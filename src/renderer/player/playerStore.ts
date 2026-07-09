@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { episodeManifestSchema, type EpisodeManifest } from '../../shared/manifest'
+import type { EpisodeManifest } from '../../shared/manifest'
 import { Scheduler, type SchedulerState } from './Scheduler'
 import { NarrationPlayer } from './NarrationPlayer'
 import { SystemTTS, type VoicePick } from './SystemTTS'
@@ -14,7 +14,6 @@ interface PlayerStore {
   narrationCharIndex: number
   elevenLabsFailure: { message: string; detail?: string } | null
   init(): Promise<void>
-  openAndPlay(manifestPath: string): Promise<void>
   startWithManifest(manifest: EpisodeManifest): Promise<void>
   pause(): Promise<void>
   resume(): Promise<void>
@@ -150,12 +149,6 @@ export const usePlayerStore = create<PlayerStore>((set, get) => ({
 
   dismissElevenLabsFailure() {
     set({ elevenLabsFailure: null })
-  },
-
-  async openAndPlay(manifestPath: string) {
-    const raw = (await window.deepcuts.manifest.load(manifestPath)) as unknown
-    const manifest: EpisodeManifest = episodeManifestSchema.parse(raw)
-    await get().startWithManifest(manifest)
   },
 
   async startWithManifest(manifest: EpisodeManifest) {

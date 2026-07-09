@@ -23,7 +23,6 @@ interface EditorStore {
   updateDraft(updater: (m: DraftManifest) => DraftManifest): void
   saveDraft(): Promise<void>
   createEmpty(title: string): Promise<string>
-  duplicate(episodePath: string): Promise<string>
   remove(draftId: string): Promise<void>
   startPreview(draftId: string): Promise<{ ok: true } | { ok: false; errors: string[] }>
   exitPreview(): void
@@ -112,12 +111,6 @@ export const useEditorStore = create<EditorStore>((set, get) => ({
 
   async createEmpty(title) {
     const id = await window.deepcuts.drafts.create(makeEmptyManifest(title))
-    await get().refreshList()
-    return id
-  },
-
-  async duplicate(episodePath) {
-    const id = await window.deepcuts.drafts.duplicateFromEpisode(episodePath)
     await get().refreshList()
     return id
   },

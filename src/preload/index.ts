@@ -39,26 +39,6 @@ const api = {
     set: (key: string, value: string) => invoke<void>(IpcChannels.KeychainSet, key, value),
     delete: (key: string) => invoke<void>(IpcChannels.KeychainDelete, key),
   },
-  catalog: {
-    loadLocal: () =>
-      invoke<{
-        episodes: Array<{
-          id: string
-          title: string
-          subject: string
-          coverImage: string
-          estimatedMinutes: number
-          manifestPath: string
-          prerendered: boolean
-        }>
-      }>(IpcChannels.CatalogLoadLocal),
-  },
-  manifest: {
-    load: (manifestPath: string) => invoke<unknown>(IpcChannels.ManifestLoad, manifestPath),
-  },
-  assets: {
-    coverUrl: (coverPath: string) => invoke<string>(IpcChannels.CoverUrl, coverPath),
-  },
   shell: {
     openExternal: (url: string) => invoke<void>(IpcChannels.OpenExternal, url),
   },
@@ -145,8 +125,6 @@ const api = {
       invoke<void>(IpcChannels.DraftsSave, draftId, manifest),
     create: (initial: unknown) => invoke<string>(IpcChannels.DraftsCreate, initial),
     delete: (draftId: string) => invoke<void>(IpcChannels.DraftsDelete, draftId),
-    duplicateFromEpisode: (episodePath: string) =>
-      invoke<string>(IpcChannels.DraftsDuplicate, episodePath),
     coverUrl: (draftId: string) => invoke<string | null>(IpcChannels.DraftsCoverUrl, draftId),
     setCover: (draftId: string, sourcePath: string) =>
       invoke<void>(IpcChannels.DraftsSetCover, draftId, sourcePath),

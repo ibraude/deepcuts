@@ -1,28 +1,20 @@
 import { randomBytes } from 'node:crypto'
 import { promises as fs } from 'node:fs'
-import { extname, join } from 'node:path'
+import { join } from 'node:path'
 import { draftManifestSchema, type DraftManifest, type DraftSummary } from '../shared/manifest'
 
 const ID_RE = /^[a-f0-9]{16}$/
 
 export interface DraftsDeps {
   draftsRoot: () => string
-  episodesRoot: () => string
 }
 
 function assertSafeId(id: string): void {
   if (!ID_RE.test(id)) throw new Error(`Unsafe draftId: ${id}`)
 }
 
-function assertSafeEpisodePath(p: string): void {
-  if (p.includes('..') || p.startsWith('/') || extname(p) !== '.json') {
-    throw new Error(`Unsafe episode path: ${p}`)
-  }
-}
-
 export function createDrafts(deps: DraftsDeps) {
   const root = deps.draftsRoot
-  const eps = deps.episodesRoot
 
   async function ensureRoot(): Promise<void> {
     await fs.mkdir(root(), { recursive: true })
@@ -130,23 +122,6 @@ export function createDrafts(deps: DraftsDeps) {
     await fs.rm(join(root(), draftId), { recursive: true, force: true })
   }
 
-  async function duplicateFromEpisode(episodePath: string): Promise<string> {
-    assertSafeEpisodePath(episodePath)
-    const sourceManifestPath = join(eps(), episodePath)
-    const raw = await fs.readFile(sourceManifestPath, 'utf-8')
-    const manifest = draftManifestSchema.parse(JSON.parse(raw))
-    const newId = await createDraft(manifest)
-    if (manifest.coverImage) {
-      const sourceCover = join(eps(), manifest.coverImage)
-      const destCover = join(root(), newId, 'cover.png')
-      const copied = await fs.copyFile(sourceCover, destCover).then(() => true).catch(() => false)
-      if (copied) {
-        await updateCoverImageField(newId)
-      }
-    }
-    return newId
-  }
-
   async function draftCoverUrl(draftId: string): Promise<string | null> {
     assertSafeId(draftId)
     const coverPath = join(root(), draftId, 'cover.png')
@@ -194,7 +169,6 @@ export function createDrafts(deps: DraftsDeps) {
     saveDraft,
     createDraft,
     deleteDraft,
-    duplicateFromEpisode,
     draftCoverUrl,
     setDraftCover,
     loadResearch,

@@ -29,7 +29,6 @@ function setupMock() {
           const i = summaries.findIndex((s) => s.draftId === id)
           if (i >= 0) summaries.splice(i, 1)
         }),
-        duplicateFromEpisode: vi.fn(async () => 'dup' + '0'.repeat(13)),
         coverUrl: vi.fn(async () => null),
         setCover: vi.fn(async () => {}),
       },

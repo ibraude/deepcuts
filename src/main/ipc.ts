@@ -1,13 +1,10 @@
 import { app, BrowserWindow, ipcMain, shell } from 'electron'
-import { promises as fs } from 'node:fs'
 import { join } from 'node:path'
 import { IpcChannels } from '../shared/ipcSchema'
 import { toSerializable } from '../shared/errors'
 import { AppleScriptSpotify } from './music/AppleScriptSpotify'
 import { ElevenLabsTTS } from './tts/ElevenLabsTTS'
 import { deleteSecret, getSecret, setSecret } from './keychain'
-import { catalogIndexSchema } from '../shared/catalog'
-import { episodeManifestSchema } from '../shared/manifest'
 import { createDrafts } from './drafts'
 import { createLibrary } from './library'
 import { GeminiImageProvider } from './image/GeminiImageProvider'
@@ -38,12 +35,6 @@ function wrap<TArgs extends unknown[], TRet>(fn: (...a: TArgs) => Promise<TRet>)
       return { ok: false as const, error: toSerializable(err) }
     }
   }
-}
-
-function episodesRoot() {
-  return app.isPackaged
-    ? join(process.resourcesPath, 'episodes')
-    : join(app.getAppPath(), 'episodes')
 }
 
 export function registerIpc() {
@@ -88,52 +79,6 @@ export function registerIpc() {
   ipcMain.handle(IpcChannels.KeychainDelete, wrap((key: string) => deleteSecret(key)))
 
   ipcMain.handle(
-    IpcChannels.CatalogLoadLocal,
-    wrap(async () => {
-      const root = episodesRoot()
-      const entries = await fs.readdir(root).catch(() => [] as string[])
-      const episodes: unknown[] = []
-      for (const entry of entries) {
-        if (!entry.endsWith('.json')) continue
-        const raw = await fs.readFile(join(root, entry), 'utf-8')
-        const manifest = episodeManifestSchema.parse(JSON.parse(raw))
-        episodes.push({
-          id: manifest.id,
-          title: manifest.title,
-          subject: manifest.subject,
-          coverImage: manifest.coverImage,
-          estimatedMinutes: manifest.estimatedMinutes,
-          manifestPath: entry,
-          prerendered: manifest.chapters
-            .flatMap((c) => c.segments)
-            .filter((s) => s.type === 'narration')
-            .every((s: any) => !!s.audio),
-        })
-      }
-      return catalogIndexSchema.parse({ episodes })
-    }),
-  )
-
-  ipcMain.handle(
-    IpcChannels.ManifestLoad,
-    wrap(async (manifestPath: string) => {
-      if (manifestPath.includes('..') || manifestPath.startsWith('/')) {
-        throw new Error('Unsafe manifest path')
-      }
-      const raw = await fs.readFile(join(episodesRoot(), manifestPath), 'utf-8')
-      return episodeManifestSchema.parse(JSON.parse(raw))
-    }),
-  )
-
-  ipcMain.handle(
-    IpcChannels.CoverUrl,
-    wrap(async (coverPath: string) => {
-      if (coverPath.includes('..')) throw new Error('Unsafe cover path')
-      return 'file://' + join(episodesRoot(), coverPath)
-    }),
-  )
-
-  ipcMain.handle(
     IpcChannels.OpenExternal,
     wrap(async (url: string) => {
       const allowed =
@@ -146,7 +91,6 @@ export function registerIpc() {
 
   const drafts = createDrafts({
     draftsRoot: () => join(app.getPath('userData'), 'drafts'),
-    episodesRoot,
   })
 
   ipcMain.handle(IpcChannels.DraftsList, wrap(() => drafts.listDrafts()))
@@ -160,10 +104,6 @@ export function registerIpc() {
     wrap((initial: unknown) => drafts.createDraft(initial as any)),
   )
   ipcMain.handle(IpcChannels.DraftsDelete, wrap((id: string) => drafts.deleteDraft(id)))
-  ipcMain.handle(
-    IpcChannels.DraftsDuplicate,
-    wrap((episodePath: string) => drafts.duplicateFromEpisode(episodePath)),
-  )
   ipcMain.handle(IpcChannels.DraftsCoverUrl, wrap((id: string) => drafts.draftCoverUrl(id)))
   ipcMain.handle(
     IpcChannels.DraftsSetCover,
