@@ -1,56 +1,62 @@
 import { useEffect, useState } from 'react'
-import { Cover } from '../ui/Cover'
-import { loadEpisodeManifest, loadUnifiedCatalog, type UnifiedCatalogEntry } from './loadLocal'
+import {
+  loadCatalog,
+  loadEpisodeManifestById,
+  type CatalogView,
+  type ReleasedEntry,
+  type UpcomingEntry,
+  type LibraryEntry,
+} from './loadCatalog'
 import { usePlayerStore } from '../player/playerStore'
 
 export function Catalog() {
-  const [entries, setEntries] = useState<UnifiedCatalogEntry[] | null>(null)
+  const [view, setView] = useState<CatalogView | null>(null)
   const [error, setError] = useState<string | null>(null)
   const startWithManifest = usePlayerStore((s) => s.startWithManifest)
 
   async function refresh() {
     try {
-      const list = await loadUnifiedCatalog()
-      setEntries(list)
+      setView(await loadCatalog())
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Failed to load catalog')
     }
   }
 
-  useEffect(() => {
-    refresh()
-  }, [])
+  useEffect(() => { refresh() }, [])
 
-  async function play(entry: UnifiedCatalogEntry) {
+  async function play(entry: ReleasedEntry | LibraryEntry) {
     try {
-      const manifest = await loadEpisodeManifest(entry)
+      const manifest = await loadEpisodeManifestById(
+        entry.id,
+        entry.source === 'library' ? 'library' : 'remote',
+      )
       await startWithManifest(manifest)
     } catch (e) {
       alert(e instanceof Error ? e.message : 'Failed to load episode')
     }
   }
 
-  async function unpublish(entry: UnifiedCatalogEntry) {
-    if (entry.source !== 'library') return
-    if (!window.confirm(`Unpublish "${entry.title}"? It'll be removed from your library but the draft stays.`)) {
-      return
-    }
+  async function unpublish(entry: LibraryEntry) {
+    if (!window.confirm(`Unpublish "${entry.title}"? It'll be removed from your library but the draft stays.`)) return
     await window.deepcuts.library.unpublish(entry.id)
     await refresh()
   }
 
   if (error) return <div className="p-8 text-[var(--color-muted)]">{error}</div>
-  if (!entries) return <div className="p-8 text-[var(--color-muted)]">Loading…</div>
+  if (!view) return <div className="p-8 text-[var(--color-muted)]">Loading…</div>
+
+  const librarySection: Array<ReleasedEntry | LibraryEntry> = [...view.released, ...view.library]
 
   return (
     <div className="p-12 max-w-5xl mx-auto">
       <div className="text-xs tracking-[0.2em] uppercase text-[var(--color-muted)] mb-2">Deepcuts</div>
       <h1 className="text-2xl font-medium mb-12">Listening documentaries</h1>
-      {entries.length === 0 ? (
-        <div className="text-[var(--color-muted)]">No episodes yet.</div>
+
+      {librarySection.length === 0 ? (
+        <div className="text-[var(--color-muted)] mb-12">No episodes yet.</div>
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-12">
-          {entries.map((e) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-12 mb-24">
+          {librarySection.map((e) => (
             <div key={`${e.source}:${e.id}`} className="group flex flex-col gap-3 relative">
               <button
                 onClick={() => play(e)}
@@ -65,7 +71,7 @@ export function Catalog() {
                     </span>
                   )
                 ) : (
-                  <Cover coverPath={e.coverImage} alt={e.title} size={220} />
+                  <img src={e.coverUrl} alt={`${e.meta.artistName} — ${e.meta.albumName}`} className="w-full h-full object-cover" draggable={false} />
                 )}
                 {e.source === 'library' && (
                   <span className="absolute top-2 left-2 text-[10px] tracking-[0.2em] uppercase px-1.5 py-0.5 rounded-sm bg-[var(--color-accent)]/15 text-[var(--color-accent)]">
@@ -74,14 +80,23 @@ export function Catalog() {
                 )}
               </button>
               <div>
-                <button
-                  onClick={() => play(e)}
-                  className="text-base font-medium text-left group-hover:text-[var(--color-accent)] transition-colors"
-                >
-                  {e.title}
-                </button>
-                <div className="text-sm text-[var(--color-muted)] mt-0.5">{e.subject}</div>
-                <div className="text-xs text-[var(--color-muted)] mt-1">{Math.round(e.estimatedMinutes)} min</div>
+                {e.source === 'library' ? (
+                  <>
+                    <button onClick={() => play(e)} className="text-base font-medium text-left group-hover:text-[var(--color-accent)] transition-colors">
+                      {e.title}
+                    </button>
+                    <div className="text-sm text-[var(--color-muted)] mt-0.5">{e.subject}</div>
+                    <div className="text-xs text-[var(--color-muted)] mt-1">{Math.round(e.estimatedMinutes)} min</div>
+                  </>
+                ) : (
+                  <>
+                    <button onClick={() => play(e)} className="text-base font-medium text-left group-hover:text-[var(--color-accent)] transition-colors">
+                      {e.meta.artistName}
+                    </button>
+                    <div className="text-sm text-[var(--color-muted)] mt-0.5">{e.meta.albumName}</div>
+                    <div className="text-xs text-[var(--color-muted)] mt-1 leading-relaxed">{e.meta.blurb}</div>
+                  </>
+                )}
               </div>
               {e.source === 'library' && (
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity">
@@ -96,6 +111,27 @@ export function Catalog() {
             </div>
           ))}
         </div>
+      )}
+
+      {view.upcoming.length > 0 && (
+        <>
+          <div className="text-xs tracking-[0.2em] uppercase text-[var(--color-muted)] mb-2">Upcoming</div>
+          <h2 className="text-xl font-medium mb-8">Coming soon</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-12">
+            {view.upcoming.map((e: UpcomingEntry) => (
+              <div key={`upcoming:${e.id}`} className="flex flex-col gap-3">
+                <div className="aspect-square w-full rounded-md bg-[var(--color-surface)] border border-[var(--color-hairline)] overflow-hidden opacity-80">
+                  <img src={e.coverUrl} alt={`${e.meta.artistName} — ${e.meta.albumName}`} className="w-full h-full object-cover" draggable={false} />
+                </div>
+                <div>
+                  <div className="text-base font-medium">{e.meta.artistName}</div>
+                  <div className="text-sm text-[var(--color-muted)] mt-0.5">{e.meta.albumName}</div>
+                  <div className="text-xs tracking-[0.2em] uppercase text-[var(--color-muted)] mt-2">{e.expectedRelease}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </>
       )}
     </div>
   )
