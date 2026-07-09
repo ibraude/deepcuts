@@ -50,6 +50,18 @@ export const IpcChannels = {
   LibraryLoadManifest: 'library:loadManifest',
   LibraryCoverUrl: 'library:coverUrl',
   LibraryIsPublished: 'library:isPublished',
+
+  RemoteCatalogList: 'remoteCatalog:list',
+  RemoteCatalogRefresh: 'remoteCatalog:refresh',
+  RemoteCatalogLoadEpisode: 'remoteCatalog:loadEpisode',
+  RemoteCatalogLoadMeta: 'remoteCatalog:loadMeta',
+  RemoteCatalogCoverUrl: 'remoteCatalog:coverUrl',
+
+  DownloadedList: 'downloaded:list',
+  DownloadedStart: 'downloaded:start',
+  DownloadedRemove: 'downloaded:remove',
+  DownloadedIsDownloaded: 'downloaded:isDownloaded',
+  DownloadedProgress: 'downloaded:progress',
 } as const
 
 export type IpcChannel = (typeof IpcChannels)[keyof typeof IpcChannels]
