@@ -3,6 +3,7 @@ import { episodeManifestSchema, type EpisodeManifest } from '../../shared/manife
 import { Scheduler, type SchedulerState } from './Scheduler'
 import { NarrationPlayer } from './NarrationPlayer'
 import { SystemTTS, type VoicePick } from './SystemTTS'
+import { createPrefetchWarmer } from './PrefetchWarmer'
 import { loadUserVoiceRef, saveUserVoiceRef } from '../settings/voiceCatalog'
 
 interface PlayerStore {
@@ -67,6 +68,9 @@ let currentHostCount = 1
 let progressSink: ((charIndex: number) => void) | null = null
 let failureSink: ((err: unknown) => void) | null = null
 
+const prefetch = createPrefetchWarmer()
+let lastPrefetchIndex = -1
+
 const scheduler = new Scheduler({
   music: {
     ensureReady: () => window.deepcuts.spotify.ensureReady(),
@@ -117,6 +121,11 @@ export const usePlayerStore = create<PlayerStore>((set, get) => ({
       set({ schedulerState: s })
       // Reset progress on segment boundary or non-narration status.
       if (s.status.kind !== 'playing-narration') set({ narrationCharIndex: 0 })
+      // Warm the next 3 CDN audio URLs whenever the segment index advances.
+      if (s.segmentIndex !== lastPrefetchIndex && s.segments.length > 0) {
+        lastPrefetchIndex = s.segmentIndex
+        prefetch.warm(s.segments, s.segmentIndex)
+      }
     })
     const voices = await SystemTTS.listVoices()
     const pick = SystemTTS.pickBestVoice(voices)
@@ -151,6 +160,8 @@ export const usePlayerStore = create<PlayerStore>((set, get) => ({
 
   async startWithManifest(manifest: EpisodeManifest) {
     currentHostCount = manifest.hosts.length
+    prefetch.reset()
+    lastPrefetchIndex = -1
     await scheduler.start(manifest, { hasElevenLabsKey: get().hasElevenLabsKey })
   },
 
