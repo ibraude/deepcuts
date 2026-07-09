@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "artistName": "Tom Waits",
+  "albumName": "The Heart of Saturday Night",
+  "blurb": "Bar-stool poetry, honking horns, and the promise of a lonesome city Saturday. Waits before Waits became Waits.",
+  "palette": {
+    "bg": "#e6dccb",
+    "ink": "#1b1610",
+    "accent": "#7c3f1f"
+  },
+  "releaseDate": null,
+  "expectedRelease": "Autumn 2026"
+}

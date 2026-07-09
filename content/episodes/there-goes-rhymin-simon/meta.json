@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "artistName": "Paul Simon",
+  "albumName": "There Goes Rhymin’ Simon",
+  "blurb": "Muscle Shoals, gospel, reggae, calypso, and one of the sharpest song-writers alive putting them all in the same room.",
+  "palette": {
+    "bg": "#ebe3ce",
+    "ink": "#182920",
+    "accent": "#3d6b52"
+  },
+  "releaseDate": null,
+  "expectedRelease": "2027-Q1"
+}

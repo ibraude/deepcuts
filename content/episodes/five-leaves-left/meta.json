@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "artistName": "Nick Drake",
+  "albumName": "Five Leaves Left",
+  "blurb": "A twenty-year-old with a guitar, a string section, and eternity in his voice. The debut that still hasn’t stopped whispering.",
+  "palette": {
+    "bg": "#e9e3d1",
+    "ink": "#232a20",
+    "accent": "#5a6d3f"
+  },
+  "releaseDate": null,
+  "expectedRelease": "Winter 2026"
+}

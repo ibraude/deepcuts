@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "artistName": "Bob Dylan",
+  "albumName": "Blood on the Tracks",
+  "blurb": "The divorce record. The masterpiece. Dylan alone in a room in New York, remembering everything, forgiving nothing.",
+  "palette": {
+    "bg": "#e6dcc7",
+    "ink": "#231610",
+    "accent": "#8a3b1e"
+  },
+  "releaseDate": null,
+  "expectedRelease": "2027-Q4"
+}

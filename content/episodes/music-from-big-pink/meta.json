@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "artistName": "The Band",
+  "albumName": "Music from Big Pink",
+  "blurb": "A pink house in Woodstock, five men, and the record that quietly rewrote what American music could be.",
+  "palette": {
+    "bg": "#e6d9c1",
+    "ink": "#221a12",
+    "accent": "#7a4e26"
+  },
+  "releaseDate": null,
+  "expectedRelease": "2027-Q2"
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "artistName": "Bill Withers",
+  "albumName": "Live at Carnegie Hall",
+  "blurb": "The songs. The stories. The man. A night to remember at Carnegie Hall, 1972.",
+  "palette": {
+    "bg": "#efe4d0",
+    "ink": "#1a1512",
+    "accent": "#b6501f"
+  },
+  "releaseDate": null,
+  "expectedRelease": "Summer 2026"
+}

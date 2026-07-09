@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "artistName": "Bruce Springsteen",
+  "albumName": "Nebraska",
+  "blurb": "A four-track cassette, ten haunted songs, and Springsteen’s bleakest, most private record. The America nobody sings about.",
+  "palette": {
+    "bg": "#dfd6c2",
+    "ink": "#141414",
+    "accent": "#4b4e4f"
+  },
+  "releaseDate": null,
+  "expectedRelease": "2027-Q3"
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "artistName": "The Smiths",
+  "albumName": "Strangeways, Here We Come",
+  "blurb": "Their final record. Their best record. Morrissey and Marr at the edge of the cliff, still holding hands.",
+  "palette": {
+    "bg": "#e2dccc",
+    "ink": "#1a2634",
+    "accent": "#5b7fa1"
+  },
+  "releaseDate": null,
+  "expectedRelease": "Winter 2026"
+}

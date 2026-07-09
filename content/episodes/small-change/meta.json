@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "artistName": "Tom Waits",
+  "albumName": "Small Change",
+  "blurb": "The piano-and-whiskey Waits at his most romantic and ruined. A skid-row masterpiece dressed in a rumpled tux.",
+  "palette": {
+    "bg": "#e5dbc5",
+    "ink": "#181410",
+    "accent": "#8d5b25"
+  },
+  "releaseDate": null,
+  "expectedRelease": "Winter 2026"
+}
