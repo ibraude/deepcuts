@@ -108,6 +108,15 @@ const api = {
     coverUrl: (libraryId: string) => invoke<string | null>(IpcChannels.LibraryCoverUrl, libraryId),
     isPublished: (draftId: string) => invoke<boolean>(IpcChannels.LibraryIsPublished, draftId),
   },
+  remoteCatalog: {
+    list: () => invoke<import('../shared/catalog').RemoteCatalogIndex>(IpcChannels.RemoteCatalogList),
+    refresh: () => invoke<import('../shared/catalog').RemoteCatalogIndex>(IpcChannels.RemoteCatalogRefresh),
+    loadEpisode: (id: string) =>
+      invoke<import('../shared/manifest').EpisodeManifest>(IpcChannels.RemoteCatalogLoadEpisode, id),
+    loadMeta: (id: string) =>
+      invoke<import('../shared/meta').EpisodeMeta>(IpcChannels.RemoteCatalogLoadMeta, id),
+    coverUrl: (id: string) => invoke<string>(IpcChannels.RemoteCatalogCoverUrl, id),
+  },
   drafts: {
     list: () =>
       invoke<

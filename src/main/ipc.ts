@@ -12,6 +12,8 @@ import { createDrafts } from './drafts'
 import { createLibrary } from './library'
 import { GeminiImageProvider } from './image/GeminiImageProvider'
 import { prerenderDraft, type PrerenderEvent } from './prerender'
+import { createRemoteCatalog } from './catalog/RemoteCatalog'
+import { resolveContentBaseUrl } from '../shared/config'
 import { parseServiceAccountJson, type VertexConfig } from './generation/vertexAuth'
 import { GeminiProvider } from './generation/GeminiProvider'
 import {
@@ -179,6 +181,18 @@ export function registerIpc() {
   ipcMain.handle(IpcChannels.LibraryLoadManifest, wrap((id: string) => library.loadManifest(id)))
   ipcMain.handle(IpcChannels.LibraryCoverUrl, wrap((id: string) => library.coverUrl(id)))
   ipcMain.handle(IpcChannels.LibraryIsPublished, wrap((id: string) => library.isPublished(id)))
+
+  // Remote catalog
+  const remoteCatalog = createRemoteCatalog({
+    baseUrl: resolveContentBaseUrl(),
+    cacheRoot: () => join(app.getPath('userData'), 'cache'),
+  })
+
+  ipcMain.handle(IpcChannels.RemoteCatalogList, wrap(() => remoteCatalog.list()))
+  ipcMain.handle(IpcChannels.RemoteCatalogRefresh, wrap(() => remoteCatalog.refresh()))
+  ipcMain.handle(IpcChannels.RemoteCatalogLoadEpisode, wrap((id: string) => remoteCatalog.loadEpisode(id)))
+  ipcMain.handle(IpcChannels.RemoteCatalogLoadMeta, wrap((id: string) => remoteCatalog.loadMeta(id)))
+  ipcMain.handle(IpcChannels.RemoteCatalogCoverUrl, wrap(async (id: string) => remoteCatalog.coverUrl(id)))
 
   // Generation
   let abortController: AbortController | null = null
