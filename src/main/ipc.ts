@@ -13,6 +13,7 @@ import { createLibrary } from './library'
 import { GeminiImageProvider } from './image/GeminiImageProvider'
 import { prerenderDraft, type PrerenderEvent } from './prerender'
 import { createRemoteCatalog } from './catalog/RemoteCatalog'
+import { createDownloadedEpisodes } from './downloaded/DownloadedEpisodes'
 import { resolveContentBaseUrl } from '../shared/config'
 import { parseServiceAccountJson, type VertexConfig } from './generation/vertexAuth'
 import { GeminiProvider } from './generation/GeminiProvider'
@@ -188,11 +189,30 @@ export function registerIpc() {
     cacheRoot: () => join(app.getPath('userData'), 'cache'),
   })
 
+  const downloaded = createDownloadedEpisodes({
+    downloadedRoot: () => join(app.getPath('userData'), 'downloaded'),
+    catalog: remoteCatalog,
+  })
+
   ipcMain.handle(IpcChannels.RemoteCatalogList, wrap(() => remoteCatalog.list()))
   ipcMain.handle(IpcChannels.RemoteCatalogRefresh, wrap(() => remoteCatalog.refresh()))
-  ipcMain.handle(IpcChannels.RemoteCatalogLoadEpisode, wrap((id: string) => remoteCatalog.loadEpisode(id)))
+  ipcMain.handle(IpcChannels.RemoteCatalogLoadEpisode, wrap(async (id: string) => {
+    const local = await downloaded.loadManifestLocal(id)
+    if (local) return local
+    return remoteCatalog.loadEpisode(id)
+  }))
   ipcMain.handle(IpcChannels.RemoteCatalogLoadMeta, wrap((id: string) => remoteCatalog.loadMeta(id)))
   ipcMain.handle(IpcChannels.RemoteCatalogCoverUrl, wrap(async (id: string) => remoteCatalog.coverUrl(id)))
+
+  ipcMain.handle(IpcChannels.DownloadedIsDownloaded, wrap((id: string) => downloaded.isDownloaded(id)))
+  ipcMain.handle(IpcChannels.DownloadedRemove, wrap((id: string) => downloaded.remove(id)))
+  ipcMain.handle(IpcChannels.DownloadedStart, wrap(async (id: string) => {
+    await downloaded.start(id, (p) => {
+      for (const win of BrowserWindow.getAllWindows()) {
+        win.webContents.send(IpcChannels.DownloadedProgress, { id, ...p })
+      }
+    })
+  }))
 
   // Generation
   let abortController: AbortController | null = null

@@ -12,17 +12,48 @@ import { usePlayerStore } from '../player/playerStore'
 export function Catalog() {
   const [view, setView] = useState<CatalogView | null>(null)
   const [error, setError] = useState<string | null>(null)
+  const [downloadedIds, setDownloadedIds] = useState<Set<string>>(new Set())
+  const [progressById, setProgressById] = useState<Record<string, { done: number; total: number }>>({})
   const startWithManifest = usePlayerStore((s) => s.startWithManifest)
 
   async function refresh() {
     try {
-      setView(await loadCatalog())
+      const next = await loadCatalog()
+      setView(next)
+      const flags = await Promise.all(next.released.map(async (e) => [e.id, await window.deepcuts.downloaded.isDownloaded(e.id)] as const))
+      setDownloadedIds(new Set(flags.filter(([, dl]) => dl).map(([id]) => id)))
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Failed to load catalog')
     }
   }
 
   useEffect(() => { refresh() }, [])
+
+  useEffect(() => {
+    const off = window.deepcuts.downloaded.onProgress((p) => {
+      setProgressById((prev) => ({ ...prev, [p.id]: { done: p.done, total: p.total } }))
+      if (p.done === p.total) {
+        setDownloadedIds((prev) => new Set(prev).add(p.id))
+        setProgressById((prev) => { const next = { ...prev }; delete next[p.id]; return next })
+      }
+    })
+    return off
+  }, [])
+
+  async function downloadEpisode(id: string) {
+    setProgressById((prev) => ({ ...prev, [id]: { done: 0, total: 1 } }))
+    try {
+      await window.deepcuts.downloaded.start(id)
+    } catch (e) {
+      alert(e instanceof Error ? e.message : 'Download failed')
+      setProgressById((prev) => { const next = { ...prev }; delete next[id]; return next })
+    }
+  }
+
+  async function removeDownload(id: string) {
+    await window.deepcuts.downloaded.remove(id)
+    setDownloadedIds((prev) => { const next = new Set(prev); next.delete(id); return next })
+  }
 
   async function play(entry: ReleasedEntry | LibraryEntry) {
     try {
@@ -78,6 +109,19 @@ export function Catalog() {
                     Yours
                   </span>
                 )}
+                {e.source === 'remote' && downloadedIds.has(e.id) && (
+                  <span className="absolute top-2 left-2 text-[10px] tracking-[0.2em] uppercase px-1.5 py-0.5 rounded-sm bg-black/50 text-white">
+                    Downloaded
+                  </span>
+                )}
+                {e.source === 'remote' && progressById[e.id] && (
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-black/30">
+                    <div
+                      className="h-full bg-[var(--color-accent)] transition-all"
+                      style={{ width: `${Math.round((progressById[e.id]!.done / Math.max(1, progressById[e.id]!.total)) * 100)}%` }}
+                    />
+                  </div>
+                )}
               </button>
               <div>
                 {e.source === 'library' ? (
@@ -106,6 +150,29 @@ export function Catalog() {
                   >
                     Unpublish
                   </button>
+                </div>
+              )}
+              {e.source === 'remote' && (
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity">
+                  {downloadedIds.has(e.id) ? (
+                    <button
+                      onClick={() => removeDownload(e.id)}
+                      className="text-xs px-2 py-1 rounded-md text-[var(--color-muted)] hover:text-red-400 hover:bg-white/5"
+                    >
+                      Remove download
+                    </button>
+                  ) : progressById[e.id] ? (
+                    <div className="text-xs px-2 py-1 text-[var(--color-muted)]">
+                      Downloading… {progressById[e.id]!.done}/{progressById[e.id]!.total}
+                    </div>
+                  ) : (
+                    <button
+                      onClick={() => downloadEpisode(e.id)}
+                      className="text-xs px-2 py-1 rounded-md text-[var(--color-muted)] hover:text-[var(--color-accent)] hover:bg-white/5"
+                    >
+                      Download for offline
+                    </button>
+                  )}
                 </div>
               )}
             </div>

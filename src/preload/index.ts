@@ -117,6 +117,16 @@ const api = {
       invoke<import('../shared/meta').EpisodeMeta>(IpcChannels.RemoteCatalogLoadMeta, id),
     coverUrl: (id: string) => invoke<string>(IpcChannels.RemoteCatalogCoverUrl, id),
   },
+  downloaded: {
+    isDownloaded: (id: string) => invoke<boolean>(IpcChannels.DownloadedIsDownloaded, id),
+    start: (id: string) => invoke<void>(IpcChannels.DownloadedStart, id),
+    remove: (id: string) => invoke<void>(IpcChannels.DownloadedRemove, id),
+    onProgress: (cb: (p: { id: string; total: number; done: number; currentUrl: string }) => void) => {
+      const listener = (_e: Electron.IpcRendererEvent, payload: { id: string; total: number; done: number; currentUrl: string }) => cb(payload)
+      ipcRenderer.on(IpcChannels.DownloadedProgress, listener)
+      return () => { ipcRenderer.removeListener(IpcChannels.DownloadedProgress, listener) }
+    },
+  },
   drafts: {
     list: () =>
       invoke<
