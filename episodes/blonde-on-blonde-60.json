@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "blonde-on-blonde-60",
+  "title": "Blonde on Blonde at 60",
+  "subject": "Bob Dylan — Blonde on Blonde",
+  "coverImage": "covers/blonde-on-blonde-60.png",
+  "estimatedMinutes": 12,
+  "hosts": [
+    {
+      "id": "host_a",
+      "name": "The Narrator",
+      "persona": "warm, knowledgeable, dry humor",
+      "voiceRef": "elevenlabs:iP95p4xoKVk53GoZ742B"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Nashville, four in the morning",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "intro",
+          "hostId": "host_a",
+          "text": "In the winter of nineteen sixty-six, Bob Dylan flew his electric band south to Nashville, looking for something he could not name. The session players had played country, gospel, and Western swing. They had never met a song like Visions of Johanna. They cut it at four in the morning, in a single take, and walked out into the cold."
+        },
+        {
+          "type": "song",
+          "id": "visions",
+          "track": {
+            "title": "Visions of Johanna",
+            "artist": "Bob Dylan",
+            "spotifyUri": "spotify:track:2rslQV48gNv3r9pPrQFPW1"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 500,
+          "why": "the thin wild mercury sound, captured in one take",
+          "voiceovers": [
+            {
+              "id": "v1",
+              "hostId": "host_a",
+              "text": "Listen for the harmonica here. It's already speaking to itself before he's finished the line.",
+              "atSeconds": 35,
+              "duckTo": 55
+            },
+            {
+              "id": "v2",
+              "hostId": "host_a",
+              "text": "Dylan kept the band waiting in the studio for hours while he finished the lyrics in a hotel room. The drummer, Kenny Buttrey, said later that he was paid to play, but mostly he was paid to wait. By the time they tracked this, it was nearly dawn.",
+              "atSeconds": 200,
+              "duckTo": 55,
+              "holdDuck": true
+            },
+            {
+              "id": "v3",
+              "hostId": "host_a",
+              "text": "What you're hearing here — the organ, the brushed snare, the way the song refuses to crescendo — is what Dylan would later call the thin wild mercury sound. He said he never quite got it back.",
+              "atSeconds": 225,
+              "duckTo": 55
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "bridge",
+          "hostId": "host_a",
+          "text": "The next song they cut, on the second night, had nine verses and almost no chorus. Charlie McCoy on bass, Kenny Buttrey still behind the kit, Al Kooper on organ. Loose enough to sound improvised. Tight enough to never fall apart."
+        },
+        {
+          "type": "song",
+          "id": "stuck",
+          "track": {
+            "title": "Stuck Inside of Mobile with the Memphis Blues Again",
+            "artist": "Bob Dylan",
+            "spotifyUri": "spotify:track:1NYTj6JEw3IOh4ggiBh82h"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 500,
+          "why": "the loose Nashville feel under one of Dylan's longest narrative songs",
+          "voiceovers": [
+            {
+              "id": "s1",
+              "hostId": "host_a",
+              "text": "Nine verses, and not one of them ends where you think it will. The band just keeps going.",
+              "atSeconds": 60,
+              "duckTo": 55
+            },
+            {
+              "id": "s2",
+              "hostId": "host_a",
+              "text": "Buttrey said later he thought the song would end after the second verse. Then after the third. He kept playing because nobody told him to stop. Listen to the snare — it stays loose the whole way through, as if Buttrey was holding back, waiting for a cue that never came.",
+              "atSeconds": 200,
+              "duckTo": 55,
+              "holdDuck": true
+            },
+            {
+              "id": "s3",
+              "hostId": "host_a",
+              "text": "Blonde on Blonde came out in June nineteen sixty-six. It was the first double album in rock history. Sixty years on, it still sounds like four in the morning in Nashville. That is the point.",
+              "atSeconds": 230,
+              "duckTo": 55
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "facts": []
+}

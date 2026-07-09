@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "marty-stuck-in-mobile",
+  "title": "The Long Song",
+  "subject": "Marty Kessler on Stuck Inside of Mobile",
+  "coverImage": "covers/marty-stuck-in-mobile.png",
+  "estimatedMinutes": 8,
+  "hosts": [
+    {
+      "id": "narrator",
+      "name": "The Narrator",
+      "persona": "warm, knowledgeable, dry humor — frames the conversation and lets the guest cook",
+      "voiceRef": "elevenlabs:SAz9YHcvj6GT2YYXdXww"
+    },
+    {
+      "id": "marty",
+      "name": "Marty Kessler",
+      "persona": "seventy-one, Brooklyn record-store owner since 1972, tangential, mispronounces things on purpose, namedrops session musicians, has met Dylan exactly once and won't shut up about it",
+      "voiceRef": "elevenlabs:bIHbv24MWmeRgasZH58o"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Side three, track two",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "s0",
+          "hostId": "narrator",
+          "text": "Some songs are short letters. This one is a novel slid under your door. Stuck Inside of Mobile with the Memphis Blues Again — nine verses, almost no chorus, recorded at Columbia Studio A in Nashville, deep into the night. Tonight we're joined by Marty Kessler, who's owned a record store in Park Slope, Brooklyn, since nineteen seventy-two. Marty — when did you first hear this song?"
+        },
+        {
+          "type": "narration",
+          "id": "s1",
+          "hostId": "marty",
+          "text": "Oh boy. Okay. So it was sixty-six. I was nineteen, I was at City College, and I had a roommate named Mickey Furst — Furst with no E, F-U-R-S-T, he reminded everybody — and Mickey had one of those Voice of Music portable record players. Bright orange. Ugliest thing you ever saw. And he comes in one night, late, with Blonde on Blonde under his arm, and he says, sit down. So I sit. And he drops the needle on side three, track two, which is Stuck Inna Mobeel — I still say it that way, I'm sorry — and after about a minute I'm thinking, you know, this song is never gonna end. And I mean that in the best possible way."
+        },
+        {
+          "type": "song",
+          "id": "s2",
+          "track": {
+            "title": "Stuck Inside of Mobile with the Memphis Blues Again",
+            "artist": "Bob Dylan",
+            "spotifyUri": "spotify:track:1NYTj6JEw3IOh4ggiBh82h"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 500,
+          "why": "let the whole song play; the conversation happens over the music",
+          "voiceovers": [
+            {
+              "id": "vo1",
+              "hostId": "marty",
+              "text": "Right here — hear how loose it is? Nobody's counting bars. Buttrey is just, you know, hanging out behind the snare.",
+              "atSeconds": 25,
+              "duckTo": 55
+            },
+            {
+              "id": "vo2",
+              "hostId": "marty",
+              "text": "You know what got me? It wasn't, like, the lyrics — although, look, you could teach a whole semester on those lyrics, I'm not gonna do that to you — it was the rhythm section. They sound like they're playing in the next room. Loose. Like nobody told them how long the song was supposed to be. Kenny Buttrey on drums, and, uh — was it Henry Strzelecki on bass? No. Charlie McCoy. Anyway. They sound a little bored, and that's what makes it perfect.",
+              "atSeconds": 180,
+              "duckTo": 55,
+              "holdDuck": true
+            },
+            {
+              "id": "vo3",
+              "hostId": "narrator",
+              "text": "Marty's not wrong about the rhythm section. Kenny Buttrey said later he thought the song would end after the second verse. Then after the third. Then after the fourth. He just kept playing. Sixty years on, this is one of the most listened-to long songs in popular music — and it still feels like nobody quite knew when it was going to end. That's not a mistake. That's the form.",
+              "atSeconds": 220,
+              "duckTo": 55,
+              "holdDuck": true
+            },
+            {
+              "id": "vo4",
+              "hostId": "marty",
+              "text": "Thanks for having me. Come by the store sometime. I'll set you up with the mono pressing — if I can find it. Mickey took it. Mickey took everything.",
+              "atSeconds": 255,
+              "duckTo": 55
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "facts": []
+}
