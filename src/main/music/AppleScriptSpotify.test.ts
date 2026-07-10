@@ -111,6 +111,21 @@ describe('AppleScriptSpotify', () => {
     expect(script).not.toMatch(/(^|\n)\s*pause\s*(\n|$)/)
   })
 
+  it('fires play track TWICE (separate osascript calls) — Spotify needs two to escape a paused context', async () => {
+    // After a pause, the first `play track "URI"` plays a related-context
+    // track instead of the requested URI. A second `play track` a fraction
+    // later corrects it. This test asserts both invocations run.
+    const calls: string[][] = []
+    const p = buildProvider(async (args) => {
+      calls.push(args)
+      return { stdout: '', stderr: '', code: 0 }
+    })
+    await p.play('spotify:track:abcDEF1234567890123456')
+    expect(calls.length).toBe(2)
+    expect(calls[0]![1]!).toContain('play track "spotify:track:abcDEF1234567890123456"')
+    expect(calls[1]![1]!).toContain('play track "spotify:track:abcDEF1234567890123456"')
+  })
+
   it('clamps volume to 0..100', async () => {
     const calls: string[][] = []
     const p = buildProvider(async (args) => {
