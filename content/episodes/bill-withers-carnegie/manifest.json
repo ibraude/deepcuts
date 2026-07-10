@@ -1,0 +1,611 @@
+{
+  "schemaVersion": 1,
+  "id": "bill-withers-carnegie",
+  "title": "A Room Where People Hear Each Other",
+  "subject": "Bill Withers — Live at Carnegie Hall",
+  "coverImage": "cover.png",
+  "estimatedMinutes": 120,
+  "hosts": [
+    {
+      "id": "walker",
+      "name": "Walker",
+      "persona": "The storyteller and biographer. Walker has a warm, grounded delivery. He focuses on Bill Withers’ working-class roots, the emotional mechanics of the lyrics, and the human narratives unfolding inside Carnegie Hall.",
+      "voiceRef": "elevenlabs:uVPaoHk10Ap5NfMgYbjN"
+    },
+    {
+      "id": "sarah",
+      "name": "Sarah",
+      "persona": "The musical analyst. Sharp, observant, and deeply appreciative of groove and restraint. She unpacks the machinery behind Withers’ apparent simplicity, focusing on arrangement, vocal technique, and the band’s incredible discipline.",
+      "voiceRef": "elevenlabs:oUMxh02yjiu8yM49gRI0"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "The Rain and the Room",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "narration-ch1-1",
+          "hostId": "walker",
+          "text": "It is Friday, October 6th, 1972. Outside Carnegie Hall, the New York evening is wet, windy, and thoroughly miserable. People are shaking out their umbrellas and pushing through the heavy doors to see a performer whose debut album had been in the world for barely a year and a half. This building carries the towering weight of European classical music, jazz history, and cultural respectability. It is an enduring monument to high art. You are supposed to behave a certain way when you walk onto this stage. You are supposed to dress it up, create a spectacle, and project an untouchable aura of stardom.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch1-1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "narration-ch1-2",
+          "hostId": "sarah",
+          "text": "But Bill Withers arrives without any of that. There are no elaborate costumes. There are no theatrical scenery changes, no backup dancers, and absolutely none of the choreographed spectacle you would typically expect from a major soul revue in the early seventies. He simply walks out and sits down with an acoustic guitar. And when the band kicks in, they do not launch into an overwhelming, brassy fanfare to announce the arrival of a star. They slip right into a groove that feels less like a formal performance and more like an intimate conversation already in progress.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch1-2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "song-ch1-1",
+          "track": {
+            "title": "Use Me",
+            "artist": "Bill Withers",
+            "spotifyUri": "spotify:track:2pAsta8dSDuz0AtMfxGcj5"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 520,
+          "why": "The immediate band-and-audience connection that opens the concert.",
+          "voiceovers": [
+            {
+              "id": "vo-ch1-1-sarah",
+              "hostId": "sarah",
+              "text": "Listen to the enormous spaces the musicians are leaving here. Drummer James Gadson and bassist Melvin Dunlap aren't trying to fill every available gap. The restraint is incredible.",
+              "atSeconds": 65,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch1-1-sarah.mp3"
+            },
+            {
+              "id": "vo-ch1-1-walker",
+              "hostId": "walker",
+              "text": "At the end of this eight-minute jam, he simply thanks the crowd for coming out through the rain. In that one small, gracious gesture, the formal architecture of Carnegie Hall totally collapses. He's talking to them like neighbors in a living room.",
+              "atSeconds": 480,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch1-1-walker.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Man Who Arrived Late",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "narration-ch2-1",
+          "hostId": "walker",
+          "text": "To understand how Bill Withers commanded this prestigious room so completely, you have to look at how long it took him to get there. He was born in 1938 in Slab Fork, West Virginia, a tiny coal-mining community. He was the youngest of six children, raised mostly by his mother's family in nearby Beckley after his parents separated when he was young. Growing up, he suffered from terrible asthma and a severe, crippling stutter. That speech impediment made him highly watchful. It made him hesitant to place himself at the center of attention, teaching him to observe people quietly and figure out how they ticked while staying safely out of the spotlight himself.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch2-1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "narration-ch2-2",
+          "hostId": "sarah",
+          "text": "At seventeen, he joined the United States Navy and stayed in the service for nine long years. When he finally settled in Los Angeles in 1967, he didn't immediately declare himself a musician. He worked in aviation manufacturing, literally installing toilets in commercial aircraft. By the time he walked onto the stage at Carnegie Hall, he was thirty-four years old. He had spent his entire adulthood surrounded by sailors, mechanics, factory noise, and shift supervisors. That late arrival is absolutely crucial to his art. He didn't spend his twenties being styled, managed, and groomed by the entertainment industry. He didn't need the music business to tell him who he was.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch2-2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "song-ch2-1",
+          "track": {
+            "title": "Friend of Mine",
+            "artist": "Bill Withers",
+            "spotifyUri": "spotify:track:1Mnc4e18oDcELB8NkoMWbq"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 270,
+          "why": "Establishes friendship as a central subject of his writing.",
+          "voiceovers": [
+            {
+              "id": "vo-ch2-1-walker",
+              "hostId": "walker",
+              "text": "Notice how he reverses the typical flow of a pop concert. Most stars organize the room so that all admiration flows in one direction, toward them. Bill asks the audience to look around and support each other.",
+              "atSeconds": 120,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch2-1-walker.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Factory Worker Makes a Demo",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "narration-ch3-1",
+          "hostId": "walker",
+          "text": "Music wasn't a divine calling that entitled Bill to abandon ordinary life. It was just a practical chance he decided to take. He bought a cheap guitar from a pawnshop, worked on songs between factory shifts, and eventually recorded some demos with a musician named Ray Jackson. Those tapes made their way to Clarence Avant, the formidable founder of Sussex Records. Bill was intrigued by the opportunity, but he approached it with the pragmatism of a working man. He saw people succeeding in the industry and simply thought the work didn't look impossible.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch3-1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "narration-ch3-2",
+          "hostId": "sarah",
+          "text": "When it came time to record his debut, Sussex Records paired Bill with Booker T. Jones. It was the perfect, miraculous match. Booker T. brought in legendary Stax musicians, but more importantly, he brought his own quiet temperament. Bill was completely untrained and didn't speak the conventional language of harmony or music theory. A self-important producer would have steamrolled him. But Booker T. never tried to correct his instincts or smother his raw rhythmic songwriting with professional orthodoxy. He just protected the space, allowing Bill to construct songs with the same unpretentious efficiency he used on the factory floor.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch3-2.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "narration-ch3-3",
+          "hostId": "walker",
+          "text": "Even after he was signed, Bill remained incredibly cautious about giving up his steady paycheck. He knew that the music business was notoriously fickle. Shortly before his debut album came out, he was offered two things on the exact same day: a letter recalling him to his factory job, and an invitation to appear on The Tonight Show. He ultimately chose Johnny Carson, but the fact that he actually had to pause and weigh that decision tells you everything about his relationship with fame. Music was not the only kind of legitimate work he recognized.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch3-3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "song-ch3-1",
+          "track": {
+            "title": "Harlem",
+            "artist": "Bill Withers",
+            "spotifyUri": "spotify:track:6JumfGk4f9E5KLT086I75s"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 210,
+          "why": "Showcases early Withers and urban momentum before diving entirely into the live setting.",
+          "voiceovers": [
+            {
+              "id": "vo-ch3-1-sarah",
+              "hostId": "sarah",
+              "text": "Listen to this forward momentum. He isn't writing literally about machines, but he constructs his songs with the exact, driving efficiency of an assembly line.",
+              "atSeconds": 85,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch3-1-sarah.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Stripping Away the Plot",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "narration-ch4-1",
+          "hostId": "walker",
+          "text": "The inspiration for 'Ain't No Sunshine' didn't come from a dramatic breakup in Bill's own life. It actually came from watching the movie 'Days of Wine and Roses'. He was struck by the central couple, two people who are bound together and constantly pulled apart by their mutual alcoholism. He noticed this repeating cycle of departures and returns between the characters. But when he sat down to write the song, he did something brilliant: he stripped away all the plot details. He doesn't explain who left, why she left, or whether it's even a good idea for her to come back. He removes all the specific context until nothing is left but the raw, unadorned feeling of absence.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch4-1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "narration-ch4-2",
+          "hostId": "sarah",
+          "text": "That decision to strip away the plot resulted in a truly radical pop structure. For one thing, there is no conventional instrumental introduction. The song just begins immediately with his voice, dropping you right into the middle of the pain. It's barely two minutes long in its studio form. But the most daring choice is the bridge, which consists entirely of the phrase 'I know' repeated twenty-six times in a row. Bill initially imagined he would go back and write an elaborate, wordy chorus to fill that space. But Booker T. Jones encouraged him to leave it exactly as it was. That repetitive trance becomes the emotional anchor of the entire composition.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch4-2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "song-ch4-1",
+          "track": {
+            "title": "Ain't No Sunshine",
+            "artist": "Bill Withers",
+            "spotifyUri": "spotify:track:5gEbHse5x6o11g2Tef4AbR"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 180,
+          "why": "Restraint and male vulnerability.",
+          "voiceovers": [
+            {
+              "id": "vo-ch4-1-sarah",
+              "hostId": "sarah",
+              "text": "Notice how his voice completely refuses to perform the emotion. He hits sustained notes cleanly, allows just a slight roughness to appear, and then stops before the feeling becomes ornamental.",
+              "atSeconds": 70,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch4-1-sarah.mp3"
+            },
+            {
+              "id": "vo-ch4-1-walker",
+              "hostId": "walker",
+              "text": "This repetition isn't filler. It's the sound of a mind trapped inside recognition, completely unable to act on what it knows.",
+              "atSeconds": 115,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch4-1-walker.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Memory as Rhythm",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "narration-ch5-1",
+          "hostId": "walker",
+          "text": "One of the most vital choices on the Carnegie Hall album is that they left the spoken introductions in. Bill talks to the audience between songs, and these transitions are essential. They prevent him from ever adopting the persona of a mysterious, brooding genius who descends from the mountain to deliver profound truths. Instead, he speaks like a neighbor leaning over a fence. He tells stories that explain exactly where the songs came from, grounding the music in everyday human reality before the first chord is even struck.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch5-1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "narration-ch5-2",
+          "hostId": "sarah",
+          "text": "Before he plays 'Grandma's Hands', he talks about his maternal grandmother, Lula Carter Galloway. He doesn't describe her as a universal symbol of matriarchy. He recalls a very specific woman. And when you listen to the lyric, notice how he paints her portrait entirely through action. We aren't given her age, her appearance, or a complete biography. We only know her through the verbs of her physical body. Her hands clap, they warn, they soothe, they give, and they intervene when other adults fail to protect a child. It is a masterpiece of working-class storytelling, where love is defined simply as something you do.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch5-2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "song-ch5-1",
+          "track": {
+            "title": "Grandma's Hands",
+            "artist": "Bill Withers",
+            "spotifyUri": "spotify:track:69E3cx8BoUMsJUr8ANe98U"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 300,
+          "why": "Family, church, and memory built through rhythm.",
+          "voiceovers": [
+            {
+              "id": "vo-ch5-1-sarah",
+              "hostId": "sarah",
+              "text": "The opening pulse here feels older than the record itself. It contains gospel handclaps and blues repetition—styles that didn't need to be academically combined because they already lived naturally inside his body.",
+              "atSeconds": 130,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch5-1-sarah.mp3"
+            },
+            {
+              "id": "vo-ch5-1-walker",
+              "hostId": "walker",
+              "text": "Years later, Johnny Cash told Bill that after hearing this song, he truly wished he could have met her.",
+              "atSeconds": 240,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch5-1-walker.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Humor and Social Unease",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "narration-ch6-1",
+          "hostId": "walker",
+          "text": "Later in his career, Bill Withers would have fierce arguments with record executives who tried to tell him what Black music was supposed to sound like. He had absolutely no patience for industry experts attempting to explain the blues to him as an academic category. He felt that his own family history in Slab Fork gave him an inherent knowledge of his culture that couldn't be acquired in a boardroom or a textbook. He wasn't an untutored innocent by any means—he was incredibly observant and precise. But his intelligence was practical. He measured ideas by whether they accurately described actual human behavior.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch6-1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "narration-ch6-2",
+          "hostId": "sarah",
+          "text": "You can hear that practical intelligence in how he uses the social architecture of the church. He wasn't primarily a gospel artist, but he took the tools of gospel—the call and response, the moral instruction delivered through story, the expectation of participation—and applied them to everyday secular life. He understood the fundamental church belief that individual suffering can be carried collectively. That is exactly what happens during this concert. The room slowly transforms into a congregation, completely organically, without Bill ever stepping up to a pulpit or turning the show into a sermon.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch6-2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "song-ch6-1",
+          "track": {
+            "title": "World Keeps Going Around",
+            "artist": "Bill Withers",
+            "spotifyUri": "spotify:track:3wrplbWL52Ow8bqSua7ACb"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 320,
+          "why": "Reveals the social unease and hard truth beneath his warm reputation.",
+          "voiceovers": [
+            {
+              "id": "vo-ch6-1-walker",
+              "hostId": "walker",
+              "text": "There is a persistent, pragmatic darkness in Bill's writing that grounds the entire concert. It proves he isn't just offering generic uplift; he prevents the community ethic from ever becoming cheap sentimentality.",
+              "atSeconds": 180,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch6-1-walker.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "narration-ch6-3",
+          "hostId": "walker",
+          "text": "Because Bill explored these heavy themes of isolation, duty, and emotional failure, he needed a release valve. He found it in his humor. His spoken voice on this album reveals a man who understands the total absurdity of being treated as profound just because he said something ordinary very clearly. He makes jokes about bad relationships, about men's egos, about food, and about his own musical limitations. This humor serves a vital function: it lowers the audience's guard, creating the emotional breathing room necessary for the next painful song.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch6-3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "song-ch6-2",
+          "track": {
+            "title": "Let Me In Your Life",
+            "artist": "Bill Withers",
+            "spotifyUri": "spotify:track:36Y9Wx0ET3B42SzUrK3Dia"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 260,
+          "why": "Humor and spoken intimacy.",
+          "voiceovers": [
+            {
+              "id": "vo-ch6-2-sarah",
+              "hostId": "sarah",
+              "text": "Listen to how the humor makes the authority horizontal. He isn't preaching from on high; he's just another guy noticing how fundamentally strange people are.",
+              "atSeconds": 150,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch6-2-sarah.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Band as a Workplace",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "narration-ch7-1",
+          "hostId": "sarah",
+          "text": "One of the main reasons Live at Carnegie Hall feels so incredibly intimate is the backing band. They do not sound like anonymous, hired guns assembled just to prop up a star. James Gadson on drums, Melvin Dunlap on bass, Benorce Blackmon on guitar, and Ray Jackson on keyboards were an experienced rhythmic unit with deep roots in the Los Angeles funk world. They sound like a highly functional workplace crew who already know each other's habits intimately. James Gadson's drumming in particular is the secret weapon of this record. His time is completely relaxed but entirely immovable. The beat feels late enough to breathe, but it never actually falls behind.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch7-1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "narration-ch7-2",
+          "hostId": "walker",
+          "text": "This is where Bill's industrial background provides the perfect analogy. In good mechanical work, whether you're building a car or an airplane, every single component performs a strictly necessary function. Additional movement doesn't create improvement; it creates failure. The band’s arrangements behave the exact same way. The bass establishes the weight. The drums establish the time. The guitar and keys create friction and color. Absolutely nothing exists merely to prove that the musician can play fast. It isn't simplicity through limitation. It is simplicity through absolute trust.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch7-2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "song-ch7-1",
+          "track": {
+            "title": "Lonely Town, Lonely Street",
+            "artist": "Bill Withers",
+            "spotifyUri": "spotify:track:2aXtl1HosMljHVPhA8cEf9"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 240,
+          "why": "Explores isolation within the city while maintaining a relentless groove.",
+          "voiceovers": [
+            {
+              "id": "vo-ch7-1-walker",
+              "hostId": "walker",
+              "text": "This is a profound sociological argument disguised as a groove: you can walk busy streets in a populated neighborhood and remain completely emotionally invisible.",
+              "atSeconds": 105,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch7-1-walker.mp3"
+            },
+            {
+              "id": "vo-ch7-1-sarah",
+              "hostId": "sarah",
+              "text": "The rhythm carries the body, keeping the song upbeat, while the lyric names the isolation that the body cannot escape.",
+              "atSeconds": 185,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch7-1-sarah.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Empathy and the Damaged Body",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "narration-ch8-1",
+          "hostId": "walker",
+          "text": "The emotional centerpiece of the concert might be a song that Bill rarely played later in his career. It’s an anti-war song completely devoid of political slogans. When he introduces 'I Can't Write Left-Handed', he doesn't offer a geopolitical analysis of Vietnam. He talks conversationally about how people usually write songs about social issues from a safe, comfortable distance. And then he narrows the entire scope of the war down to a single, devastating image: an injured young soldier who has been shot in the right shoulder, who simply needs someone else to help him write a letter home to his mother.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch8-1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "narration-ch8-2",
+          "hostId": "sarah",
+          "text": "The power of the song comes from Bill’s own institutional knowledge. He had spent nine years in the Navy. He hadn't fought in Vietnam, but he intimately knew the world of the military. He knew how young men are turned into functions, into serial numbers. Instead of standing on stage and loudly announcing that war is wrong, he asks the listener to fully inhabit a damaged body. He concentrates on the soldier's sheer physical bewilderment—the realization that his dominant arm no longer works, and his total inability to understand why a stranger just shot him.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch8-2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "song-ch8-1",
+          "track": {
+            "title": "I Can't Write Left-Handed",
+            "artist": "Bill Withers",
+            "spotifyUri": "spotify:track:4u5caeri2MC9V32n9OBuZT"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 400,
+          "why": "Vietnam and narrative empathy.",
+          "voiceovers": [
+            {
+              "id": "vo-ch8-1-sarah",
+              "hostId": "sarah",
+              "text": "The moral force here comes entirely from specificity. He highlights the abrupt, cruel distance between political orders and bodily consequences.",
+              "atSeconds": 240,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch8-1-sarah.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Secular Hymn",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "narration-ch9-1",
+          "hostId": "sarah",
+          "text": "The origin of 'Lean on Me' is famously unpretentious. Bill had just bought a brand-new Wurlitzer electric piano. He brought it home, screwed on the legs, sat down, and started messing around. He didn't know how to play the piano properly, so he just found a simple chord shape and started moving his hands up and down the keys without changing the shape of his fingers. He later pointed out that its sheer mechanical simplicity is exactly why it's one of the very first songs that children learn to play. But it’s the lyric that transforms that simple exercise into a masterpiece.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch9-1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "narration-ch9-2",
+          "hostId": "walker",
+          "text": "The words emerged from his childhood in Slab Fork. In a small, isolated mining town, survival genuinely depended on people noticing when another household was in trouble. If you were out of food, or someone was sick, the community stepped in. 'Lean on Me' turns that specific, regional survival ethic into a universal declaration without ever mentioning mines, poverty, or West Virginia. He distilled human life down to a constant movement between two conditions: sometimes we desperately need help, and sometimes we need to feel useful by giving it to someone else.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch9-2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "song-ch9-1",
+          "track": {
+            "title": "Lean on Me",
+            "artist": "Bill Withers",
+            "spotifyUri": "spotify:track:6HM7ppJ2G0mRzQYxkw76Zr"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 350,
+          "why": "Audience as congregation.",
+          "voiceovers": [
+            {
+              "id": "vo-ch9-1-walker",
+              "hostId": "walker",
+              "text": "Notice how he doesn't protect the song as his private property. He gives it over to the room entirely. The audience knows exactly when to enter because the structure feels like a hymn and a playground chant simultaneously.",
+              "atSeconds": 195,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch9-1-walker.mp3"
+            },
+            {
+              "id": "vo-ch9-1-sarah",
+              "hostId": "sarah",
+              "text": "This isn't uncomplicated uplift. The hard truth embedded in this song is that asking for help requires you to admit your own pride is insufficient.",
+              "atSeconds": 280,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch9-1-sarah.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Contradiction and Darkness",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "narration-ch10-1",
+          "hostId": "walker",
+          "text": "One of Bill Withers' greatest strengths as a writer is his total refusal to simplify human motivation. Most pop songs demand that a character feel only one emotion at a time. But Bill's songs allow deeply contradictory feelings to sit right next to each other. 'Hope She'll Be Happier' goes a step further than the pain of 'Ain't No Sunshine'. Here, the abandoned narrator is actively trying to wish the departed person well. The performance is completely devastating because he doesn't sing the sentiment as a moral triumph. The wish sounds incredibly fragile. He genuinely hopes she is happier, while still desperately wanting her back.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch10-1.mp3"
+        },
+        {
+          "type": "song",
+          "id": "song-ch10-1",
+          "track": {
+            "title": "Hope She'll Be Happier",
+            "artist": "Bill Withers",
+            "spotifyUri": "spotify:track:6rcwnfN5RnAqolVvZxHCxi"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 270,
+          "why": "Emotional generosity mixed with pain.",
+          "voiceovers": [
+            {
+              "id": "vo-ch10-1-sarah",
+              "hostId": "sarah",
+              "text": "The melody stays remarkably controlled here. He avoids the massive, cathartic soul climax you might expect, because the emotional situation itself is completely unresolved.",
+              "atSeconds": 150,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch10-1-sarah.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "narration-ch10-2",
+          "hostId": "walker",
+          "text": "If 'Hope She'll Be Happier' shows his capacity for emotional generosity, 'Better Off Dead' exposes the stark, unvarnished darkness he was willing to explore. The song is voiced by a man who has severely damaged his own family through alcoholism, and has come to the horrific conclusion that they might literally be better off without him. Placing a song this morally compromised next to the warmth of 'Lean on Me' is a deliberate choice. It proves that Bill understood what happens when isolation becomes truly dangerous, and when there is absolutely no one left to lean on.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch10-2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "song-ch10-2",
+          "track": {
+            "title": "Better Off Dead",
+            "artist": "Bill Withers",
+            "spotifyUri": "spotify:track:36DN9Xm8kWHgjz3YmDFWq2"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 225,
+          "why": "The dark edge beneath the warmth.",
+          "voiceovers": [
+            {
+              "id": "vo-ch10-2-walker",
+              "hostId": "walker",
+              "text": "He understands that the person causing the harm is also deeply suffering, but he refuses to convert that observation into automatic forgiveness.",
+              "atSeconds": 140,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch10-2-walker.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cold Baloney",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "narration-ch11-1",
+          "hostId": "walker",
+          "text": "This live album is universally praised because it captures Bill Withers at his absolute commercial peak. But its deeper value is that it documents a brief, beautiful window before the music industry managed to complicate something that Bill had made wonderfully direct. Years later, Sussex Records would collapse. His catalog moved to CBS, and Bill spent years fighting executives who demanded more obviously marketable pop hits. He became so frustrated with the system that he essentially walked away from recording entirely in the mid-eighties. But at Carnegie Hall in 1972, none of that corporate machinery had closed around him yet. He has the songs, he has the band, and he has a room full of people listening.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch11-1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "narration-ch11-2",
+          "hostId": "sarah",
+          "text": "The album ends with a thirteen-minute medley of 'Harlem' and 'Cold Baloney', and it is the perfect conclusion because it joins the massive, public version of Bill with the quiet, domestic version. 'Harlem' starts as an accumulating urban groove, steadily repeating and intensifying. It isn't a conventional encore where the star returns just to deliver one more polished radio hit. It turns into a massive, collective rhythmic event that scales up entirely through pure crowd participation. And then, at the height of the frenzy, he brings it down to the most comically modest subject possible.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch11-2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "song-ch11-1",
+          "track": {
+            "title": "Harlem/Cold Baloney",
+            "artist": "Bill Withers",
+            "spotifyUri": "spotify:track:3ROP3Z7Ed8yD4NjnajlLi0"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 780,
+          "why": "The communal closing that reduces fame to food and companionship.",
+          "voiceovers": [
+            {
+              "id": "vo-ch11-1-sarah",
+              "hostId": "sarah",
+              "text": "This is the full range of his authority. He is shouting without grandstanding, and he is preaching without ever becoming a preacher.",
+              "atSeconds": 300,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch11-1-sarah.mp3"
+            },
+            {
+              "id": "vo-ch11-1-walker",
+              "hostId": "walker",
+              "text": "This image totally dissolves his celebrity. The evening doesn't end with limousines or artistic transcendence; it ends with hunger, companionship, and whatever cold food is waiting in the kitchen.",
+              "atSeconds": 540,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch11-1-walker.mp3"
+            },
+            {
+              "id": "vo-ch11-1-walker2",
+              "hostId": "walker",
+              "text": "Carnegie Hall was built to make music feel important. Bill Withers did something far more difficult. For one rainy night, he made importance feel completely ordinary.",
+              "atSeconds": 700,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch11-1-walker2.mp3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "facts": []
+}

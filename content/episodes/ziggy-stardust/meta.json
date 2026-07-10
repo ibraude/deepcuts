@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "artistName": "David Bowie",
+  "albumName": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+  "blurb": "The alien who came to save rock and roll — and quit before the last encore. Bowie invents pop stardom and then walks away from it.",
+  "palette": {
+    "bg": "#141212",
+    "ink": "#f0dcd0",
+    "accent": "#c8342b"
+  },
+  "releaseDate": null,
+  "expectedRelease": null
+}

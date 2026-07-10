@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "id": "ziggy-stardust",
+  "title": "The Rise, Fall, and Assassination of Ziggy Stardust",
+  "subject": "David Bowie — The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+  "coverImage": "cover.png",
+  "estimatedMinutes": 45,
+  "hosts": [
+    {
+      "id": "oliver",
+      "name": "Oliver",
+      "persona": "A British music historian, deeply knowledgeable about production and studio magic. Analytical, reverent, and focused on the sonic architecture of albums.",
+      "voiceRef": "elevenlabs:iP95p4xoKVk53GoZ742B"
+    },
+    {
+      "id": "roxy",
+      "name": "Roxy",
+      "persona": "A cultural critic with a sharp edge. She focuses on the psychological toll, gender fluidity, and theatricality of rock stars.",
+      "voiceRef": "elevenlabs:SAz9YHcvj6GT2YYXdXww"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "The Blueprint of an Alien",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "ch1-seg1-narration",
+          "hostId": "oliver",
+          "text": "By late 1971, David Bowie was highly respected by critics, but he just couldn't find his footing commercially. He had tasted the charts with a novelty-adjacent hit a couple of years prior, but his subsequent albums failed to launch him into the stratosphere. Looking around at a rock landscape dominated by earnest, denim-clad blues bands, Bowie felt a distinct lack of true rock stars. If the world wouldn't give him one, he decided he would just have to manufacture one from the ground up.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch1-seg1-narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch1-seg2-song",
+          "track": {
+            "title": "Space Oddity",
+            "artist": "David Bowie",
+            "spotifyUri": "spotify:track:72Z17vmmeQKAg8bptWvpVG"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 500,
+          "why": "Establishes Bowie's pre-Ziggy baseline and his first brush with sci-fi themes.",
+          "voiceovers": [
+            {
+              "id": "ch1-seg2-vo1",
+              "hostId": "roxy",
+              "text": "While 'Space Oddity' put Bowie on the map, he knew a lonely astronaut wouldn't sustain a career. To build his ultimate rock god, he began studying the exaggerated gestures of Kabuki theatre, the discipline of mime under Lindsay Kemp, and the visceral danger of street-level rockers like Lou Reed and Iggy Pop.",
+              "atSeconds": 120,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch1-seg2-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "ch1-seg3-narration",
+          "hostId": "roxy",
+          "text": "Ziggy Stardust wasn't born naturally; he was engineered in a lab. He was a beautiful Frankenstein's monster stitched together from Bowie's most eclectic and transgressive fascinations. The psychological blueprint of a messianic alien descending into madness was lifted directly from Vince Taylor, a tragic, drug-addled rockabilly singer from the sixties, wrapped in a futuristic visual silhouette designed by Kansai Yamamoto.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch1-seg3-narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch1-seg4-song",
+          "track": {
+            "title": "Five Years",
+            "artist": "David Bowie",
+            "spotifyUri": "spotify:track:1JIzFhI9Lt5FyslawmHCBi"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 500,
+          "why": "The dramatic, world-building opener of the Ziggy Stardust album.",
+          "voiceovers": [
+            {
+              "id": "ch1-seg4-vo1",
+              "hostId": "oliver",
+              "text": "For an album with such an elaborate conceptual facade, the studio reality was incredibly raw and fast. Co-producer Ken Scott actually kept the unedited first take of this vocal, capturing Bowie sobbing uncontrollably in the booth as he sang the apocalyptic climax.",
+              "atSeconds": 240,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch1-seg4-vo1.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Sonic Muscle and The Starman",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "ch2-seg1-narration",
+          "hostId": "oliver",
+          "text": "While Ziggy was Bowie's dazzling conceptual vehicle, he needed a serious engine to drive it. Enter the Spiders from Mars, a tightly honed backing band pulled primarily from Yorkshire. The absolute linchpin of this operation was guitarist and arranger Mick Ronson. It was Ronson's soaring, muscular guitar tone that anchored Bowie's high-art theatrical concepts in legitimate, undeniable rock-and-roll credibility.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch2-seg1-narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch2-seg2-song",
+          "track": {
+            "title": "Moonage Daydream",
+            "artist": "David Bowie",
+            "spotifyUri": "spotify:track:6mib3N4E8PZHAGQ3xy7bho"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 500,
+          "why": "Demonstrates Mick Ronson's heavy guitar layered over Bowie's acoustic foundation.",
+          "voiceovers": [
+            {
+              "id": "ch2-seg2-vo1",
+              "hostId": "roxy",
+              "text": "What makes the Ziggy sound so unique is the interplay of textures. Beneath Ronson's roaring electric Les Paul, there is actually a crisp, driving acoustic guitar foundation that gives the record its incredible punch and clarity.",
+              "atSeconds": 150,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch2-seg2-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "ch2-seg3-narration",
+          "hostId": "roxy",
+          "text": "The album was practically finished when an RCA executive named Dennis Katz listened to the master tapes and delivered some bad news: they lacked a clear, radio-friendly single. There was no pop hook to introduce Ziggy to the masses. Unfazed, Bowie sat down in January of 1972 and quickly tossed off a masterpiece to replace a Chuck Berry cover on the tracklist.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch2-seg3-narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch2-seg4-song",
+          "track": {
+            "title": "Starman",
+            "artist": "David Bowie",
+            "spotifyUri": "spotify:track:0pQskrTITgmCMyr85tb9qq"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 500,
+          "why": "The late-addition hit single that broke Ziggy into the mainstream.",
+          "voiceovers": [
+            {
+              "id": "ch2-seg4-vo1",
+              "hostId": "oliver",
+              "text": "On July 6, 1972, Bowie fundamentally altered British youth culture on Top of the Pops. Singing 'I had to phone someone so I picked on you,' he pointed directly into millions of living rooms, casually draped his arm around Mick Ronson, and beamed unabashed queer intimacy across the nation.",
+              "atSeconds": 65,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch2-seg4-vo1.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Assassination of Ziggy Stardust",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "ch3-seg1-narration",
+          "hostId": "roxy",
+          "text": "The execution of Ziggy Stardust was brilliant, but the psychological toll was devastating. By mid-1973, after eighteen months of relentless touring, the line between David Jones and his alien alter-ego had dangerously blurred. Fueled by exhaustion and a growing cocaine habit, Bowie realized he was becoming trapped inside the very character he had built. David Bowie had gone completely to sleep, and Ziggy had taken the wheel.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch3-seg1-narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch3-seg2-song",
+          "track": {
+            "title": "Ziggy Stardust",
+            "artist": "David Bowie",
+            "spotifyUri": "spotify:track:5IyL3XOaRPpTgxVjRIAxXU"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 500,
+          "why": "The archetype song defining the rise and hubris of the character.",
+          "voiceovers": [
+            {
+              "id": "ch3-seg2-vo1",
+              "hostId": "oliver",
+              "text": "This track is a masterclass in thematic duality, functioning as both a celebration of rock mythology and a self-aware critique. Bowie is literally singing about the crushing ego, jealousy, and inevitable burnout of the manufactured idol.",
+              "atSeconds": 100,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch3-seg2-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "ch3-seg3-narration",
+          "hostId": "oliver",
+          "text": "The destruction of Ziggy Stardust wasn't just a conceptual necessity; it was an act of ruthless self-preservation executed with show business flair. On July 3, 1973, at the Hammersmith Odeon in London, Bowie stepped to the microphone at the end of a blistering set. He shockingly announced it was the last show they would ever do. While his manager and Mick Ronson were in on the secret, his rhythm section was completely blindsided, finding out they were unemployed live on stage.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch3-seg3-narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch3-seg4-song",
+          "track": {
+            "title": "Rock 'n' Roll Suicide",
+            "artist": "David Bowie",
+            "spotifyUri": "spotify:track:1k5iH4KDKi56MFvlnrALNV"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 500,
+          "why": "The epic album and concert closer where Ziggy is finally destroyed.",
+          "voiceovers": [
+            {
+              "id": "ch3-seg4-vo1",
+              "hostId": "roxy",
+              "text": "By publicly assassinating Ziggy, Bowie severed himself from the glam-rock scene before it could stagnate into parody. He freed himself to evolve, leaving behind a legacy that would birth punk rock and provide a lasting visual vocabulary for queer representation across the globe.",
+              "atSeconds": 160,
+              "duckTo": 40,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch3-seg4-vo1.mp3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "facts": []
+}

@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "id": "all-things-must-pass",
+  "title": "The Mansion of Sound",
+  "subject": "George Harrison - All Things Must Pass",
+  "coverImage": "cover.png",
+  "estimatedMinutes": 45,
+  "hosts": [
+    {
+      "id": "oliver",
+      "name": "Oliver",
+      "persona": "A meticulous music historian who loves breaking down studio techniques, session gear, and the timeline of events. He marvels at the architecture of sound.",
+      "voiceRef": "elevenlabs:iP95p4xoKVk53GoZ742B"
+    },
+    {
+      "id": "stella",
+      "name": "Stella",
+      "persona": "A sharp, empathetic cultural critic. She focuses on the messy human element—the egos, the love triangles, and the spiritual yearning behind the music.",
+      "voiceRef": "elevenlabs:SAz9YHcvj6GT2YYXdXww"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "The Pressure Cooker",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c1-n1",
+          "hostId": "stella",
+          "text": "It is January 1969, and Twickenham Studios in London is freezing. The atmosphere inside the cavernous soundstage is even colder. The Beatles are supposed to be getting back to their roots for the Let It Be sessions, but instead, they are trapped in a miserable, toxic loop of bickering and apathy. George Harrison, who is quietly hitting the greatest creative peak of his life, steps up to the mic. He pitches a batch of new songs to John Lennon and Paul McCartney. We are talking about 'Hear Me Lord,' 'Let It Down,' and a majestic little tune called 'All Things Must Pass.' And how do the two most famous songwriters on earth react? With indifferent yawns, blank stares, and condescending suggestions. For a decade, George has been the little brother, rationing out his genius to fit whatever leftover space John and Paul allowed him. But in this freezing room, the dynamic has finally become suffocating.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c1-n1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "c1-n2",
+          "hostId": "oliver",
+          "text": "The suffocation did not last much longer. After a particularly patronizing argument with Paul McCartney, George simply stood up, packed his guitar, and delivered one of the most polite and devastating exit lines in rock history: 'I will leave the band now. See you round the clubs.' He drove home to his estate, completely fed up with the egos and the endless drama. But instead of wallowing, he picked up his guitar and channeled an entire decade of repressed frustration into a single, biting, aggressive riff. He had a headache from the suffocating presence of Paul and John, and he decided to name the song after that exact throbbing pain.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c1-n2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c1-s1",
+          "track": {
+            "title": "Wah-Wah",
+            "artist": "George Harrison",
+            "spotifyUri": "spotify:track:57cZFx3KlHmx0CNNYbWO8u"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 330,
+          "why": "The direct, aggressive result of his anger at McCartney and Lennon, serving as a sonic middle finger.",
+          "voiceovers": [
+            {
+              "id": "c1-s1-v1",
+              "hostId": "stella",
+              "text": "Listen to the sheer volume and chaos on this track. This is not the mystical, sitar-playing Beatle we are used to. This is the sound of a guy who has been told to sit down and be quiet for ten years finally screaming at the top of his lungs.",
+              "atSeconds": 30,
+              "duckTo": 30,
+              "holdDuck": true,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c1-s1-v1.mp3"
+            },
+            {
+              "id": "c1-s1-v2",
+              "hostId": "oliver",
+              "text": "And the title itself is a brilliant double meaning. 'Wah-Wah' was not just a nod to the guitar effects pedal driving the riff. It was George's literal term for the massive, throbbing headache Paul McCartney was giving him.",
+              "atSeconds": 45,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c1-s1-v2.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c1-n3",
+          "hostId": "stella",
+          "text": "So, what do you do when you have just walked out on the biggest band in the world? Prior to the absolute breaking point, George had already found an escape hatch. In late 1968, he took a trip to upstate New York to hang out with Bob Dylan and The Band in Woodstock. Far away from the suffocating hierarchy of The Beatles, George experienced a total revelation. He walked into a room where musicians were just passing around instruments, sharing ideas, and treating each other as absolute equals. There were no designated geniuses and no arbitrary quotas. It was a completely collaborative, ego-free environment, rooted in pure musicianship and brotherhood. This rootsy, communal approach became the exact blueprint for the atmosphere George desperately wanted to build for himself. Sitting in Dylan's living room, the two friends started writing together, proving to George that life outside the Fab Four was not just possible, it could be beautiful.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c1-n3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c1-s2",
+          "track": {
+            "title": "I'd Have You Anytime",
+            "artist": "George Harrison",
+            "spotifyUri": "spotify:track:7c37wgrjBNMnxAvGTXBJTT"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 176,
+          "why": "Co-written with Dylan in Woodstock, it sets the intimate, collaborative tone for his new musical philosophy.",
+          "voiceovers": [
+            {
+              "id": "c1-s2-v1",
+              "hostId": "oliver",
+              "text": "When it came time to finally release his massive solo debut, George did not open it with a loud declaration of independence. He opened it with this: a gentle, intimate invitation co-written with Bob Dylan in upstate New York.",
+              "atSeconds": 18,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c1-s2-v1.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Mansion of Sound and Secret Sorrows",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c2-n1",
+          "hostId": "oliver",
+          "text": "By May of 1970, The Beatles are officially over, and George is back at Abbey Road Studios. But this time, he is not the subordinate little brother begging for album space. He is the ringleader of a sprawling supergroup. Armed with a mountain of rejected songs, George invites all the friends he has made on the road, including Eric Clapton, Ringo Starr, and the band Badfinger, to help him finally build his masterpiece. To ensure these songs sound as massive as they feel, he brings in the eccentric, legendary producer Phil Spector. Spector is famous for his Wall of Sound technique, which involves cramming dozens of musicians into a room and recording them simultaneously in a heavily reverberant space. The goal is to make a record so thick, so grandiose, that it completely drowns out the legacy of his former band.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c2-n1.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c2-s1",
+          "track": {
+            "title": "Isn't It a Pity",
+            "artist": "George Harrison",
+            "spotifyUri": "spotify:track:0vTvkf24wkCG3DTKgoNnih"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 430,
+          "why": "A sweeping, melancholic ballad mourning the breakdown of The Beatles' brotherhood with massive production.",
+          "voiceovers": [
+            {
+              "id": "c2-s1-v1",
+              "hostId": "oliver",
+              "text": "You can hear Spector's legendary Wall of Sound being erected in real time right here. They have twin drum kits going at once, multiple keyboardists, and an absolute army of acoustic guitars, all drenched in Abbey Road's chamber echo.",
+              "atSeconds": 65,
+              "duckTo": 25,
+              "holdDuck": true,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c2-s1-v1.mp3"
+            },
+            {
+              "id": "c2-s1-v2",
+              "hostId": "stella",
+              "text": "But beneath the massive production, pay attention to the lyrics. George is watching his oldest friends tear each other apart over money and bruised egos in the press. Rather than striking back, he frames the entire Beatles breakup as a tragic failure of universal love.",
+              "atSeconds": 130,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c2-s1-v2.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c2-n2",
+          "hostId": "stella",
+          "text": "While George is in the studio preaching universal love and spiritual transcendence, there is a very dark, very human soap opera playing out right behind the control board. George has built a supergroup to back him, and the undisputed star of that backing band is his closest friend, guitarist Eric Clapton. What George does not fully realize is that Clapton has developed a consuming, absolute obsession with George's wife, Pattie Boyd. Throughout the sweltering summer of 1970, while Eric is laying down these soaring, gorgeous guitar tracks for George's spiritual awakening, he is secretly writing agonizing love letters to Pattie. It is a devastating, unspoken love triangle quietly poisoning the atmosphere of the sessions.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c2-n2.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "c2-n3",
+          "hostId": "oliver",
+          "text": "Clapton's unrequited love was tearing him apart from the inside. To cope with the emotional distress of sitting in a room with the woman he was obsessed with and the best friend he was betraying, Clapton began using heroin. The drug use was escalating right alongside the recording schedule. Yet, astonishingly, this immense pain translated into some of the most blistering, emotionally charged guitar work of Clapton's entire career. The two men maintained a deep, almost telepathic musical brotherhood, even as their personal lives were fundamentally fracturing. Clapton was literally pouring his torment over George's wife into the grooves of George's own record.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c2-n3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c2-s2",
+          "track": {
+            "title": "Art of Dying",
+            "artist": "George Harrison",
+            "spotifyUri": "spotify:track:4oK317kw2NlPN0P149UCfl"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 195,
+          "why": "Features furious, biting lead guitar work by Eric Clapton, capturing the intense, dark energy under the surface of the sessions.",
+          "voiceovers": [
+            {
+              "id": "c2-s2-v1",
+              "hostId": "stella",
+              "text": "Highlight that furious, biting guitar bend. That is Eric Clapton, completely strung out, pouring his toxic, secret obsession for his best friend's wife directly onto the tape.",
+              "atSeconds": 15,
+              "duckTo": 30,
+              "holdDuck": true,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c2-s2-v1.mp3"
+            },
+            {
+              "id": "c2-s2-v2",
+              "hostId": "oliver",
+              "text": "The rhythm section on this track is phenomenal. In fact, Clapton bonded so deeply with these specific players during these sessions that as soon as they finished, they immediately fled to Miami to form Derek and the Dominos.",
+              "atSeconds": 30,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c2-s2-v2.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trojan Horses and Triumphs",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c3-n1",
+          "hostId": "oliver",
+          "text": "Recording an album of this magnitude is one thing; mixing it is another beast entirely. And the post-production for All Things Must Pass quickly spirals into absolute chaos. Phil Spector's erratic behavior and heavy drinking start catching up with him. Halfway through the sessions, Spector gets staggeringly drunk, falls down in a London hotel, breaks his arm, and abruptly flees back to Los Angeles. George is left holding the bag. He suddenly has to manage the final overdubs and mix a sprawling triple album largely by himself. His only guidance from his legendary producer comes in the form of cryptic, rambling, and increasingly unhinged telegrams sent from California. Yet, despite the chaos, George meticulously carves out a sound that will define the era, culminating in a song that achieves the impossible.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c3-n1.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c3-s1",
+          "track": {
+            "title": "My Sweet Lord",
+            "artist": "George Harrison",
+            "spotifyUri": "spotify:track:2vkeOv5wDFgHFSBKbcX3SY"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 280,
+          "why": "The cultural centerpiece of the album, successfully blending Eastern and Western spirituality into a massive global hit.",
+          "voiceovers": [
+            {
+              "id": "c3-s1-v1",
+              "hostId": "oliver",
+              "text": "Listen to how dense those acoustics are. To get this sound, Spector arranged all four members of the band Badfinger, plus George, in a tight semi-circle, having them strum identical rhythms into a single microphone setup.",
+              "atSeconds": 22,
+              "duckTo": 25,
+              "holdDuck": true,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c3-s1-v1.mp3"
+            },
+            {
+              "id": "c3-s1-v2",
+              "hostId": "stella",
+              "text": "And here comes the real genius. George starts the chorus with a familiar Christian Hallelujah, making western pop audiences feel safe. Then, seamlessly, he slips in the Hindu Hare Krishna, literally tricking radio listeners around the world into chanting a holy mantra.",
+              "atSeconds": 105,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c3-s1-v2.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c3-n2",
+          "hostId": "stella",
+          "text": "My Sweet Lord was an absolute cultural earthquake. It shot to number one globally, proving once and for all that George Harrison was the absolute equal of John Lennon and Paul McCartney. But the triumph came with a devastating price. In 1971, a publishing company sued George, claiming that the melody of his spiritual masterpiece was plagiarized from The Chiffons' 1963 hit, He's So Fine. What followed was a grueling, humiliating, decade-long legal battle. A judge eventually ruled that George had committed subconscious plagiarism. For a man whose music was a pure extension of his soul, being dragged through the courts and branded a thief deeply scarred him. The lawsuit drained his spirit and permanently curbed his enthusiasm for the music business.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c3-n2.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "c3-n3",
+          "hostId": "oliver",
+          "text": "Even with the shadows that gathered in its wake, the legacy of All Things Must Pass is almost impossible to overstate. It was a massive flex, the first triple album ever released by a solo rock artist, proving that audiences hungered for expansive, ambitious artistic statements. The sheer scale of the project, and the vast network of musicians George assembled to make it, gave him the blueprint to organize The Concert for Bangladesh the very next year, essentially inventing the all-star charity rock concert. Most importantly, it completely rewrote Beatles history. It stands today as the absolute gold standard for life after the Fab Four. George Harrison finally stepped out of the shadows, built a mountain of sound, and staked his claim as a titan.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c3-n3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c3-s2",
+          "track": {
+            "title": "All Things Must Pass",
+            "artist": "George Harrison",
+            "spotifyUri": "spotify:track:1AGridgU0QAWZykQReGWk5"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 225,
+          "why": "The majestic, stoic title track that serves as a philosophical epitaph for The Beatles and a victory lap for George.",
+          "voiceovers": [
+            {
+              "id": "c3-s2-v1",
+              "hostId": "stella",
+              "text": "Just think back to January 1969. George brought this exact song to John and Paul, and they could not find a use for it. They let it slip right through their fingers.",
+              "atSeconds": 45,
+              "duckTo": 30,
+              "holdDuck": true,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c3-s2-v1.mp3"
+            },
+            {
+              "id": "c3-s2-v2",
+              "hostId": "oliver",
+              "text": "Now, listen to those majestic horns swell. It is a stoic, philosophical epitaph for The Beatles, and the ultimate victory lap for the Quiet Beatle.",
+              "atSeconds": 68,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c3-s2-v2.mp3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "facts": []
+}

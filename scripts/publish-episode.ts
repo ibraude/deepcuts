@@ -21,6 +21,13 @@ export interface PublishEpisodeArgs {
   synthesize?: SynthFn
   fs?: Pick<typeof nodefs, 'readFile' | 'writeFile' | 'mkdir' | 'copyFile'>
   baseUrl?: string
+  /**
+   * Override the draft's internal `id` with a catalog slug (e.g. "solid-air").
+   * The app writes hex draft ids into the manifest, but the catalog uses
+   * human-readable slugs — this bridges the two. The written manifest keeps
+   * the override id and is stored under content/episodes/<idOverride>/.
+   */
+  idOverride?: string
 }
 
 export async function publishEpisode(args: PublishEpisodeArgs): Promise<void> {
@@ -29,8 +36,9 @@ export async function publishEpisode(args: PublishEpisodeArgs): Promise<void> {
   const today = (args.today ?? (() => new Date().toISOString().slice(0, 10)))()
 
   const draftRaw = await fs.readFile(join(args.draftDir, 'manifest.json'), 'utf-8')
-  const draft = JSON.parse(draftRaw as unknown as string) as DraftManifest
-  const id = draft.id
+  const draftFromDisk = JSON.parse(draftRaw as unknown as string) as DraftManifest
+  const id = args.idOverride ?? draftFromDisk.id
+  const draft: DraftManifest = args.idOverride ? { ...draftFromDisk, id } : draftFromDisk
   const episodeDir = join(args.contentDir, 'episodes', id)
 
   await fs.mkdir(episodeDir, { recursive: true })
@@ -130,9 +138,11 @@ if (isCli) {
   const draftId = arg('draft')
   const status = (arg('status') ?? 'released') as 'released' | 'upcoming'
   const order = arg('order') ? Number(arg('order')) : undefined
+  const idOverride = arg('id')
+  const releaseDateOverride = arg('release-date')
   if (!draftId) {
     console.error(
-      'Usage: publish-episode --draft <id> [--status released|upcoming] [--order N] [--narration-cache <dir>]',
+      'Usage: publish-episode --draft <id> [--id <slug>] [--status released|upcoming] [--order N] [--release-date YYYY-MM-DD] [--narration-cache <dir>]',
     )
     process.exit(1)
   }
@@ -154,6 +164,8 @@ if (isCli) {
           throw new Error('synthesize is not required for upcoming')
         })
 
-  publishEpisode({ draftDir, contentDir, status, order, synthesize })
-    .catch((err: unknown) => { console.error(err); process.exit(1) })
+  publishEpisode({
+    draftDir, contentDir, status, order, synthesize, idOverride,
+    today: releaseDateOverride ? () => releaseDateOverride : undefined,
+  }).catch((err: unknown) => { console.error(err); process.exit(1) })
 }

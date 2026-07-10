@@ -1,0 +1,558 @@
+{
+  "schemaVersion": 1,
+  "id": "solid-air",
+  "title": "Air Made Solid",
+  "subject": "John Martyn — Solid Air (1973)",
+  "coverImage": "cover.png",
+  "estimatedMinutes": 90,
+  "hosts": [
+    {
+      "id": "clara",
+      "name": "Clara",
+      "persona": "A biographical storyteller. Empathetic but clear-eyed, she focuses on the psychological tensions, domestic reality, and the complex relationships surrounding the music.",
+      "voiceRef": "elevenlabs:SAz9YHcvj6GT2YYXdXww"
+    },
+    {
+      "id": "simon",
+      "name": "Simon",
+      "persona": "A seasoned music journalist and studio lore enthusiast. He revels in serendipitous studio accidents, gear setups, and how atmospheric sounds were physically achieved.",
+      "voiceRef": "elevenlabs:iP95p4xoKVk53GoZ742B"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "The Boy on the Beach",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "chap1-narr1",
+          "hostId": "clara",
+          "text": "Let's begin not with John Martyn, but with a visitor. It is the early 1970s in the English seaside town of Hastings. A neighbour knocks on Beverley Martyn's door to tell her that a young man is standing completely frozen on the beach outside. It's Nick Drake. He has evidently driven all the way to the coast to see John and Beverley, but the crippling weight of his depression means he cannot physically bring himself to walk up to the door and knock. Beverley sends the neighbour down to retrieve him. Nick is brought inside, handed a cup of tea, and placed in a chair. For hours, he might just stare out of the window at the water, saying almost nothing. Occasionally, he will put a single record on the turntable and play it over and over again, wrapped in an impenetrable silence.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap1-narr1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "chap1-narr2",
+          "hostId": "simon",
+          "text": "John Martyn was essentially the inverse of Nick Drake. John was loud, deeply physical, flirtatious, combative, and totally desperate for company at all hours of the day. Yet, for all his volume, this loud man fundamentally understood something about his silent friend. He knew he couldn't cure Nick. He couldn't argue him out of a clinical depression, and half the time, he couldn't even manage to get Nick to speak to him directly. So John did the only thing he knew how to do: he wrote a song. He wrote about a person trying to move through a space that should be empty, but has somehow become physically resistant and suffocating. He wrote about moving through solid air.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap1-narr2.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "chap1-narr3",
+          "hostId": "clara",
+          "text": "The song is undeniably an act of love, but it also carries a fascinating, uncomfortable complication. A mutual friend of the two men, Paul Wheeler, later suggested that John's extroverted promises to follow Nick anywhere might have actually been suffocating for a severe introvert. In his desperation to reach his friend, John may not have realized that you cannot simply force your way through another person's silence by sheer force of personality. The song is beautiful, but it might also be the sound of an extrovert failing to understand why his love isn't a cure.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap1-narr3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "chap1-song1",
+          "track": {
+            "title": "Solid Air",
+            "artist": "John Martyn",
+            "spotifyUri": "spotify:track:7EDrSW40rkvj1O1l2pAcbJ"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 343,
+          "why": "The title track, directly addressing Nick Drake's suffocating depression.",
+          "voiceovers": [
+            {
+              "id": "chap1-vo1",
+              "hostId": "simon",
+              "text": "Despite the sheer, breathtaking majesty of this track, John and his bassist Danny Thompson privately referred to it by the absolutely absurd nickname, 'Sausages.'",
+              "atSeconds": 30,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap1-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "chap1-narr4",
+          "hostId": "clara",
+          "text": "To understand John's intense need for connection, you have to look at how he started. He was born Iain David McGeachy in 1948 to parents who were both opera singers. When their marriage collapsed, his childhood was violently split between the south of England and a life with his father and grandmother in Glasgow. That division permanently fractured his identity—even as an adult, his accent could shift unpredictably from broad Glaswegian to polished Southern English depending on who he was talking to. Beverley later found heartbreaking letters he had written as a young boy to his absent mother, begging to know why she never visited or wrote to him. It's a wound of abandonment that would drive his desperate, lifelong plea for loyalty: do not leave me, do not disappear.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap1-narr4.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "chap1-narr5",
+          "hostId": "simon",
+          "text": "By his late teens, having soaked up the Glasgow folk scene, he adopted the name John Martyn and headed to London. But you need to completely erase any quaint, polite imagery of acoustic coffeehouses from your mind. He landed at Les Cousins, a notorious all-night basement club on Greek Street. This was a smoky, intense crucible fueled by coffee, pills, hash, and dizzying intellectual pretension. It was a place where visiting Americans and British guitar innovators sat inches from each other, aggressively stealing chords. John arrived there not as a scholarly folk purist trying to preserve old tunes, but as an impatient shape-shifter ready to tear the genre apart.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap1-narr5.mp3"
+        },
+        {
+          "type": "song",
+          "id": "chap1-song2",
+          "track": {
+            "title": "Bless the Weather",
+            "artist": "John Martyn",
+            "spotifyUri": "spotify:track:6GXOriLcYRb1ZcIvoIK90y"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 270,
+          "why": "Shows John leaving conventional acoustic folk behind.",
+          "voiceovers": [
+            {
+              "id": "chap1-vo2",
+              "hostId": "simon",
+              "text": "Listen to the groove here. This is the exact sound of John stepping over the threshold of traditional folk music, leaving it entirely behind to find something much deeper.",
+              "atSeconds": 45,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap1-vo2.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The House in Hastings",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "chap2-narr1",
+          "hostId": "clara",
+          "text": "John and Beverley married in 1969. They journeyed to Woodstock, mingling with American royalty like Levon Helm, and released albums billed as 'John and Beverley Martyn'. But that joint billing actually concealed a deeply unequal partnership. It is vital to remember that Beverley was not just a muse who happened to sing backup. Before John, she had already lived a phenomenal musical life. She had been signed to the Witchseason organization as a solo artist, worked with Jimmy Page and John Paul Jones, performed at the Monterey Pop Festival, and sang alongside Simon & Garfunkel. Her career did not begin as an appendage to his, but it was steadily erased as she stepped back to raise their children and support his rise.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap2-narr1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "chap2-narr2",
+          "hostId": "clara",
+          "text": "By 1973, the family had relocated to that house in Hastings. From the outside, it looked like a bohemian paradise—a coastal folk salon where legends like Bert Jansch and Nick Drake would drift through to eat, drink, and make music in the living room. But inside, there was an escalating, dark instability. We have to actively reject the familiar, romantic cliché of the 'difficult male genius and his long-suffering wife.' Beverley was an artist whose career was suffocated, and who would later describe a harrowing reality of physical abuse and intimidation at John's hands. The house in Hastings was not just a creative hub; it was increasingly a place of fear.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap2-narr2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "chap2-song1",
+          "track": {
+            "title": "Over the Hill",
+            "artist": "John Martyn",
+            "spotifyUri": "spotify:track:4doNObRI4sHz3klm81tZmu"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 172,
+          "why": "Represents John's uncomplicated fantasy of a happy return home.",
+          "voiceovers": [
+            {
+              "id": "chap2-vo1",
+              "hostId": "simon",
+              "text": "With Richard Thompson on mandolin and the Fairport Convention family chiming in, this transforms into a completely idealized, sunny rural procession. A fantasy of an uncomplicated homecoming.",
+              "atSeconds": 65,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap2-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "chap2-narr3",
+          "hostId": "clara",
+          "text": "That sunny procession of 'Over the Hill' stands in stark contrast to the reality Beverley was navigating. She later revealed that for the song 'Don't Want to Know', she was the one who supplied the musical motion in their sea-facing living room while John worked out the lyrics. Yet, when the album was pressed, the writing credit she was promised mysteriously vanished. It was entirely credited to John. The lyrics themselves ostensibly reject the horror of the outside world—war, greed, and lies. But knowing what was happening in that house, it takes on a much darker hue.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap2-narr3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "chap2-song2",
+          "track": {
+            "title": "Don't Want to Know",
+            "artist": "John Martyn",
+            "spotifyUri": "spotify:track:4Pvddc8BhvNcqZyklcReyq"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 180,
+          "why": "A rejection of worldly knowledge that doubles as a personal evasion.",
+          "voiceovers": [
+            {
+              "id": "chap2-vo2",
+              "hostId": "clara",
+              "text": "When you know the history of the household, this song's rejection of the world's ugliness feels incredibly defensive. Not wanting to know was also John's personal strategy for ignoring the damage he was causing.",
+              "atSeconds": 40,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap2-vo2.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Utopian Hangover and the Staircase",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "chap3-narr1",
+          "hostId": "simon",
+          "text": "By late 1972, the hazy, utopian dream of the 1960s had thoroughly soured. The counterculture hadn't stopped any wars, hadn't dismantled the establishment, and certainly hadn't saved the artists who believed in it most. For many in John's orbit, recreational experimentation had calcified into grim chemical dependency. Nick Drake, in particular, was the tragic embodiment of this hangover. He had just released his stripped-down, desolate masterpiece 'Pink Moon' and subsequently vanished, retreating to his parents' house in Warwickshire. His friends were caught in a panicked cycle of trying gentleness, anger, and desperate invitations to pull him back to the surface.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap3-narr1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "chap3-narr2",
+          "hostId": "clara",
+          "text": "It was during this terrifying withdrawal that John went to visit Nick at his childhood home. The visit clearly shook John to his core. The moment he returned to his own house, he immediately picked up the telephone and called their mutual friend, Paul Wheeler. With a sense of desperate urgency, John sang a brand new song down the receiver, completely unaccompanied. It's a breathtaking, cinematic image. Long before the vibraphones and the smooth studio polish, 'Solid Air' existed as nothing more than a frightened man singing into a plastic telephone, terrified for a friend slipping out of his reach.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap3-narr2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "chap3-song1",
+          "track": {
+            "title": "Pink Moon",
+            "artist": "Nick Drake",
+            "spotifyUri": "spotify:track:4KROoGIaPaR1pBHPnR3bwC"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 126,
+          "why": "To contrast Nick's stark, isolated sound with John's warm, communal album.",
+          "voiceovers": [
+            {
+              "id": "chap3-vo1",
+              "hostId": "simon",
+              "text": "Pink Moon strips everything away. It is total isolation. Solid Air is exactly the opposite—John responds to this terrifying emptiness by surrounding Nick with warm bodies, heavy bass, and protective instrumentation.",
+              "atSeconds": 60,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap3-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "chap3-narr3",
+          "hostId": "simon",
+          "text": "The warmth of Solid Air owes almost everything to one of the most fortuitous, ridiculous accidents in British music history. John originally wanted a clean slate for the album. He told his producer, John Wood, that he wanted 'fresh faces' and purposely decided not to hire his usual foil, the legendary upright bass player Danny Thompson. Wood thought this was a terrible mistake, but he booked the sessions at Sound Techniques studio anyway. Then, fate intervened in the form of a terribly designed architectural feature. Sound Techniques had a dangerously steep staircase leading from the kitchen into the live room. John Wood tripped.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap3-narr3.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "chap3-narr4",
+          "hostId": "simon",
+          "text": "Wood tumbled all the way down the stairs, landed in a heap in the recording room, and twisted his ankle so violently that the entire week's session had to be scrapped. By the time Wood healed and the sessions were re-booked across town at Island's Basing Street Studios, John Martyn's hand-picked 'fresh-faced' bass player was no longer available. Out of options, John picked up the phone and sheepishly called Danny Thompson. It's a staggering reminder of how fragile these classic records are. Change one twisted ankle, one misstep on a staircase, and Solid Air loses its absolute beating heart.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap3-narr4.mp3"
+        },
+        {
+          "type": "song",
+          "id": "chap3-song2",
+          "track": {
+            "title": "I'd Rather Be the Devil",
+            "artist": "John Martyn",
+            "spotifyUri": "spotify:track:1U0TNCUUrXlMLgPxvrbigz"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 378,
+          "why": "Demonstrates the telepathic interplay between John and returning bassist Danny Thompson.",
+          "voiceovers": [
+            {
+              "id": "chap3-vo2",
+              "hostId": "simon",
+              "text": "Danny Thompson wasn't just keeping time here; he was a co-pilot. Producer John Wood famously considered this to be among the absolute finest bass performances he ever committed to tape.",
+              "atSeconds": 120,
+              "duckTo": 20,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap3-vo2.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Electronic Weather and Hidden Harm",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "chap4-narr1",
+          "hostId": "simon",
+          "text": "That track, 'I'd Rather Be the Devil', is actually a radical dismantling of a 1931 Delta blues song by Skip James. But John didn't just respectfully cover it; he possessed it. He ran his acoustic guitar through a fuzz pedal, added a phase effect to make it rotate, and fed the whole thing into an Echoplex. The Echoplex recorded his playing onto a moving loop of tape and spat it back at him on a delay. He was literally playing against his own immediate past. Every note returned altered, turning a solo performance into a visceral, rhythmic struggle between man and machine. It wasn't avant-garde for the sake of it—it sounded like thick, electronic weather moving right through a folk song.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap4-narr1.mp3"
+        },
+        {
+          "type": "song",
+          "id": "chap4-song1",
+          "track": {
+            "title": "Go Down Easy",
+            "artist": "John Martyn",
+            "spotifyUri": "spotify:track:17g3bROn8V2eKfPpSYbSOQ"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 214,
+          "why": "Showcases the sensual, organic imagery John could conjure.",
+          "voiceovers": [
+            {
+              "id": "chap4-vo1",
+              "hostId": "clara",
+              "text": "Danny Thompson remembered hearing the line about curling around someone like a fern in the spring, marveling at John's ability to conjure an image of such profound, organic gentleness.",
+              "atSeconds": 60,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap4-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "chap4-narr2",
+          "hostId": "clara",
+          "text": "That gentleness is the hardest contradiction to reckon with. It is dangerously easy to call John a 'Jekyll and Hyde' character, but that phrase is a cop-out. It makes his domestic abuse sound like a mysterious, supernatural affliction rather than a series of choices. The agonizing truth of 'Go Down Easy' is that the song proves John fully understood what profound tenderness and care looked like. He could articulate it flawlessly. And that precise awareness makes his failure to practice it in his own home, with his own wife, exponentially more painful. He wasn't ignorant of gentleness; he simply withheld it.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap4-narr2.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "chap4-narr3",
+          "hostId": "clara",
+          "text": "Beverley Martyn survived serious physical injuries and a suffocating loss of safety. While John's alcohol and drug abuse certainly intensified the violence, it absolutely does not absolve him of it. When we listen to Solid Air, we have to hold two competing truths in the same room. The music's intimacy is genuine, but that intimacy coexisted with severe harm. The shimmering, nocturnal beauty of this record does not, and cannot, erase the history of the woman who survived the man making it.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap4-narr3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "chap4-song2",
+          "track": {
+            "title": "Dreams by the Sea",
+            "artist": "John Martyn",
+            "spotifyUri": "spotify:track:5LmzymdRSMfXm2nqV7HBzt"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 196,
+          "why": "Captures the restless, unstable energy of the Hastings period.",
+          "voiceovers": [
+            {
+              "id": "chap4-vo2",
+              "hostId": "simon",
+              "text": "Tony Coe plays that brilliant, unstable saxophone drifting through the arrangement. Amazingly, Coe later admitted he had absolutely no memory of ever playing on this album. For the hired guns, history is just another Tuesday.",
+              "atSeconds": 90,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap4-vo2.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Midnight Rescues",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "chap5-narr1",
+          "hostId": "simon",
+          "text": "If you listen closely to the title track of Solid Air again, you'll hear that the vibraphone notes seem to float endlessly, overlapping in a way that feels beautifully, woozily suspended. That wasn't a genius compositional choice. It was another total studio accident. Session player Tristan Fry sat down at the vibraphone, only to discover the instrument's mechanical damper pedal was completely broken. He couldn't stop the notes with his foot. He had to damp the metal keys manually with his hands while playing, creating this unbroken, liquid wash of sound. Once again, an equipment failure accidentally stamped the record with its signature magic.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap5-narr1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "chap5-narr2",
+          "hostId": "clara",
+          "text": "The album's most famous song was rescued by a similarly chaotic stroke of luck. 'May You Never' was supposed to be a centerpiece, but during the Basing Street sessions, John simply couldn't nail it. They tried it with the band. They tried different tempos. Nothing worked. It was 2 a.m., the album mix was theoretically finished, and producer John Wood was literally flying to New York the next morning to get the tapes mastered. Staring down the clock, a frustrated Wood told John to just grab his acoustic guitar, go down to the back of the studio, and play the damn song alone. One take. That panicked, midnight, last-ditch effort is the vocal you hear on the record.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap5-narr2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "chap5-song1",
+          "track": {
+            "title": "May You Never",
+            "artist": "John Martyn",
+            "spotifyUri": "spotify:track:6ofam9RHTG7UBUa6uO2MjP"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 221,
+          "why": "The iconic, intimate solo performance captured at the last possible minute.",
+          "voiceovers": [
+            {
+              "id": "chap5-vo1",
+              "hostId": "clara",
+              "text": "It is a brotherly blessing for a friend, but beneath that, it sounds remarkably like a once-abandoned child desperately trying to offer someone else the unconditional security he always wanted for himself.",
+              "atSeconds": 85,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap5-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "chap5-narr3",
+          "hostId": "simon",
+          "text": "John Wood knew exactly why they couldn't overcook the arrangement. John had actually tried to record 'May You Never' two years earlier, in 1971. He knew it was a great song, so he tried to make it a pop hit. He brought in Free guitarist Paul Kossoff and tracked a bouncy, full-band single version. It completely flopped. When you hear the 1971 take, it becomes painfully obvious why the stripped-back, 2 a.m. acoustic rescue mission was the only way this song was ever going to work.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap5-narr3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "chap5-song2",
+          "track": {
+            "title": "May You Never",
+            "artist": "John Martyn",
+            "spotifyUri": "spotify:track:2B5n8Gqvl1UR4hgQFMqXkp"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 163,
+          "why": "The failed 1971 attempt at making the song a commercial hit.",
+          "voiceovers": [
+            {
+              "id": "chap5-vo2",
+              "hostId": "simon",
+              "text": "It's jarring, isn't it? The 1971 single tries so hard to be a 'record'. The 1973 midnight acoustic take just lets it be what it actually is: a private promise.",
+              "atSeconds": 50,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap5-vo2.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Transient Lives and Heavy Hands",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "chap6-narr1",
+          "hostId": "simon",
+          "text": "There's a secret ingredient to Solid Air that doesn't get nearly enough credit: a Texan keyboard player named John 'Rabbit' Bundrick. Rabbit had come to Britain playing with Johnny Nash, which placed him squarely in the orbit of Bob Marley and the rising reggae scene at Island Records. When Rabbit sat down at the electric piano for Martyn, he didn't play folk chords. He played with a deep, soulful, almost reggae-inflected intuition. He provided a hidden bridge between English acoustic music and Jamaican groove. He and Danny Thompson didn't just support the beat; they completely softened the edges of time.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap6-narr1.mp3"
+        },
+        {
+          "type": "song",
+          "id": "chap6-song1",
+          "track": {
+            "title": "The Man in the Station",
+            "artist": "John Martyn",
+            "spotifyUri": "spotify:track:1qEG5O6bKeSnYcWLnjmQ37"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 173,
+          "why": "Illustrates the album's blend of soul-jazz groove and folk.",
+          "voiceovers": [
+            {
+              "id": "chap6-vo1",
+              "hostId": "simon",
+              "text": "Listen to Rabbit's electric piano. It's not just adding harmony; it changes the entire atmospheric temperature of the room. It pushes this way past folk into something resembling early trip-hop.",
+              "atSeconds": 70,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap6-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "chap6-narr2",
+          "hostId": "clara",
+          "text": "The transient lyric of 'The Man in the Station' mirrored John's exhausting reality. In early 1973, to support Solid Air, he was sent on a punishing American tour opening for Free and Traffic. We're talking 35 shows in 39 days, playing brief sets in massive, unforgiving rooms. He came home completely depleted, his behavior increasingly paranoid and erratic. Watching the band Traffic stretch out and improvise every night changed him. By the time he returned to England, he was already thoroughly bored with the immaculate studio polish of Solid Air.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap6-narr2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "chap6-song2",
+          "track": {
+            "title": "The Easy Blues / Gentle Blues",
+            "artist": "John Martyn",
+            "spotifyUri": "spotify:track:6jbHxcmMaSzP77wBUREL2x"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 200,
+          "why": "The final track of the core album, signaling his move toward freer forms.",
+          "voiceovers": [
+            {
+              "id": "chap6-vo2",
+              "hostId": "simon",
+              "text": "This looseness points to what came next. Just eight months after Solid Air, John would drop 'Inside Out'—a sprawling, wild record that he privately preferred to his so-called masterpiece.",
+              "atSeconds": 45,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap6-vo2.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "chap6-narr3",
+          "hostId": "clara",
+          "text": "The wildness wasn't confined to the stage. The mythology of John Martyn and Danny Thompson on the road is genuinely alarming. They were drinking partners, brothers in arms, and occasionally profound liabilities to one another. There's a story of Danny literally nailing John under a hotel room carpet to subdue him, then calmly ordering room service breakfast to eat while sitting on top of him. In another terrifying instance, Danny had to bend John's thumb backward until it nearly snapped just to stop John from strangling him in a drunken rage. And yet, the next night, they would walk out on stage, laugh, and play together as if nothing had happened. It was an insular, boys-club culture that routinely spun horrific violence into charming rock-and-roll anecdotes.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap6-narr3.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "chap6-narr4",
+          "hostId": "simon",
+          "text": "When you hear those stories, it's tempting to think the chaos somehow fueled the genius. But that's a myth. The true miracle isn't that their violence birthed great music. The miracle is that two men who conducted themselves with such heavy hands in the real world possessed a musical language that was so deeply, infinitely graceful. When they picked up their instruments, the brawling stopped. They communicated with a telepathy that was vastly superior to anything they could manage in conversation. The live stage was the only place their brotherhood made total sense.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap6-narr4.mp3"
+        },
+        {
+          "type": "song",
+          "id": "chap6-song3",
+          "track": {
+            "title": "I'd Rather Be the Devil (Live)",
+            "artist": "John Martyn",
+            "spotifyUri": "spotify:track:284iibHm6OfWr0aLhgH7sX"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 513,
+          "why": "Shows the studio track expanding into a massive, living machine on stage.",
+          "voiceovers": [
+            {
+              "id": "chap6-vo3",
+              "hostId": "simon",
+              "text": "This is what happened when they took it on the road. The studio track was just a blueprint. Live, with the Echoplex screaming and Danny's bass locking in, it becomes a ferocious, living organism.",
+              "atSeconds": 180,
+              "duckTo": 20,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap6-vo3.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Things Not Quite There",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "chap7-narr1",
+          "hostId": "clara",
+          "text": "In November 1974, the subject of Solid Air's title track finally succumbed to his illness. Nick Drake died of an overdose of amitriptyline. History has often romanticized this tragedy, trying to view Nick's entire life merely as a prelude to a beautifully doomed end. But Solid Air wasn't written as a eulogy; it was a desperate intervention for a living boy. The painful coda is that, according to friends, John and Nick had a bitter argument about a month before Nick's death. It was a fight that was never repaired. John disappeared for two days when he heard the news. Decades later, he would express a deep, uncomfortable resentment toward the posthumous cult that sprang up around Nick—perhaps fueled by grief, perhaps by guilt, or perhaps by the agonizing knowledge that he couldn't push through the solid air in time.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap7-narr1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "chap7-narr2",
+          "hostId": "simon",
+          "text": "John didn't stop in 1973, and we shouldn't rush straight to the tragic end of his own story. He didn't just fulfill some neat, self-destructive rock cliché. He went on to release an extraordinary run of albums: Inside Out, Sunday's Child, One World, and Grace and Danger. He pushed further into electric instrumentation, pioneered ambient environmental recordings, and fully embraced electronic production. By the time he passed away in 2009, having lost a leg to septicaemia but still touring relentlessly in a wheelchair, he had created an artistic universe that cast a shadow over everything from folk to trip-hop.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap7-narr2.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "chap7-narr3",
+          "hostId": "clara",
+          "text": "Solid Air is universally known as an album about Nick Drake, but Nick is really just one of its many ghosts. It's a record built entirely out of absences. The absence of Beverley's writing credit. The absence of the mother who left John behind in Glasgow. The imagined, receding home in 'Over the Hill'. Even the sonics are made of things not quite there: a tape delay echoing a note that has already died, a vibraphone pedal that won't damp the ring. John Martyn could hear human fragility with devastating, miraculous precision. What he could not always do was protect it. The tenderness in the grooves is totally real, and so is the damage in the house that built it. They do not cancel each other out. They occupy the exact same space.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap7-narr3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "chap7-song1",
+          "track": {
+            "title": "Small Hours",
+            "artist": "John Martyn",
+            "spotifyUri": "spotify:track:1sFh9LmPrsZarW5PqhOFD9"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 520,
+          "why": "The culmination of Martyn's desire for floating, environmental sound.",
+          "voiceovers": [
+            {
+              "id": "chap7-vo1",
+              "hostId": "simon",
+              "text": "For thirty-five minutes in 1973, air became solid. It was something invisible finally given weight, resistance, and sound. This is where that sound went next.",
+              "atSeconds": 30,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap7-vo1.mp3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "facts": []
+}
