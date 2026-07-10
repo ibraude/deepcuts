@@ -126,11 +126,6 @@ export class AppleScriptSpotify implements MusicProvider {
     // `play track URI` but then immediately advances to a random track from the
     // active context. Wrapped in `try` so older Spotify versions that don't expose
     // these properties don't break the play command.
-    //
-    // Do NOT `pause` before `play track "URI"`. Reproduced 2026-07-10: with a
-    // pause in the same tell-block, Spotify plays the NEXT track in its active
-    // context (e.g. the next album track) instead of the requested URI. Without
-    // the pause, `play track` correctly plays the URI regardless of prior state.
     await this.callExpectingOk(
       osa(
         'tell application "Spotify"',
@@ -143,6 +138,16 @@ export class AppleScriptSpotify implements MusicProvider {
         `  play track "${trackUri}"`,
         'end tell',
       ),
+    )
+    // Spotify AppleScript context bug: after `pause`, the first `play track "URI"`
+    // sometimes plays a DIFFERENT track from the previous context (e.g. the next
+    // album track), not the requested URI. A second `play track` call ~200ms
+    // later corrects it. When there was no prior pause, the second call is a
+    // harmless no-op (re-plays the same URI from the start).
+    // Reproduced live 2026-07-10 via osascript; ships as the least-invasive fix.
+    await new Promise((r) => setTimeout(r, 200))
+    await this.callExpectingOk(
+      osa('tell application "Spotify"', `  play track "${trackUri}"`, 'end tell'),
     )
   }
 
