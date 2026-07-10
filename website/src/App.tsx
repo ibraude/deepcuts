@@ -3,6 +3,9 @@ import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Library } from './components/Library'
 import { Upcoming } from './components/Upcoming'
+import { About } from './components/About'
+import { Download } from './components/Download'
+import { Footer } from './components/Footer'
 import { ScrollProgress } from './components/ScrollProgress'
 import { usePlayer } from './hooks/usePlayer'
 import {
@@ -44,6 +47,9 @@ export default function App() {
         onSeek={player.seek}
       />
       <Upcoming episodes={view?.upcoming ?? []} />
+      <About />
+      <Download />
+      <Footer />
       {error && (
         <div className="max-w-[600px] mx-auto p-12 text-sm" style={{ color: 'var(--muted)' }}>
           Catalog failed to load: {error}
