@@ -297,6 +297,14 @@ export class Scheduler {
     // and the segment is abandoned milliseconds after it starts.
     let sawOurTrack = false
     const SETTLE_GRACE_MS = 4000
+    // AppleScript reads sometimes flicker mid-playback — Spotify may briefly
+    // report a queued/adjacent track URI while still playing ours. Require the
+    // mismatch to persist across two consecutive polls (~1s at the default
+    // 500ms interval) before treating it as a real track change. A real user
+    // skip / natural song end holds the new URI indefinitely; a transient
+    // stale read clears on the next poll.
+    let mismatchStreak = 0
+    const MISMATCH_TRIGGER = 2
 
     while (!stopped && !this.stopSignal.stop && !this.skipSignal.skip) {
       // App-side pause (user clicked our Pause button).
@@ -425,18 +433,36 @@ export class Scheduler {
       // Detect when Spotify settles on our target track. Only counts if we
       // actually read a URI from Spotify — the default value would also match,
       // creating a false positive when getCurrentTrack() fails.
-      if (uriRead && uri === segment.track.spotifyUri) sawOurTrack = true
+      if (uriRead && uri === segment.track.spotifyUri) {
+        sawOurTrack = true
+        mismatchStreak = 0
+      }
 
       // Any track change — natural end, user skipped in Spotify, autoplay advance — means move forward.
-      // But ignore mismatches during the settle window: Spotify often still reports the
-      // previous track on the first one or two polls after play().
+      // But ignore mismatches during the settle window, and require the mismatch
+      // to persist across MISMATCH_TRIGGER consecutive polls to filter out
+      // transient stale reads mid-track.
       const inSettleWindow = !sawOurTrack && Date.now() - startedAt < SETTLE_GRACE_MS
-      const trackChanged = uriRead && !!uri && uri !== segment.track.spotifyUri && !inSettleWindow
-      if (trackChanged) {
+      const uriMismatch = uriRead && !!uri && uri !== segment.track.spotifyUri && !inSettleWindow
+      if (uriMismatch) {
+        mismatchStreak++
+      } else if (uriRead) {
+        // Only reset when we successfully read a matching (or empty) URI —
+        // don't reset on failed reads (uriRead=false), those are noise.
+        mismatchStreak = 0
+      }
+      if (mismatchStreak >= MISMATCH_TRIGGER) {
         // eslint-disable-next-line no-console
         console.warn(
           '[Scheduler] track changed during song segment',
-          { segmentId: segment.id, expected: segment.track.spotifyUri, actual: uri, sawOurTrack, ageMs: Date.now() - startedAt },
+          {
+            segmentId: segment.id,
+            expected: segment.track.spotifyUri,
+            actual: uri,
+            sawOurTrack,
+            ageMs: Date.now() - startedAt,
+            streak: mismatchStreak,
+          },
         )
         exitReason = 'trackChanged'
         break

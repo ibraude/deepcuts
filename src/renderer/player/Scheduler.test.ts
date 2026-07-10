@@ -145,6 +145,31 @@ describe('Scheduler', () => {
     await run
   })
 
+  it('single-poll URI flicker does NOT advance the segment', async () => {
+    const m = buildMocks()
+    // Slow the poll interval so we can construct a controlled single-tick flicker.
+    m.deps.pollIntervalMs = 40
+    const sched = new Scheduler(m.deps)
+    const run = sched.start(makeManifest(), { hasElevenLabsKey: false })
+    await vi.waitFor(() => expect(m.narrationCalls).toEqual(['n1']))
+    m.narrationHandles[0]!.resolve()
+    await vi.waitFor(() =>
+      expect(m.musicCalls.some((c) => c.method === 'play' && c.arg === 'spotify:track:aaaaaaaaaaaaaaaaaaaaaa')).toBe(true),
+    )
+    // Let a couple of polls run so sawOurTrack becomes true.
+    await new Promise((r) => setTimeout(r, 100))
+    // Flicker to a wrong URI for exactly one poll tick, then restore.
+    m.music.uri = 'spotify:track:ccccccccccccccccccccCC'
+    await new Promise((r) => setTimeout(r, 40))
+    m.music.uri = 'spotify:track:aaaaaaaaaaaaaaaaaaaaaa'
+    // Give a few more polls to confirm the scheduler didn't advance.
+    await new Promise((r) => setTimeout(r, 200))
+    expect(m.narrationCalls).toEqual(['n1'])
+    expect(sched.getState().status.kind).toBe('playing-song')
+    await sched.stop()
+    await run
+  })
+
   it('user-skipped track in Spotify advances to the next segment', async () => {
     const m = buildMocks()
     const sched = new Scheduler(m.deps)
