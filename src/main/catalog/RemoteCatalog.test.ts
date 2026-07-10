@@ -71,10 +71,10 @@ describe('RemoteCatalog', () => {
     expect(files.get('/tmp/cache/catalog.json')).toContain('almost-blue')
   })
 
-  it('list() returns cached catalog when present without a fetch', async () => {
+  it('list() always fetches fresh — cache is fallback only', async () => {
     const { fs, files } = makeFakeFs()
     files.set('/tmp/cache/catalog.json', JSON.stringify(VALID_CATALOG))
-    const fetcher = vi.fn()
+    const fetcher = makeFetcher({ 'https://cdn.example.com/content/catalog.json': VALID_CATALOG })
     const rc = createRemoteCatalog({
       baseUrl: 'https://cdn.example.com/content',
       cacheRoot: () => '/tmp/cache',
@@ -85,7 +85,25 @@ describe('RemoteCatalog', () => {
     })
     const result = await rc.list()
     expect(result.episodes).toHaveLength(2)
-    expect(fetcher).not.toHaveBeenCalled()
+    expect(fetcher).toHaveBeenCalledTimes(1)
+  })
+
+  it('list() falls back to cached catalog when network fails', async () => {
+    const { fs, files } = makeFakeFs()
+    files.set('/tmp/cache/catalog.json', JSON.stringify(VALID_CATALOG))
+    const fetcher = makeFetcher({
+      'https://cdn.example.com/content/catalog.json': new Error('offline'),
+    })
+    const rc = createRemoteCatalog({
+      baseUrl: 'https://cdn.example.com/content',
+      cacheRoot: () => '/tmp/cache',
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      fetcher: fetcher as any,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      fs: fs as any,
+    })
+    const result = await rc.list()
+    expect(result.episodes).toHaveLength(2)
   })
 
   it('list() falls back to fetching when no cache exists', async () => {
@@ -137,14 +155,17 @@ describe('RemoteCatalog', () => {
     expect(files.get('/tmp/cache/episodes/almost-blue/meta.json')).toContain('Chet Baker')
   })
 
-  it('loadMeta() returns cached copy on subsequent calls', async () => {
-    const { fs } = makeFakeFs()
+  it('loadMeta() falls back to cache when network fails', async () => {
+    const { fs, files } = makeFakeFs()
     const meta = {
       schemaVersion: 1, artistName: 'X', albumName: 'Y', blurb: 'Z',
       palette: { bg: '#000000', ink: '#000000', accent: '#000000' },
       releaseDate: null, expectedRelease: 'Q3',
     }
-    const fetcher = makeFetcher({ 'https://cdn.example.com/content/episodes/x/meta.json': meta })
+    files.set('/tmp/cache/episodes/x/meta.json', JSON.stringify(meta))
+    const fetcher = makeFetcher({
+      'https://cdn.example.com/content/episodes/x/meta.json': new Error('offline'),
+    })
     const rc = createRemoteCatalog({
       baseUrl: 'https://cdn.example.com/content',
       cacheRoot: () => '/tmp/cache',
@@ -153,9 +174,19 @@ describe('RemoteCatalog', () => {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       fs: fs as any,
     })
-    await rc.loadMeta('x')
-    await rc.loadMeta('x')
-    expect(fetcher).toHaveBeenCalledTimes(1)
+    const result = await rc.loadMeta('x')
+    expect(result.artistName).toBe('X')
+  })
+
+  it('coverUrl() cache-busts with catalog.updatedAt after list() runs', async () => {
+    const rc = createRemoteCatalog(defaults())
+    // Before any fetch, no version is known — plain URL.
+    expect(rc.coverUrl('almost-blue')).toBe('https://cdn.example.com/content/episodes/almost-blue/cover.png')
+    // After list() populates latestUpdatedAt, the URL is versioned.
+    await rc.list()
+    expect(rc.coverUrl('almost-blue')).toBe(
+      'https://cdn.example.com/content/episodes/almost-blue/cover.png?v=2026-07-09T00%3A00%3A00Z',
+    )
   })
 
   it('coverUrl() returns a direct CDN URL without fetching', () => {
