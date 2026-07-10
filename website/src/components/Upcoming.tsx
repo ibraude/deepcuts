@@ -20,7 +20,7 @@ export function Upcoming({ episodes }: { episodes: EpisodeView[] }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
           {episodes.map((entry, i) => (
             <RevealOnScroll key={entry.id} delay={i * 0.06}>
-              <div className="flex flex-col gap-3 opacity-80">
+              <div className="flex flex-col gap-3">
                 <div className="w-full aspect-square overflow-hidden">
                   <img
                     src={entry.coverUrl}

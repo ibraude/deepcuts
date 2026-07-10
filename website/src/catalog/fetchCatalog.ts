@@ -23,20 +23,39 @@ export interface CatalogView {
   featured: EpisodeView | null
 }
 
-async function fetchJson(url: string, fetcher: typeof fetch): Promise<unknown> {
-  const resp = await fetcher(url)
+async function fetchJson(
+  url: string,
+  fetcher: typeof fetch,
+  init?: RequestInit,
+): Promise<unknown> {
+  const resp = await fetcher(url, init)
   if (!resp.ok) throw new Error(`Fetch ${url} failed: ${resp.status}`)
   return resp.json()
 }
 
 export async function fetchCatalog(fetcher: typeof fetch = fetch): Promise<CatalogView> {
-  const catalogRaw = await fetchJson(`${CATALOG_BASE_URL}/catalog.json`, fetcher)
+  // The catalog is small (~2KB at 22 episodes) and drives everything below,
+  // so bypass browser cache to guarantee a new publish is visible immediately.
+  const catalogRaw = await fetchJson(
+    `${CATALOG_BASE_URL}/catalog.json`,
+    fetcher,
+    { cache: 'no-store' },
+  )
   const catalog = remoteCatalogSchema.parse(catalogRaw)
+
+  // Cache-bust downstream assets when catalog.updatedAt changes. jsDelivr
+  // ignores query strings for cache keys (its edge still serves the same
+  // origin bytes) but browsers treat the URL as new, forcing a refetch when
+  // a publish changes cover art or meta text at the same path.
+  const v = encodeURIComponent(catalog.updatedAt)
 
   const sorted = [...catalog.episodes].sort((a, b) => a.order - b.order)
   const views: EpisodeView[] = await Promise.all(
     sorted.map(async (entry) => {
-      const raw = await fetchJson(`${CATALOG_BASE_URL}/episodes/${entry.id}/meta.json`, fetcher)
+      const raw = await fetchJson(
+        `${CATALOG_BASE_URL}/episodes/${entry.id}/meta.json?v=${v}`,
+        fetcher,
+      )
       const meta = episodeMetaSchema.parse(raw)
       return {
         id: entry.id,
@@ -45,7 +64,7 @@ export async function fetchCatalog(fetcher: typeof fetch = fetch): Promise<Catal
         releaseDate: entry.releaseDate,
         expectedRelease: entry.expectedRelease,
         meta,
-        coverUrl: `${CATALOG_BASE_URL}/episodes/${entry.id}/cover.png`,
+        coverUrl: `${CATALOG_BASE_URL}/episodes/${entry.id}/cover.png?v=${v}`,
       }
     }),
   )

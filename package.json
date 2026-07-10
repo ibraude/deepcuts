@@ -14,6 +14,8 @@
     "test:watch": "vitest",
     "probe-spotify": "tsx scripts/probe-spotify.ts",
     "publish-episode": "tsx scripts/publish-episode.ts",
+    "publish-all-ready": "tsx scripts/publish-all-ready.ts",
+    "purge-jsdelivr": "tsx scripts/purge-jsdelivr.ts",
     "lint": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit"
   },
   "dependencies": {

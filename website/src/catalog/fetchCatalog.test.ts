@@ -19,11 +19,13 @@ function metaFixture(over: Partial<EpisodeMeta> = {}): EpisodeMeta {
 
 function makeFetcher(responses: Record<string, unknown>): typeof fetch {
   return (async (url: string) => {
-    if (!(url in responses)) throw new Error(`No fixture for ${url}`)
+    // Strip cache-bust query strings — fixtures are keyed on the base URL.
+    const key = url.split('?')[0]!
+    if (!(key in responses)) throw new Error(`No fixture for ${url}`)
     return {
       ok: true,
       status: 200,
-      json: async () => responses[url],
+      json: async () => responses[key],
     } as unknown as Response
   }) as unknown as typeof fetch
 }
@@ -99,6 +101,7 @@ describe('fetchCatalog', () => {
       [`${BASE}/episodes/z/meta.json`]: metaFixture(),
     })
     const view = await fetchCatalog(fetcher)
-    expect(view.upcoming[0]!.coverUrl).toBe(`${BASE}/episodes/z/cover.png`)
+    // Cover URL includes the catalog's updatedAt as a cache-bust param.
+    expect(view.upcoming[0]!.coverUrl).toBe(`${BASE}/episodes/z/cover.png?v=t`)
   })
 })
