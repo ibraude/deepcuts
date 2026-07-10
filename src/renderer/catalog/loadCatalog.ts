@@ -83,5 +83,10 @@ export async function loadEpisodeManifestById(
     const libraryCoverUrl = await window.deepcuts.library.coverUrl(id).catch(() => null)
     return libraryCoverUrl ? { ...manifest, coverImage: libraryCoverUrl } : manifest
   }
-  return window.deepcuts.remoteCatalog.loadEpisode(id)
+  // Remote manifests store coverImage as a relative path ("cover.png"). Rewrite
+  // to the absolute CDN URL so the Player's <Cover> component (which now only
+  // renders full URLs, not repo-relative paths) can display it.
+  const manifest = await window.deepcuts.remoteCatalog.loadEpisode(id)
+  const remoteCoverUrl = await window.deepcuts.remoteCatalog.coverUrl(id)
+  return { ...manifest, coverImage: remoteCoverUrl }
 }
