@@ -1,0 +1,30 @@
+name: Validate content
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'content/**'
+      - 'src/shared/**'
+      - 'scripts/validate-content.ts'
+      - '.github/workflows/validate-content.yml'
+  # Also run on direct pushes to main as a safety net.
+  push:
+    branches: [main]
+    paths:
+      - 'content/**'
+      - 'src/shared/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - name: Install root deps
+        run: npm ci
+      - name: Validate every content file against zod schemas
+        run: npm run validate-content

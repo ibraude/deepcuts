@@ -9,6 +9,12 @@ import { EditorView } from './editor/EditorView'
 import { useEditorStore } from './editor/editorStore'
 import { DraftPreviewBanner } from './editor/DraftPreviewBanner'
 
+// Editor and Settings are dev-only. Production builds (the .dmg users
+// download from the site) ship a library + player experience only. Vite
+// statically inlines this constant so unused branches are dead-code eliminated
+// from the production bundle.
+const IS_DEV = import.meta.env.DEV
+
 export function App() {
   const init = usePlayerStore((s) => s.init)
   const status = usePlayerStore((s) => s.schedulerState.status.kind)
@@ -18,6 +24,7 @@ export function App() {
 
   useEffect(() => {
     init()
+    if (!IS_DEV) return
     const onKey = (e: KeyboardEvent) => {
       if (e.metaKey && e.key === ',') {
         e.preventDefault()
@@ -37,24 +44,27 @@ export function App() {
   }, [previewing, status])
 
   const playerActive = status !== 'idle' && status !== 'done'
+  const inEditor = IS_DEV && appMode === 'editor'
 
   return (
     <main className="min-h-screen">
       <div className="drag fixed top-0 left-0 right-0 h-9 z-50" aria-hidden />
-      <div className="fixed top-1.5 right-3 z-[60]">
-        <ModeToggle />
-      </div>
+      {IS_DEV && (
+        <div className="fixed top-1.5 right-3 z-[60]">
+          <ModeToggle />
+        </div>
+      )}
       {previewing && <DraftPreviewBanner />}
       {previewing && playerActive ? (
         <Player />
-      ) : appMode === 'editor' ? (
+      ) : inEditor ? (
         <EditorView />
       ) : playerActive ? (
         <Player />
       ) : (
         <Catalog />
       )}
-      {showSettings && <Settings onClose={() => setShowSettings(false)} />}
+      {IS_DEV && showSettings && <Settings onClose={() => setShowSettings(false)} />}
     </main>
   )
 }

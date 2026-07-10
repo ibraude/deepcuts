@@ -16,6 +16,7 @@
     "publish-episode": "tsx scripts/publish-episode.ts",
     "publish-all-ready": "tsx scripts/publish-all-ready.ts",
     "purge-jsdelivr": "tsx scripts/purge-jsdelivr.ts",
+    "validate-content": "tsx scripts/validate-content.ts",
     "lint": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit"
   },
   "dependencies": {
