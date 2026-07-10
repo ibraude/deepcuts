@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Library } from './components/Library'
+import { Upcoming } from './components/Upcoming'
+import { ScrollProgress } from './components/ScrollProgress'
 import { usePlayer } from './hooks/usePlayer'
 import {
   fetchCatalog,
@@ -29,6 +31,7 @@ export default function App() {
 
   return (
     <main className="min-h-screen">
+      <ScrollProgress />
       <Header />
       <div id="top" />
       <Hero featured={view?.featured ?? null} />
@@ -40,6 +43,7 @@ export default function App() {
         onResume={player.resume}
         onSeek={player.seek}
       />
+      <Upcoming episodes={view?.upcoming ?? []} />
       {error && (
         <div className="max-w-[600px] mx-auto p-12 text-sm" style={{ color: 'var(--muted)' }}>
           Catalog failed to load: {error}
