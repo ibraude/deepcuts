@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "a",
+  "title": "Test",
+  "subject": "Album",
+  "coverImage": "cover.png",
+  "estimatedMinutes": 1,
+  "hosts": [{ "id": "h1", "name": "Host", "persona": "", "voiceRef": "elevenlabs:v" }],
+  "chapters": [
+    {
+      "title": "One",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "n-01",
+          "hostId": "h1",
+          "text": "Hello.",
+          "audio": "http://localhost:8090/episodes/a/audio/n-01.mp3"
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "facts": []
+}

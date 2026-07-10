@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "artistName": "Upcoming Artist",
+  "albumName": "Upcoming Album",
+  "blurb": "Coming soon.",
+  "palette": { "bg": "#0a0a0a", "ink": "#f5f5f5", "accent": "#a04a1c" },
+  "releaseDate": null,
+  "expectedRelease": "Summer 2026"
+}
