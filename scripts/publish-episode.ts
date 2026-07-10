@@ -10,6 +10,7 @@ import { episodeMetaSchema, type EpisodeMeta } from '../src/shared/meta'
 import { remoteCatalogSchema, type RemoteCatalogIndex } from '../src/shared/catalog'
 import { resolveContentBaseUrl } from '../src/shared/config'
 import type { SynthFn } from '../src/main/prerender'
+import { createCacheOnlySynth } from '../src/main/tts/narrationCache'
 
 export interface PublishEpisodeArgs {
   draftDir: string
@@ -130,20 +131,29 @@ if (isCli) {
   const status = (arg('status') ?? 'released') as 'released' | 'upcoming'
   const order = arg('order') ? Number(arg('order')) : undefined
   if (!draftId) {
-    console.error('Usage: publish-episode --draft <id> [--status released|upcoming] [--order N]')
+    console.error(
+      'Usage: publish-episode --draft <id> [--status released|upcoming] [--order N] [--narration-cache <dir>]',
+    )
     process.exit(1)
   }
+
   const home = process.env.HOME ?? ''
   const draftDir = join(home, 'Library/Application Support/deepcuts/drafts', draftId)
   const contentDir = join(process.cwd(), 'content')
-  publishEpisode({
-    draftDir, contentDir, status, order,
-    synthesize: async () => {
-      throw new Error(
-        'Live synthesis from CLI is not wired yet. Pre-render from the app first via the ' +
-        'Prerender action, then re-run this script — it will pick up the cached MP3s from ' +
-        'userData/narration-cache. TODO(catalog): add --from-narration-cache flag.',
-      )
-    },
-  }).catch((err: unknown) => { console.error(err); process.exit(1) })
+  const defaultCacheDir = join(home, 'Library/Application Support/deepcuts/narration-cache')
+  const cacheDir = arg('narration-cache') ?? defaultCacheDir
+
+  // For released episodes the CLI reads pre-rendered MP3s from the narration
+  // cache (populated by the app's Prerender action). Live synthesis from the
+  // CLI would require an ElevenLabs key + Vertex config in the shell, which is
+  // out of scope. For upcoming episodes no audio is needed.
+  const synthesize: SynthFn =
+    status === 'released'
+      ? createCacheOnlySynth({ cacheDir })
+      : (async () => {
+          throw new Error('synthesize is not required for upcoming')
+        })
+
+  publishEpisode({ draftDir, contentDir, status, order, synthesize })
+    .catch((err: unknown) => { console.error(err); process.exit(1) })
 }

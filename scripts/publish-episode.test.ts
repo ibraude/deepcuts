@@ -1,6 +1,7 @@
 import { describe, expect, it, vi } from 'vitest'
 import { publishEpisode } from './publish-episode'
 import type { DraftManifest } from '../src/shared/manifest'
+import { createCacheOnlySynth, narrationCacheKey } from '../src/main/tts/narrationCache'
 
 const DRAFT: DraftManifest = {
   schemaVersion: 1,
@@ -33,6 +34,9 @@ function makeFakeFs() {
       writeFile: vi.fn(async (p: string, data: string | Uint8Array) => { files.set(p, data) }),
       mkdir: vi.fn(async () => undefined),
       copyFile: vi.fn(async (src: string, dst: string) => { files.set(dst, files.get(src) ?? '') }),
+      access: vi.fn(async (p: string) => {
+        if (!files.has(p)) throw Object.assign(new Error('ENOENT'), { code: 'ENOENT' })
+      }),
     },
   }
 }
@@ -145,5 +149,83 @@ describe('publishEpisode', () => {
 
     const catalog = JSON.parse(files.get('/content/catalog.json') as string)
     expect(catalog.episodes[0].order).toBe(7)
+  })
+
+  it('publishes a released episode using createCacheOnlySynth (end-to-end)', async () => {
+    const { fs, files } = makeFakeFs()
+    files.set('/drafts/almost-blue/manifest.json', JSON.stringify(DRAFT))
+    files.set('/drafts/almost-blue/cover.png', new Uint8Array([1, 2, 3]))
+    files.set('/drafts/almost-blue/meta.json', JSON.stringify({
+      schemaVersion: 1, artistName: 'Chet Baker', albumName: 'Almost Blue', blurb: 'A portrait.',
+      palette: { bg: '#e8e4d6', ink: '#0e2a44', accent: '#2f6ea1' },
+      releaseDate: '2026-06-10', expectedRelease: null,
+    }))
+    files.set('/content/catalog.json', JSON.stringify({
+      schemaVersion: 1, updatedAt: '2026-07-09T00:00:00Z', episodes: [],
+    }))
+
+    // Populate the fake narration cache with hashed files matching the draft's
+    // narration segments. Voice ref = 'elevenlabs:vX', model default (v2).
+    const CACHE = '/narration-cache'
+    const hash01 = narrationCacheKey('elevenlabs:vX', 'eleven_multilingual_v2', 'Hello.')
+    const hash02 = narrationCacheKey('elevenlabs:vX', 'eleven_multilingual_v2', 'World.')
+    files.set(`${CACHE}/n-01-${hash01}.mp3`, new Uint8Array([0xff, 0xfb]))
+    files.set(`${CACHE}/n-02-${hash02}.mp3`, new Uint8Array([0xff, 0xfb]))
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const synthesize = createCacheOnlySynth({ cacheDir: CACHE, fs: fs as any })
+
+    await publishEpisode({
+      draftDir: '/drafts/almost-blue',
+      contentDir: '/content',
+      status: 'released',
+      order: 1,
+      today: () => '2026-07-10',
+      synthesize,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      fs: fs as any,
+      baseUrl: 'https://cdn.example.com/content',
+    })
+
+    expect(files.has('/content/episodes/almost-blue/audio/n-01.mp3')).toBe(true)
+    expect(files.has('/content/episodes/almost-blue/audio/n-02.mp3')).toBe(true)
+    const manifestOut = JSON.parse(files.get('/content/episodes/almost-blue/manifest.json') as string)
+    expect(manifestOut.chapters[0].segments[0].audio).toBe(
+      'https://cdn.example.com/content/episodes/almost-blue/audio/n-01.mp3',
+    )
+    const catalog = JSON.parse(files.get('/content/catalog.json') as string)
+    expect(catalog.episodes[0]).toMatchObject({
+      id: 'almost-blue', status: 'released', releaseDate: '2026-07-10', order: 1,
+    })
+  })
+
+  it('createCacheOnlySynth throws with actionable guidance when audio is missing', async () => {
+    const { fs, files } = makeFakeFs()
+    files.set('/drafts/almost-blue/manifest.json', JSON.stringify(DRAFT))
+    files.set('/drafts/almost-blue/cover.png', new Uint8Array([1]))
+    files.set('/drafts/almost-blue/meta.json', JSON.stringify({
+      schemaVersion: 1, artistName: 'A', albumName: 'B', blurb: 'C',
+      palette: { bg: '#e8e4d6', ink: '#0e2a44', accent: '#2f6ea1' },
+      releaseDate: '2026-06-10', expectedRelease: null,
+    }))
+    files.set('/content/catalog.json', JSON.stringify({
+      schemaVersion: 1, updatedAt: '2026-07-09T00:00:00Z', episodes: [],
+    }))
+    // Cache is empty — no MP3 for either narration segment.
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const synthesize = createCacheOnlySynth({ cacheDir: '/empty-cache', fs: fs as any })
+
+    await expect(
+      publishEpisode({
+        draftDir: '/drafts/almost-blue',
+        contentDir: '/content',
+        status: 'released',
+        today: () => '2026-07-10',
+        synthesize,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        fs: fs as any,
+        baseUrl: 'https://cdn.example.com/content',
+      }),
+    ).rejects.toThrow(/Run Prerender in the app first/)
   })
 })
