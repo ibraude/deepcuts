@@ -95,6 +95,22 @@ describe('AppleScriptSpotify', () => {
     expect(script).toContain('play track "spotify:track:abcDEF1234567890123456"')
   })
 
+  it('does NOT pause before play — pause causes Spotify to play the next context track', async () => {
+    // Regression: with a `pause` inside the same tell-block, `play track "URI"`
+    // silently plays the NEXT track in Spotify's current context (e.g. the next
+    // album track) instead of the requested URI. Reproduced live 2026-07-10;
+    // removing the pause fixes it.
+    const calls: string[][] = []
+    const p = buildProvider(async (args) => {
+      calls.push(args)
+      return { stdout: '', stderr: '', code: 0 }
+    })
+    await p.play('spotify:track:abcDEF1234567890123456')
+    const script = calls[0]![1]!
+    // Match `pause` as its own statement — not as part of "unpause" or a comment.
+    expect(script).not.toMatch(/(^|\n)\s*pause\s*(\n|$)/)
+  })
+
   it('clamps volume to 0..100', async () => {
     const calls: string[][] = []
     const p = buildProvider(async (args) => {
