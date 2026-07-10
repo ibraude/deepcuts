@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "artistName": "Test Artist",
+  "albumName": "Test Album",
+  "blurb": "A test blurb.",
+  "palette": { "bg": "#0a0a0a", "ink": "#f5f5f5", "accent": "#2f6ea1" },
+  "releaseDate": "2026-06-10",
+  "expectedRelease": null
+}

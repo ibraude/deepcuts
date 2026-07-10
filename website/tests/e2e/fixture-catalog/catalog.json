@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-10T00:00:00Z",
+  "episodes": [
+    { "id": "a", "status": "released", "releaseDate": "2026-06-10", "order": 1 },
+    { "id": "b", "status": "upcoming", "expectedRelease": "Summer 2026", "order": 2 }
+  ]
+}
