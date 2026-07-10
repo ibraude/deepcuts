@@ -13,6 +13,11 @@ export default defineConfig({
   resolve: {
     alias: {
       '@shared': resolve(__dirname, '../src/shared'),
+      // The @shared files live outside website/ and their imports (e.g. `zod`)
+      // must resolve from website/node_modules — otherwise builds fail on
+      // hosts (Vercel monorepo Root Directory = website) that don't install
+      // the main repo's node_modules.
+      zod: resolve(__dirname, 'node_modules/zod'),
     },
   },
   test: {

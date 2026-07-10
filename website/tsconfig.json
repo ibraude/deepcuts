@@ -15,8 +15,10 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "types": ["vite/client", "vitest/globals"],
+    "baseUrl": ".",
     "paths": {
-      "@shared/*": ["../src/shared/*"]
+      "@shared/*": ["../src/shared/*"],
+      "zod": ["./node_modules/zod"]
     }
   },
   "include": ["src", "tests"],
