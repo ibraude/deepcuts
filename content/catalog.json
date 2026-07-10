@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-09T00:00:00Z",
+  "episodes": [
+    { "id": "almost-blue", "status": "upcoming", "expectedRelease": "Summer 2026", "order": 1 },
+    { "id": "waiting-around-to-die", "status": "upcoming", "expectedRelease": "Summer 2026", "order": 2 },
+    { "id": "bill-withers-carnegie", "status": "upcoming", "expectedRelease": "Summer 2026", "order": 3 },
+    { "id": "solid-air", "status": "upcoming", "expectedRelease": "Summer 2026", "order": 4 },
+    { "id": "blonde-on-blonde", "status": "upcoming", "expectedRelease": "Autumn 2026", "order": 5 },
+    { "id": "heart-of-saturday-night", "status": "upcoming", "expectedRelease": "Autumn 2026", "order": 6 },
+    { "id": "dusk", "status": "upcoming", "expectedRelease": "Autumn 2026", "order": 7 },
+    { "id": "five-leaves-left", "status": "upcoming", "expectedRelease": "Winter 2026", "order": 8 },
+    { "id": "small-change", "status": "upcoming", "expectedRelease": "Winter 2026", "order": 9 },
+    { "id": "strangeways", "status": "upcoming", "expectedRelease": "Winter 2026", "order": 10 },
+    { "id": "prince-of-darkness", "status": "upcoming", "expectedRelease": "2027-Q1", "order": 11 },
+    { "id": "there-goes-rhymin-simon", "status": "upcoming", "expectedRelease": "2027-Q1", "order": 12 },
+    { "id": "mad-dogs-and-englishmen", "status": "upcoming", "expectedRelease": "2027-Q1", "order": 13 },
+    { "id": "rumours", "status": "upcoming", "expectedRelease": "2027-Q2", "order": 14 },
+    { "id": "music-from-big-pink", "status": "upcoming", "expectedRelease": "2027-Q2", "order": 15 },
+    { "id": "blue", "status": "upcoming", "expectedRelease": "2027-Q2", "order": 16 },
+    { "id": "tapestry", "status": "upcoming", "expectedRelease": "2027-Q3", "order": 17 },
+    { "id": "i-never-loved-a-man", "status": "upcoming", "expectedRelease": "2027-Q3", "order": 18 },
+    { "id": "nebraska", "status": "upcoming", "expectedRelease": "2027-Q3", "order": 19 },
+    { "id": "blood-on-the-tracks", "status": "upcoming", "expectedRelease": "2027-Q4", "order": 20 }
+  ]
+}

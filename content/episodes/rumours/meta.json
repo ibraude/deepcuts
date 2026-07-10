@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "artistName": "Fleetwood Mac",
+  "albumName": "Rumours",
+  "blurb": "Five people, five heartbreaks, one impossible record. The most beautiful bad breakup in pop.",
+  "palette": {
+    "bg": "#ebe1cc",
+    "ink": "#251a12",
+    "accent": "#a67435"
+  },
+  "releaseDate": null,
+  "expectedRelease": "2027-Q2"
+}

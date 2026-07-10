@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "artistName": "Chet Baker",
+  "albumName": "Almost Blue",
+  "blurb": "A portrait of Chet Baker. The music. The silence. The beauty. And the blues that never left.",
+  "palette": {
+    "bg": "#e8e4d6",
+    "ink": "#0e2a44",
+    "accent": "#2f6ea1"
+  },
+  "releaseDate": null,
+  "expectedRelease": "Summer 2026"
+}

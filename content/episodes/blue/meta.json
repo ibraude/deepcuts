@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "artistName": "Joni Mitchell",
+  "albumName": "Blue",
+  "blurb": "The record that gave the confessional song-writer form its blueprint. Ten small windows onto the biggest interior in music.",
+  "palette": {
+    "bg": "#dee5e9",
+    "ink": "#182f45",
+    "accent": "#4a86ad"
+  },
+  "releaseDate": null,
+  "expectedRelease": "2027-Q2"
+}

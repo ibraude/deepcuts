@@ -13,6 +13,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "probe-spotify": "tsx scripts/probe-spotify.ts",
+    "publish-episode": "tsx scripts/publish-episode.ts",
     "lint": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit"
   },
   "dependencies": {

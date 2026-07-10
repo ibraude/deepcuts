@@ -42,6 +42,7 @@ const voiceoverSchema = z.object({
   // The next voiceover will pick up the conversation at the already-ducked level.
   // Set on every voiceover in a chain EXCEPT the last one.
   holdDuck: z.boolean().default(false),
+  audio: z.string().url().or(z.string().startsWith('file:')).or(z.string().startsWith('/')).optional(),
 })
 
 const songSegmentSchema = z.object({

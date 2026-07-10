@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "artistName": "Nick Cave",
+  "albumName": "The Prince of Darkness",
+  "blurb": "The murder ballads, the love songs, the god-haunted noise. Cave from the Birthday Party to the pulpit.",
+  "palette": {
+    "bg": "#d9d1c0",
+    "ink": "#0e0e10",
+    "accent": "#7a1e1e"
+  },
+  "releaseDate": null,
+  "expectedRelease": "2027-Q1"
+}

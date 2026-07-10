@@ -33,7 +33,7 @@ describe('drafts module', () => {
   it('creates a draft and returns a 16-char id', async () => {
     const root = await mkTmp()
     const episodesRoot = await mkTmp()
-    const m = createDrafts({ draftsRoot: () => root, episodesRoot: () => episodesRoot })
+    const m = createDrafts({ draftsRoot: () => root })
     const id = await m.createDraft(freshManifest())
     expect(id).toMatch(/^[a-f0-9]{16}$/)
     const onDisk = await fs.readFile(join(root, id, 'manifest.json'), 'utf-8')
@@ -42,7 +42,7 @@ describe('drafts module', () => {
 
   it('lists drafts with summary data', async () => {
     const root = await mkTmp()
-    const m = createDrafts({ draftsRoot: () => root, episodesRoot: () => '' })
+    const m = createDrafts({ draftsRoot: () => root })
     await m.createDraft(freshManifest({ title: 'First', subject: 'sub' }))
     await m.createDraft(freshManifest({ title: 'Second' }))
     const list = await m.listDrafts()
@@ -55,7 +55,7 @@ describe('drafts module', () => {
 
   it('loads a saved draft', async () => {
     const root = await mkTmp()
-    const m = createDrafts({ draftsRoot: () => root, episodesRoot: () => '' })
+    const m = createDrafts({ draftsRoot: () => root })
     const id = await m.createDraft(freshManifest({ title: 'Loadable' }))
     const loaded = await m.loadDraft(id)
     expect(loaded.title).toBe('Loadable')
@@ -63,7 +63,7 @@ describe('drafts module', () => {
 
   it('saves overwriting an existing draft', async () => {
     const root = await mkTmp()
-    const m = createDrafts({ draftsRoot: () => root, episodesRoot: () => '' })
+    const m = createDrafts({ draftsRoot: () => root })
     const id = await m.createDraft(freshManifest({ title: 'Old' }))
     await m.saveDraft(id, freshManifest({ title: 'New' }))
     const loaded = await m.loadDraft(id)
@@ -72,7 +72,7 @@ describe('drafts module', () => {
 
   it('deletes a draft', async () => {
     const root = await mkTmp()
-    const m = createDrafts({ draftsRoot: () => root, episodesRoot: () => '' })
+    const m = createDrafts({ draftsRoot: () => root })
     const id = await m.createDraft(freshManifest())
     await m.deleteDraft(id)
     await expect(m.loadDraft(id)).rejects.toThrow()
@@ -80,36 +80,16 @@ describe('drafts module', () => {
     expect(list).toHaveLength(0)
   })
 
-  it('duplicates from an episode, copies manifest, returns new draftId', async () => {
-    const root = await mkTmp()
-    const eps = await mkTmp()
-    const episode = freshManifest({ title: 'Episode', subject: 'sub' })
-    await fs.writeFile(join(eps, 'ep.json'), JSON.stringify(episode))
-    const m = createDrafts({ draftsRoot: () => root, episodesRoot: () => eps })
-    const id = await m.duplicateFromEpisode('ep.json')
-    expect(id).toMatch(/^[a-f0-9]{16}$/)
-    const loaded = await m.loadDraft(id)
-    expect(loaded.title).toBe('Episode')
-  })
-
   it('rejects unsafe draftIds', async () => {
     const root = await mkTmp()
-    const m = createDrafts({ draftsRoot: () => root, episodesRoot: () => '' })
+    const m = createDrafts({ draftsRoot: () => root })
     await expect(m.loadDraft('../etc/passwd')).rejects.toThrow()
     await expect(m.deleteDraft('../etc/passwd')).rejects.toThrow()
   })
 
-  it('rejects unsafe episode paths in duplicate', async () => {
-    const root = await mkTmp()
-    const eps = await mkTmp()
-    const m = createDrafts({ draftsRoot: () => root, episodesRoot: () => eps })
-    await expect(m.duplicateFromEpisode('../etc/passwd')).rejects.toThrow()
-    await expect(m.duplicateFromEpisode('/abs/path')).rejects.toThrow()
-  })
-
   it('reports hasCover=false when no cover file, true when one exists', async () => {
     const root = await mkTmp()
-    const m = createDrafts({ draftsRoot: () => root, episodesRoot: () => '' })
+    const m = createDrafts({ draftsRoot: () => root })
     const id = await m.createDraft(freshManifest())
     let list = await m.listDrafts()
     expect(list[0]!.hasCover).toBe(false)
@@ -120,7 +100,7 @@ describe('drafts module', () => {
 
   it('returns a file:// URL for the cover when present', async () => {
     const root = await mkTmp()
-    const m = createDrafts({ draftsRoot: () => root, episodesRoot: () => '' })
+    const m = createDrafts({ draftsRoot: () => root })
     const id = await m.createDraft(freshManifest())
     expect(await m.draftCoverUrl(id)).toBeNull()
     await fs.writeFile(join(root, id, 'cover.png'), 'fake')

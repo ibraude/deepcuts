@@ -39,26 +39,6 @@ const api = {
     set: (key: string, value: string) => invoke<void>(IpcChannels.KeychainSet, key, value),
     delete: (key: string) => invoke<void>(IpcChannels.KeychainDelete, key),
   },
-  catalog: {
-    loadLocal: () =>
-      invoke<{
-        episodes: Array<{
-          id: string
-          title: string
-          subject: string
-          coverImage: string
-          estimatedMinutes: number
-          manifestPath: string
-          prerendered: boolean
-        }>
-      }>(IpcChannels.CatalogLoadLocal),
-  },
-  manifest: {
-    load: (manifestPath: string) => invoke<unknown>(IpcChannels.ManifestLoad, manifestPath),
-  },
-  assets: {
-    coverUrl: (coverPath: string) => invoke<string>(IpcChannels.CoverUrl, coverPath),
-  },
   shell: {
     openExternal: (url: string) => invoke<void>(IpcChannels.OpenExternal, url),
   },
@@ -108,6 +88,25 @@ const api = {
     coverUrl: (libraryId: string) => invoke<string | null>(IpcChannels.LibraryCoverUrl, libraryId),
     isPublished: (draftId: string) => invoke<boolean>(IpcChannels.LibraryIsPublished, draftId),
   },
+  remoteCatalog: {
+    list: () => invoke<import('../shared/catalog').RemoteCatalogIndex>(IpcChannels.RemoteCatalogList),
+    refresh: () => invoke<import('../shared/catalog').RemoteCatalogIndex>(IpcChannels.RemoteCatalogRefresh),
+    loadEpisode: (id: string) =>
+      invoke<import('../shared/manifest').EpisodeManifest>(IpcChannels.RemoteCatalogLoadEpisode, id),
+    loadMeta: (id: string) =>
+      invoke<import('../shared/meta').EpisodeMeta>(IpcChannels.RemoteCatalogLoadMeta, id),
+    coverUrl: (id: string) => invoke<string>(IpcChannels.RemoteCatalogCoverUrl, id),
+  },
+  downloaded: {
+    isDownloaded: (id: string) => invoke<boolean>(IpcChannels.DownloadedIsDownloaded, id),
+    start: (id: string) => invoke<void>(IpcChannels.DownloadedStart, id),
+    remove: (id: string) => invoke<void>(IpcChannels.DownloadedRemove, id),
+    onProgress: (cb: (p: { id: string; total: number; done: number; currentUrl: string }) => void) => {
+      const listener = (_e: Electron.IpcRendererEvent, payload: { id: string; total: number; done: number; currentUrl: string }) => cb(payload)
+      ipcRenderer.on(IpcChannels.DownloadedProgress, listener)
+      return () => { ipcRenderer.removeListener(IpcChannels.DownloadedProgress, listener) }
+    },
+  },
   drafts: {
     list: () =>
       invoke<
@@ -126,8 +125,6 @@ const api = {
       invoke<void>(IpcChannels.DraftsSave, draftId, manifest),
     create: (initial: unknown) => invoke<string>(IpcChannels.DraftsCreate, initial),
     delete: (draftId: string) => invoke<void>(IpcChannels.DraftsDelete, draftId),
-    duplicateFromEpisode: (episodePath: string) =>
-      invoke<string>(IpcChannels.DraftsDuplicate, episodePath),
     coverUrl: (draftId: string) => invoke<string | null>(IpcChannels.DraftsCoverUrl, draftId),
     setCover: (draftId: string, sourcePath: string) =>
       invoke<void>(IpcChannels.DraftsSetCover, draftId, sourcePath),

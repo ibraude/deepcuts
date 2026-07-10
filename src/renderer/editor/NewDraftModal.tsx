@@ -3,13 +3,7 @@ import { useEditorStore } from './editorStore'
 import { GenerationProgress } from './GenerationProgress'
 import { loadGenerationConfig } from '../settings/generationConfig'
 
-interface BundledEpisodeOption {
-  manifestPath: string
-  title: string
-  subject: string
-}
-
-type Tab = 'empty' | 'duplicate' | 'generate'
+type Tab = 'empty' | 'generate'
 
 interface ProgressState {
   step: 'idle' | 'researching' | 'resolving' | 'finalizing' | 'done' | 'error'
@@ -22,38 +16,19 @@ interface ProgressState {
 
 export function NewDraftModal({ onClose }: { onClose: () => void }) {
   const createEmpty = useEditorStore((s) => s.createEmpty)
-  const duplicate = useEditorStore((s) => s.duplicate)
   const openDraft = useEditorStore((s) => s.openDraft)
   const refreshList = useEditorStore((s) => s.refreshList)
 
   const [tab, setTab] = useState<Tab>('empty')
   const [title, setTitle] = useState('')
-  const [episodes, setEpisodes] = useState<BundledEpisodeOption[] | null>(null)
-  const [selectedEp, setSelectedEp] = useState<string>('')
   const [working, setWorking] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
-  // Generate tab state
   const [subject, setSubject] = useState('')
   const [hints, setHints] = useState('')
   const [lengthMinutes, setLengthMinutes] = useState(12)
   const [useSearch, setUseSearch] = useState(true)
   const [progress, setProgress] = useState<ProgressState>({ step: 'idle' })
-
-  useEffect(() => {
-    window.deepcuts.catalog
-      .loadLocal()
-      .then((c) =>
-        setEpisodes(
-          c.episodes.map((e) => ({
-            manifestPath: e.manifestPath,
-            title: e.title,
-            subject: e.subject,
-          })),
-        ),
-      )
-      .catch((e: Error) => setError(e.message))
-  }, [])
 
   useEffect(() => {
     const off = window.deepcuts.generation.onProgress((event: unknown) => {
@@ -73,21 +48,6 @@ export function NewDraftModal({ onClose }: { onClose: () => void }) {
       onClose()
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Create failed')
-    } finally {
-      setWorking(false)
-    }
-  }
-
-  async function submitDuplicate() {
-    if (!selectedEp) return
-    setWorking(true)
-    setError(null)
-    try {
-      const id = await duplicate(selectedEp)
-      await openDraft(id)
-      onClose()
-    } catch (e) {
-      setError(e instanceof Error ? e.message : 'Duplicate failed')
     } finally {
       setWorking(false)
     }
@@ -151,7 +111,7 @@ export function NewDraftModal({ onClose }: { onClose: () => void }) {
         </div>
 
         <div className="flex gap-2 text-xs tracking-[0.2em] uppercase">
-          {(['empty', 'duplicate', 'generate'] as const).map((t) => (
+          {(['empty', 'generate'] as const).map((t) => (
             <button
               key={t}
               onClick={() => setTab(t)}
@@ -191,43 +151,6 @@ export function NewDraftModal({ onClose }: { onClose: () => void }) {
                 className="text-sm px-3 py-1.5 rounded-md bg-[var(--color-accent)]/20 text-[var(--color-accent)] hover:bg-[var(--color-accent)]/30 disabled:opacity-50"
               >
                 Create
-              </button>
-            </div>
-          </div>
-        )}
-
-        {tab === 'duplicate' && (
-          <div className="space-y-2">
-            <label className="text-sm">Source episode</label>
-            {episodes === null ? (
-              <div className="text-xs text-[var(--color-muted)]">Loading episodes…</div>
-            ) : episodes.length === 0 ? (
-              <div className="text-xs text-[var(--color-muted)]">No bundled episodes to duplicate.</div>
-            ) : (
-              <select
-                value={selectedEp}
-                onChange={(e) => setSelectedEp(e.target.value)}
-                className="w-full bg-[var(--color-background)] border border-[var(--color-hairline)] rounded-md px-2 py-1.5 text-sm focus:outline-none focus:border-[var(--color-accent)]"
-              >
-                <option value="">Select an episode…</option>
-                {episodes.map((e) => (
-                  <option key={e.manifestPath} value={e.manifestPath}>
-                    {e.title} — {e.subject}
-                  </option>
-                ))}
-              </select>
-            )}
-            <div className="text-xs text-[var(--color-muted)]">Creates an editable copy.</div>
-            <div className="flex justify-end pt-2 gap-2">
-              <button onClick={onClose} className="text-sm px-3 py-1.5 rounded-md text-[var(--color-muted)] hover:bg-white/5">
-                Cancel
-              </button>
-              <button
-                disabled={!selectedEp || working}
-                onClick={submitDuplicate}
-                className="text-sm px-3 py-1.5 rounded-md bg-[var(--color-accent)]/20 text-[var(--color-accent)] hover:bg-[var(--color-accent)]/30 disabled:opacity-50"
-              >
-                Duplicate
               </button>
             </div>
           </div>

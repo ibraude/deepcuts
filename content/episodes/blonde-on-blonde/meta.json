@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "artistName": "Bob Dylan",
+  "albumName": "Blonde on Blonde",
+  "blurb": "That thin, wild mercury sound. Nashville, 1966. The first double album in rock and one of its most enduring puzzles.",
+  "palette": {
+    "bg": "#e8ded1",
+    "ink": "#2c1e12",
+    "accent": "#8a6134"
+  },
+  "releaseDate": null,
+  "expectedRelease": "Autumn 2026"
+}

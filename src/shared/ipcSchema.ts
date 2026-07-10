@@ -16,9 +16,6 @@ export const IpcChannels = {
   KeychainSet: 'keychain:set',
   KeychainDelete: 'keychain:delete',
 
-  CatalogLoadLocal: 'catalog:loadLocal',
-  ManifestLoad: 'manifest:load',
-  CoverUrl: 'assets:coverUrl',
   OpenExternal: 'shell:openExternal',
 
   DraftsList: 'drafts:list',
@@ -26,7 +23,6 @@ export const IpcChannels = {
   DraftsSave: 'drafts:save',
   DraftsCreate: 'drafts:create',
   DraftsDelete: 'drafts:delete',
-  DraftsDuplicate: 'drafts:duplicateFromEpisode',
   DraftsCoverUrl: 'drafts:coverUrl',
   DraftsSetCover: 'drafts:setCover',
 
@@ -50,6 +46,18 @@ export const IpcChannels = {
   LibraryLoadManifest: 'library:loadManifest',
   LibraryCoverUrl: 'library:coverUrl',
   LibraryIsPublished: 'library:isPublished',
+
+  RemoteCatalogList: 'remoteCatalog:list',
+  RemoteCatalogRefresh: 'remoteCatalog:refresh',
+  RemoteCatalogLoadEpisode: 'remoteCatalog:loadEpisode',
+  RemoteCatalogLoadMeta: 'remoteCatalog:loadMeta',
+  RemoteCatalogCoverUrl: 'remoteCatalog:coverUrl',
+
+  DownloadedList: 'downloaded:list',
+  DownloadedStart: 'downloaded:start',
+  DownloadedRemove: 'downloaded:remove',
+  DownloadedIsDownloaded: 'downloaded:isDownloaded',
+  DownloadedProgress: 'downloaded:progress',
 } as const
 
 export type IpcChannel = (typeof IpcChannels)[keyof typeof IpcChannels]
