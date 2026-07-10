@@ -1,8 +1,28 @@
+# Dependencies and build output
 node_modules
 out
 dist
 out-tsbuild
-.DS_Store
-*.log
+*.tsbuildinfo
+
+# Local env / secrets
 .env
 .env.*
+*.pem
+*.key
+credentials*.json
+service-account*.json
+
+# Editor / tool local state
+.vscode
+.idea
+.claude/settings.local.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs and coverage
+*.log
+coverage
+.nyc_output
