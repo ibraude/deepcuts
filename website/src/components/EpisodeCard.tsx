@@ -1,19 +1,29 @@
 import type { EpisodeView } from '../catalog/fetchCatalog'
+import type { PlayerState } from '../hooks/usePlayer'
 import { usePointerTilt } from '../hooks/usePointerTilt'
+import { InlinePlayer } from './InlinePlayer'
 
 export function EpisodeCard({
   entry,
   onPlay,
-  isActive,
+  state,
+  onPause,
+  onResume,
+  onSeek,
 }: {
   entry: EpisodeView
   onPlay: (entry: EpisodeView) => void
-  isActive: boolean
+  state: PlayerState
+  onPause: () => void
+  onResume: () => void
+  onSeek: (fraction: number) => void
 }) {
   const { ref, style } = usePointerTilt<HTMLButtonElement>()
+  const isActive = state.activeId === entry.id
+  const isPlaying = isActive && state.status === 'playing'
 
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3" id={entry.id}>
       <button
         ref={ref}
         style={{
@@ -24,7 +34,7 @@ export function EpisodeCard({
           transition: (style.transition ?? '') + ', box-shadow 300ms var(--easing-expo)',
         }}
         onClick={() => onPlay(entry)}
-        aria-label={`Play preview: ${entry.meta.artistName} — ${entry.meta.albumName}`}
+        aria-label={`${isPlaying ? 'Pause' : 'Play'} preview: ${entry.meta.artistName} — ${entry.meta.albumName}`}
         className="block w-full aspect-square overflow-hidden"
       >
         <img
@@ -34,6 +44,13 @@ export function EpisodeCard({
           draggable={false}
         />
       </button>
+      <InlinePlayer
+        entry={entry}
+        state={state}
+        onPause={onPause}
+        onResume={onResume}
+        onSeek={onSeek}
+      />
       <div>
         <div className="text-[17px] font-medium" style={{ color: 'var(--ink)' }}>
           {entry.meta.artistName}
@@ -41,10 +58,7 @@ export function EpisodeCard({
         <div className="text-[13px] mt-0.5" style={{ color: 'var(--muted)' }}>
           {entry.meta.albumName}
         </div>
-        <p
-          className="text-[12px] mt-2 leading-relaxed line-clamp-2"
-          style={{ color: 'var(--muted)' }}
-        >
+        <p className="text-[12px] mt-2 leading-relaxed" style={{ color: 'var(--muted)' }}>
           {entry.meta.blurb}
         </p>
       </div>

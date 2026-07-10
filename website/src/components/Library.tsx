@@ -1,15 +1,22 @@
 import type { EpisodeView } from '../catalog/fetchCatalog'
+import type { PlayerState } from '../hooks/usePlayer'
 import { EpisodeCard } from './EpisodeCard'
 import { RevealOnScroll } from './RevealOnScroll'
 
 export function Library({
   released,
-  activeId,
+  state,
   onPlay,
+  onPause,
+  onResume,
+  onSeek,
 }: {
   released: EpisodeView[]
-  activeId: string | null
+  state: PlayerState
   onPlay: (entry: EpisodeView) => void
+  onPause: () => void
+  onResume: () => void
+  onSeek: (fraction: number) => void
 }) {
   if (released.length === 0) {
     return (
@@ -37,7 +44,14 @@ export function Library({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
           {released.map((entry, i) => (
             <RevealOnScroll key={entry.id} delay={i * 0.06}>
-              <EpisodeCard entry={entry} onPlay={onPlay} isActive={activeId === entry.id} />
+              <EpisodeCard
+                entry={entry}
+                state={state}
+                onPlay={onPlay}
+                onPause={onPause}
+                onResume={onResume}
+                onSeek={onSeek}
+              />
             </RevealOnScroll>
           ))}
         </div>
