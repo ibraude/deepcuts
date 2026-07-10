@@ -1,4 +1,4 @@
-import { describe, it, expect, vi } from 'vitest'
+import { describe, it, expect } from 'vitest'
 import { fetchCatalog } from './fetchCatalog'
 import type { EpisodeMeta, RemoteCatalogIndex } from './types'
 
@@ -17,15 +17,15 @@ function metaFixture(over: Partial<EpisodeMeta> = {}): EpisodeMeta {
   }
 }
 
-function makeFetcher(responses: Record<string, unknown>) {
-  return vi.fn(async (url: string) => {
+function makeFetcher(responses: Record<string, unknown>): typeof fetch {
+  return (async (url: string) => {
     if (!(url in responses)) throw new Error(`No fixture for ${url}`)
     return {
       ok: true,
       status: 200,
       json: async () => responses[url],
     } as unknown as Response
-  })
+  }) as unknown as typeof fetch
 }
 
 describe('fetchCatalog', () => {
