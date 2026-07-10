@@ -1,0 +1,700 @@
+{
+  "schemaVersion": 1,
+  "id": "waiting-around-to-die",
+  "title": "Waitin' Around to Die",
+  "subject": "The Life and Music of Townes Van Zandt",
+  "coverImage": "cover.png",
+  "estimatedMinutes": 120,
+  "hosts": [
+    {
+      "id": "walker",
+      "name": "Walker",
+      "persona": "A grounded, empathetic storyteller who sets the scene with vivid, novelistic detail. He focuses on the biography, the landscapes, and the lingering ghosts of Texas.",
+      "voiceRef": "elevenlabs:aqX2Uja7BjNmiIDg7oe9"
+    },
+    {
+      "id": "sarah",
+      "name": "Sarah",
+      "persona": "A sharp, analytical voice who cuts through the 'tortured genius' mythology to examine the mechanics of the songwriting and the human collateral of his lifestyle.",
+      "voiceRef": "elevenlabs:yplPYwGTUmxFuOqyKNlq"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "The Blacksmith's Tears",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "ch1-nar1",
+          "hostId": "walker",
+          "text": "It is 1975, and we are standing outside a dusty trailer on the fringes of Austin, Texas. A documentary crew has arrived to film the strange new community of outlaw country songwriters gathering far from the polished studios of Nashville. But Townes Van Zandt has absolutely no interest in sitting for a conventional interview. Instead, he turns the camera on his neighbor, wanders aimlessly around the property, and playfully avoids the questions. He cracks a series of terrible jokes while casually carrying a Coca-Cola, a bottle of whiskey, and a rifle all at the same time. Eventually, the eccentric performance settles down, and Townes sits in a plain, sunlit kitchen holding a borrowed guitar. Across from him is his neighbor Seymour Washington, an older man known locally as the Walking Blacksmith. Townes introduces the tune as the very first song he ever wrote, and as he begins to sing, something extraordinary happens. The camera drifts to Seymour, whose eyes have completely filled with tears.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch1-nar1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "ch1-nar2",
+          "hostId": "sarah",
+          "text": "That kitchen scene from the film Heartworn Highways contains the entire Townes Van Zandt story in a single, mesmerizing frame. You have a highly privileged white songwriter, the heir to a prominent Texas oil family, sitting in the humble home of a Black working man. The song he is playing is a devastating fiction about abuse, escape, crime, and the numbing embrace of codeine. Yet Townes performs it with an extreme, almost chilling emotional control, appearing faintly amused by the tragedy of his own creation. It is the listener, Seymour, who reacts openly to the devastation in the room. The performance forces us to ask a difficult question from the very beginning. When Townes sang about fictional, doomed drifters, was he just telling a story, or was he actively rehearsing the person he intended to become?",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch1-nar2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch1-song1",
+          "track": {
+            "title": "Waitin' Around to Die",
+            "artist": "Townes Van Zandt",
+            "spotifyUri": "spotify:track:6ZjdoTD95G5P3rMo0AgnZc"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 200,
+          "why": "Establishes the core question of whether he was describing a drifter or rehearsing his own future.",
+          "voiceovers": [
+            {
+              "id": "ch1-vo1",
+              "hostId": "walker",
+              "text": "Right after the last chord fades, Seymour gently rebukes Townes for his drinking, telling him that seeing a barrel of whiskey doesn't mean he has to drink the whole barrel. It's funny, but it proves everyone around him already saw the danger.",
+              "atSeconds": 160,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch1-vo1.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Texas Prince and the Fall",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "ch2-nar1",
+          "hostId": "walker",
+          "text": "Townes was born John Townes Van Zandt in Fort Worth in 1944. His bloodline connected him to some of the most prominent, aristocratic families in Texas history. Van Zandt County in East Texas literally carried one side of his family's name, while Townes Hall at the University of Texas in Austin reflected the other. His father worked high up in the lucrative oil business, constantly moving the family between Texas, Colorado, and beyond. Given his pedigree, the family firmly expected Townes to become a prominent lawyer, a politician, or a wealthy businessman. But while Colorado became his mountain refuge, Texas remained the true landscape of his imagination. He became obsessed with the endless roads, the dry country, the booming oil towns, the dive bars, the freight lines, and the kind of people who leave home because staying simply feels impossible.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch2-nar1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "ch2-nar2",
+          "hostId": "sarah",
+          "text": "The critical childhood influence for Townes wasn't just old-time country music. He worshipped a very specific, deeply personal trinity of artists. From Hank Williams, he learned the power of compressed, unapologetic emotional devastation. From Bob Dylan, he gained the permission to treat a popular folk song as serious, weight-bearing literature, famously saying his best lyrics worked because every single word was in its exact, correct place. But the third pillar was Lightnin' Hopkins, the legendary Texas bluesman. Hopkins gave Townes his rhythmic foundation, teaching him the blues storyteller's unique mixture of dark comedy and sudden menace. The image of Townes as an instinctive, half-conscious primitive is totally false. He built his sound on a rigorous, disciplined study of the blues.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch2-nar2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch2-song1",
+          "track": {
+            "title": "Trouble in Mind",
+            "artist": "Lightnin' Hopkins",
+            "spotifyUri": "spotify:track:2QkmNNiHM9e3R8oT2yGeVo"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 180,
+          "why": "Demonstrates the foundational Texas blues guitar technique Townes would adopt.",
+          "voiceovers": [
+            {
+              "id": "ch2-vo1",
+              "hostId": "sarah",
+              "text": "Listen to that alternating thumb bass and the complete rhythmic independence of the fingers. That is the exact technique Townes studied obsessively and brought into the folk world.",
+              "atSeconds": 15,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch2-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "ch2-nar3",
+          "hostId": "walker",
+          "text": "While attending the University of Colorado, Townes was involved in an incident that became the dark, foundational myth of his life. During a party, he reportedly went out onto a fourth-floor balcony, sat on the railing, and slowly leaned backwards until he fell into the void. Miraculously, he survived the four-story drop with remarkably little physical injury. When asked why he did it, accounts attributed to Townes say he simply wanted to know what falling felt like. His horrified family, unable to comprehend this terrifying behavior, immediately pulled him out of school and arranged for a rigorous psychiatric evaluation. The golden boy of a Texas dynasty had just thrown himself off a building for an experiment in gravity, and the consequences would alter the architecture of his mind forever.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch2-nar3.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "ch2-nar4",
+          "hostId": "sarah",
+          "text": "Townes was hospitalized in Galveston and diagnosed, in the crude clinical language of the time, with a manic-depressive illness and schizophrenic reactions. Over several agonizing months, he was subjected to brutal insulin-coma therapy and severe electroconvulsive shock treatments. Biographers and family members maintain that these procedures effectively wiped out his long-term memory; according to one famous story, he had to be reintroduced to his own mother afterward. We have to be careful not to use this trauma as a supernatural explanation for his genius, as if electroshock magically created his talent. It didn't. But it did leave a young man obsessed with lineage permanently disconnected from his own past. For the rest of his life, he would write characters who have lost their homes, their names, their families, and any safe place to return to.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch2-nar4.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch2-song2",
+          "track": {
+            "title": "Nothin'",
+            "artist": "Townes Van Zandt",
+            "spotifyUri": "spotify:track:2QkwjhbVeaufp4XUXT2KGS"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 210,
+          "why": "Represents the profound disconnection and metaphysical void he carried after his psychiatric treatments.",
+          "voiceovers": [
+            {
+              "id": "ch2-vo2",
+              "hostId": "sarah",
+              "text": "The power of this song comes entirely from controlled repetition and the chilling absence of ornament. It sounds almost metaphysical, but it’s really the sound of a wiped memory.",
+              "atSeconds": 60,
+              "duckTo": 35,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch2-vo2.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Closet and the Studio",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "ch3-nar1",
+          "hostId": "walker",
+          "text": "After his grueling hospitalization, Townes actually attempted to build a conventional life. In 1965, he married Fran Peterson, moved into a modest Houston apartment partially supported by his wealthy family, and enrolled as a pre-law student. He was trying to be the respectable heir his father always wanted. But the pull of the music was relentless. The story goes that one day, overwhelmed by the domestic pressure, Townes locked himself inside a small closet in their apartment with his guitar. When he finally emerged, he had written 'Waitin' Around to Die.' It was a startling, grim announcement from a newly married young man who was supposed to be studying torts and contracts.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch3-nar1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "ch3-nar2",
+          "hostId": "sarah",
+          "text": "It is crucial to understand that the narrator of “Waitin’ Around to Die” is not literally Townes. The song is meticulously crafted fiction. Yet he made a revealing choice for his first original character: a man who expects betrayal from his family, loses his money to a grifter, goes to prison, and ultimately finds his most reliable companion in codeine.\n\nTownes soon began playing Houston’s Jester Lounge for ten dollars a night, eventually abandoning covers on his father’s advice. But when you hear the early studio recordings, something is startlingly clear: the wreckage we now associate with Townes was not always present. His voice was once clean, controlled and entirely intact.\n\nSo let’s hear the song again—not in its original studio setting, but in the version that would come to define it: Townes, alone with a guitar, on Live at the Old Quarter, Houston, Texas. It is one of the great live documents of American songwriting: intimate, unguarded and so close that the distance between the singer, the song and the room seems to disappear.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch3-nar2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch3-song1",
+          "track": {
+            "title": "Waitin' Around to Die",
+            "artist": "Townes Van Zandt",
+            "spotifyUri": "spotify:track:4crzejvMsnhzEWkZKImnO4"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 165,
+          "why": "Shows the clearer, less physically damaged voice of the young songwriter.",
+          "voiceovers": [
+            {
+              "id": "ch3-vo1",
+              "hostId": "walker",
+              "text": "Listen to how clear and undamaged his voice is here compared to the Heartworn Highways performance. The physical toll of his lifestyle hadn't yet shown up in his throat.",
+              "atSeconds": 20,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch3-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "ch3-nar3",
+          "hostId": "sarah",
+          "text": "As Townes began making waves in the Texas scene, fellow songwriter Mickey Newbury helped him land a deal with Poppy Records and legendary producer Cowboy Jack Clement. Clement had worked with massive figures like Johnny Cash and Jerry Lee Lewis, but Townes presented a bizarre problem. He wasn't exactly country, he wasn't a traditional folk revivalist, and he certainly wasn't a standard bluesman. Not knowing what to do with his quiet, intricate acoustic songs, the label surrounded his 1968 debut album with fashionable, over-the-top studio ornamentation. They layered on sweeping strings, dramatic backing singers, and even a harpsichord. The words already contained all the necessary drama, but the producers buried his emotional geometry under a spaghetti-western soundtrack.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch3-nar3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch3-song2",
+          "track": {
+            "title": "For the Sake of the Song",
+            "artist": "Townes Van Zandt",
+            "spotifyUri": "spotify:track:4ELGuNlKE0uiD6waM1qWhu"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 300,
+          "why": "Illustrates the heavy-handed production that fought against the natural intimacy of his writing.",
+          "voiceovers": [
+            {
+              "id": "ch3-vo2",
+              "hostId": "sarah",
+              "text": "You can hear the elaborate arrangement literally fighting the song. It proves a vital point about his art: Townes's music became significantly less mysterious the harder producers tried to make it sound mysterious.",
+              "atSeconds": 45,
+              "duckTo": 20,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch3-vo2.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Architecture of Empathy",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "ch4-nar1",
+          "hostId": "walker",
+          "text": "The song that finally convinced Mickey Newbury and the Nashville establishment of Townes's undeniable genius was a demo called 'Tecumseh Valley.' It’s the story of Caroline, the daughter of a hard-luck miner, who leaves her home to find work in town. She takes on grueling labor, eventually turns to prostitution to survive, and dies entirely alone. The brilliance of the song isn't in some complex, twisting plot. It lies in its profound moral distance. Townes uses the architecture of a traditional ballad—a stranger arrives, the community observes, misfortune accumulates, and death comes without redemption. He doesn't swoop in to rescue Caroline, nor does he offer a grand psychological explanation, and he certainly never condemns her. He just acts as a pure, empathetic witness to a tragedy born of geography and economics.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch4-nar1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "ch4-nar2",
+          "hostId": "sarah",
+          "text": "Early producers recognized the beauty of the song, but they reportedly panicked at the blunt reference to prostitution. They pressured Townes to record a softened, sanitized version of the lyric. This tension is incredibly revealing. The commercial folk business of the late 1960s desperately wanted the aesthetic of tragic authenticity, but they couldn't stomach the actual, ugly material conditions that produced the tragedy. Townes resisted because his storytelling depended on that realism. His characters are practically never destroyed by a mustache-twirling villain. Instead, they are slowly crushed by the weather, a lack of money, relentless loneliness, inescapable family history, and the quiet accumulation of ordinary bad luck.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch4-nar2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch4-song1",
+          "track": {
+            "title": "Tecumseh Valley",
+            "artist": "Townes Van Zandt",
+            "spotifyUri": "spotify:track:5KJMVvokqnMn9ribqPQja9"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 240,
+          "why": "Showcases his use of traditional ballad architecture and deep empathy for invented people.",
+          "voiceovers": [
+            {
+              "id": "ch4-vo1",
+              "hostId": "walker",
+              "text": "In just a handful of verses, he gives Caroline a family, a hometown, and a brutal sequence of economic pressures. He builds an entire, dignified human life out of thin air.",
+              "atSeconds": 130,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch4-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "ch4-nar3",
+          "hostId": "sarah",
+          "text": "Here is where we have to confront the darkest, most uncomfortable paradox of Townes Van Zandt. He was capable of writing with immense, world-stopping empathy about fictional women like Caroline. Yet, in his actual life, he behaved with terrifying unreliability toward the real women who loved him. Townes married three times and fathered three children. In interviews, he often romanticized his terrible behavior, framing his artistic commitment as the deliberate, necessary abandonment of security and domestic happiness. He claimed that to be a true songwriter, you had to blow off your family, buy a guitar, and hit the road.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch4-nar3.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "ch4-nar4",
+          "hostId": "walker",
+          "text": "But that wasn't just artistic freedom. It was a lifestyle that violently transferred the cost of his freedom onto everyone else. During his first marriage, Fran was left to work and care for their child alone while Townes disappeared on obscure tours for weeks or months at a time without warning. Fran Peterson, Cindy Morgan, and Jeanene Munsell didn't just orbit a misunderstood genius; they lived with the agonizing consequences of his daily decisions. They were repeatedly forced to become the essential machinery that kept a deeply unstable man functioning. Townes was unusually alert to the pain of abandonment when he was imagining it in a song, and unusually capable of causing that exact pain when he was living his life.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch4-nar4.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch4-song2",
+          "track": {
+            "title": "I'll Be Here in the Morning",
+            "artist": "Townes Van Zandt",
+            "spotifyUri": "spotify:track:0HLBLRkkTOlAmjonShicD0"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 180,
+          "why": "Highlights the profound contradiction between his songs about staying and his life of leaving.",
+          "voiceovers": [
+            {
+              "id": "ch4-vo2",
+              "hostId": "sarah",
+              "text": "It is a heartbreaking irony that one of the most convincing, tender promises of fidelity in American songwriting was written by a man who fundamentally refused to stay anywhere.",
+              "atSeconds": 90,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch4-vo2.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Hottest Room in Houston",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "ch5-nar1",
+          "hostId": "walker",
+          "text": "By the early 1970s, Townes's touring life was a chaotic circuit traced between the mountains of Colorado, the industry hubs of Nashville, and the humid grit of Houston. Houston was where he could reliably obtain heroin. His addiction escalated until he moved in with a dealer in Pasadena, Texas, pawning his possessions and completely isolating himself from friends and family. In 1971, he suffered a catastrophic overdose. Accounts from that night describe him flatlining and essentially dying more than once in the ambulance on the way to the hospital before paramedics managed to revive him. In response to this brush with the grave, Townes deployed his favorite defense mechanism: a joke. He titled his next record 'The Late Great Townes Van Zandt,' mocking both his own mortality and the industry whispers that his career was already over.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch5-nar1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "ch5-nar2",
+          "hostId": "sarah",
+          "text": "That dark, deflecting humor is absolutely essential to understanding how Townes operated. He wasn't continuously solemn and brooding like the tortured poet myth suggests. He aggressively relied on humor to manage the energy of a room, keeping audiences from completely drowning in the weight of his songs. He would tell deliberately terrible, meandering jokes about talking animals or penguins—stories designed to totally bomb halfway through. It was a highly strategic pattern on stage. He would make the audience laugh, completely lower their emotional defenses, and then, without any warning or transition, hit them with something utterly devastating.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch5-nar2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch5-song1",
+          "track": {
+            "title": "Mr. Mudd and Mr. Gold",
+            "artist": "Townes Van Zandt",
+            "spotifyUri": "spotify:track:7o26b8BlWibCvxssItnOat"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 180,
+          "why": "Shows his verbal speed, playfulness, and mathematical narrative construction.",
+          "voiceovers": [
+            {
+              "id": "ch5-vo1",
+              "hostId": "sarah",
+              "text": "Listen to the blistering pace and the rapid-fire internal rhymes. This proves he wasn't just pouring out raw emotion; he was a mathematically precise craftsman.",
+              "atSeconds": 75,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch5-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "ch5-nar3",
+          "hostId": "walker",
+          "text": "That intimacy was captured in July 1973, when Townes played a now-legendary run of shows at the Old Quarter in Houston, a tiny, claustrophobic venue run by Rex Bell and Dale Soffar. Producer Earl Willis brought a portable four-track machine into the club, hoping to preserve what happened when Townes played to a room that knew how to listen.\n\nThe Texas heat was oppressive, and because the venue’s loud air-conditioning unit would have ruined the recording, they switched it off. The club was packed so tightly with sweating bodies that beers and dollar bills had to be passed hand over hand to the bar. You can almost hear the heat on the tape.\n\nBut that discomfort became part of the record’s power. Live at the Old Quarter strips away the distance and polish of the studio, leaving a solitary man, an acoustic guitar, the occasional dry joke, and the charged silence of a room hanging on every word.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch5-nar3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch5-song2",
+          "track": {
+            "title": "Pancho and Lefty",
+            "artist": "Townes Van Zandt",
+            "spotifyUri": "spotify:track:6XGAEKhlf9QWprGpkatdD1"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 240,
+          "why": "Captures Townes in his absolute prime, stripped of studio artifice, holding a sweaty room in the palm of his hand.",
+          "voiceovers": [
+            {
+              "id": "ch5-vo2",
+              "hostId": "walker",
+              "text": "Notice the dead silence of the room. A hundred people sweltering in the Texas summer heat, not making a sound, hanging on every single syllable until the applause finally breaks the tension.",
+              "atSeconds": 200,
+              "duckTo": 20,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch5-vo2.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Betrayal No One Can Prove",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "ch6-nar1",
+          "hostId": "sarah",
+          "text": "'Pancho and Lefty' sounds like a folk ballad that has existed for two hundred years, but its genius lies in the fact that the story is deliberately incomplete. Pancho becomes an outlaw and is gunned down in Mexico. Lefty mysteriously acquires the money to escape to Ohio. The Federales brag that they could have taken Pancho any time they wanted. Townes strongly implies a terrible betrayal, but he completely refuses to describe the act itself. And then comes the greatest moral turn in his catalog. A lesser writer would make Pancho the noble martyr and Lefty the contemptible villain. Instead, Townes asks the listener to spare a prayer for Lefty, understanding that surviving with the guilt of betrayal is a much harsher punishment than dying young and becoming a legend.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch6-nar1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "ch6-nar2",
+          "hostId": "walker",
+          "text": "The mythology around 'Pancho and Lefty' grew far beyond Townes's control, leading to one of his absolute favorite comic anecdotes. He was driving down a long stretch of highway when he was pulled over for speeding by two formidable Texas state troopers. Desperate to talk his way out of the ticket, Townes casually dropped that he was the guy who wrote 'Pancho and Lefty.' The two stunned officers looked at each other and revealed that Pancho and Lefty were actually their radio call-signs. The wild coincidence managed to get him out of the most expensive citation, though they still made him pay for the lesser violations. It was a perfectly poetic moment: his one truly famous song saving his skin not at a glitzy awards show, but during a shabby roadside hustle.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch6-nar2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch6-song1",
+          "track": {
+            "title": "Pancho and Lefty",
+            "artist": "Willie Nelson & Merle Haggard",
+            "spotifyUri": "spotify:track:1A6P8IxzNyBRsQualaNXNY"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 285,
+          "why": "Represents Townes's strange relationship with success, as his most private creation became public mythology for others.",
+          "voiceovers": [
+            {
+              "id": "ch6-vo1",
+              "hostId": "sarah",
+              "text": "This version went to number one in 1983. Townes even made a cameo in the promotional music video, essentially acting as a silent witness while his private creation turned into a massive industry juggernaut.",
+              "atSeconds": 140,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch6-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "ch6-nar3",
+          "hostId": "walker",
+          "text": "The great outlaw songwriter movement of the 1970s wasn't actually built in the corporate boardrooms of Nashville; it was forged around sticky kitchen tables. Townes found his greatest creative sanctuary in the home of his closest friends, Guy and Susanna Clark. Susanna was a gifted painter, a songwriter, and a magnetic creative force. Their house functioned as a second home for Townes, a place where lines were violently debated, whiskey was poured, and songs were tested out loud before they ever saw a microphone. While Kris Kristofferson had forced Music Row to respect songwriters, Townes and Guy pushed the art form even further into the dirt. They fought for extreme compression, demanding fewer explanations and leaving more room for the stark, empty landscapes of the West.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch6-nar3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch6-song2",
+          "track": {
+            "title": "Desperados Waiting for a Train",
+            "artist": "Guy Clark",
+            "spotifyUri": "spotify:track:5A86aMAbKGTAB3M726ydg5"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 270,
+          "why": "Provides a contrast between Guy Clark's materially specific, observational style and Townes's elemental, dreamlike poetry.",
+          "voiceovers": [
+            {
+              "id": "ch6-vo2",
+              "hostId": "sarah",
+              "text": "Notice the difference in their craft. Guy Clark writes like a master carpenter, building a highly specific, tangible scene out of wood and nails. Townes writes like smoke slowly coming up through the floorboards.",
+              "atSeconds": 60,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch6-vo2.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dreams and Disappearances",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "ch7-nar1",
+          "hostId": "walker",
+          "text": "Townes often told interviewers that he didn't really write his best songs; he merely caught them as they fell from the sky. 'If I Needed You' comes with one of his most famous legends. He claimed the song arrived completely whole, melody and lyrics, in the middle of a vivid dream. He woke up in the dead of night, scrambled to grab his guitar, and managed to write the entire thing down before it vanished back into the ether. Whether you believe the supernatural origin story or chalk it up to his penchant for self-mythologizing, the song itself truly feels discovered rather than consciously engineered. It strips away all the heavy poetry in favor of elemental, almost childlike words: need, come, morning, eyes, hand, heart.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch7-nar1.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch7-song1",
+          "track": {
+            "title": "If I Needed You",
+            "artist": "Townes Van Zandt",
+            "spotifyUri": "spotify:track:3FMQnxcc6FcPscLeLqtW5S"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 225,
+          "why": "Displays his almost childlike language masking a complicated, conditional romantic test.",
+          "voiceovers": [
+            {
+              "id": "ch7-vo1",
+              "hostId": "sarah",
+              "text": "The sunrise verse is a masterclass in compression. He doesn't make a grand philosophical argument about human mortality. He simply points out that closing your eyes risks missing the morning, and the loss would break his heart.",
+              "atSeconds": 105,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch7-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "ch7-nar2",
+          "hostId": "sarah",
+          "text": "Because Townes ultimately failed to achieve massive solo fame, it is very tempting to buy into the romantic myth that he intentionally rejected success in the name of purity. But that narrative lets the music business off the hook. Townes definitely sabotaged himself, but he was also crippled by incredibly damaging management and opaque label deals. Between 1968 and 1972, he released six brilliant albums. He then went into the studio with Jack Clement to record an ambitious follow-up meant to be called 'Seven Come Eleven.' Instead, the project completely vanished into a bitter dispute between the producer, label boss Kevin Eggers, and an unpaid studio bill. Clement locked the master tapes in a vault, and the album didn't see the light of day for almost twenty years.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch7-nar2.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "ch7-nar3",
+          "hostId": "walker",
+          "text": "The loss of 'Seven Come Eleven' created a permanent wound in his career. By the time those sessions were finally released in 1993 under the title 'The Nashville Sessions,' the cultural moment had entirely passed, and Townes had been relegated to the status of an obscure cult figure. It forces us to ask a painful counterfactual question. What happens to Townes Van Zandt if his strongest, most confident batch of songs hits the market exactly on schedule? It’s foolish to pretend a successful record would have magically cured his profound addictions. But it might have changed the rhythm of his decline, bringing him the financial stability his family desperately needed while his voice and fingers were still at the absolute peak of their powers.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch7-nar3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch7-song2",
+          "track": {
+            "title": "No Place to Fall",
+            "artist": "Townes Van Zandt",
+            "spotifyUri": "spotify:track:7m4lC0uLXHITenebWYjeER"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 180,
+          "why": "Represents the lost masterpiece from the buried Nashville sessions.",
+          "voiceovers": [
+            {
+              "id": "ch7-vo2",
+              "hostId": "walker",
+              "text": "Listen to the sharp clarity of his vocal here. It perfectly captures his deepest lifelong conflict: he desperately wants to be loved, but he needs to find a place safe enough to receive it first.",
+              "atSeconds": 85,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch7-vo2.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Philosophy and the Younger Outlaws",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "ch8-nar1",
+          "hostId": "sarah",
+          "text": "If you want to understand the bedrock of Townes Van Zandt’s worldview, you have to look at 'To Live Is to Fly.' It is his clearest, most uncompromising statement of belief. The song doesn't celebrate the romantic idea of wandering without cost. Instead, it accepts the brutal truth that intimacy and departure are fundamentally inseparable. Loving someone means eventually losing them, and staying perfectly still does not prevent the world from changing around you. He avoids tedious explanations because the lyric is constructed like an ancient proverb. It features almost zero ornamental language, turning profound grief into a hollow vessel large enough for anyone in the world to place their own specific sorrow inside.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch8-nar1.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch8-song1",
+          "track": {
+            "title": "To Live Is to Fly",
+            "artist": "Townes Van Zandt",
+            "spotifyUri": "spotify:track:1NvX2spI7zdIASbXPw0d5P"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 180,
+          "why": "Demonstrates his mastery of ambiguity and moral generosity, turning grief into a vessel for the listener.",
+          "voiceovers": [
+            {
+              "id": "ch8-vo1",
+              "hostId": "sarah",
+              "text": "Notice how he explicitly refuses to tell the audience what to feel. He simply names the elements—the rain, the dust, the sky, the goodbyes—and lets you fill in the blanks.",
+              "atSeconds": 110,
+              "duckTo": 20,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch8-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "ch8-nar2",
+          "hostId": "walker",
+          "text": "By the late 1970s and 80s, Townes had transcended mere peer status; he had become a towering, intimidating myth for the next generation of Texas writers. A young, fiery Steve Earle latched onto Townes as a mentor in Houston. Earle famously declared to the press that Townes Van Zandt was the best songwriter in the whole world, and he swore he would stand in his cowboy boots on Bob Dylan's coffee table to say it. When word of the hyperbolic quote finally reached Townes, he offered a characteristically deflating, deadpan response. He just smiled and said he highly doubted Steve Earle could ever get past Bob Dylan's bodyguards.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch8-nar2.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "ch8-nar3",
+          "hostId": "sarah",
+          "text": "But the idolization had a highly toxic byproduct. Younger artists began to mistake the suffering for the source of the magic. Townes found a tragic kindred spirit in Blaze Foley, a brilliantly talented, profoundly itinerant songwriter who essentially lived out of cars and on friends' couches. Blaze was murdered in 1989, a senseless act of violence that only deepened the dark mythology surrounding the Texas songwriter scene. The real tragedy wasn't just that the music industry failed to turn Townes and Blaze into conventional, wealthy stars. The tragedy was that terrible suffering, abject poverty, and chemical self-destruction were slowly weaponized into the ultimate credentials for artistic authenticity.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch8-nar3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch8-song2",
+          "track": {
+            "title": "If I Could Only Fly",
+            "artist": "Blaze Foley",
+            "spotifyUri": "spotify:track:3AJI3lyZLADSaFjG2wQoFp"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 210,
+          "why": "Honors the deep friendship and parallel tragedy of Blaze Foley, another writer consumed by the outlaw myth.",
+          "voiceovers": [
+            {
+              "id": "ch8-vo2",
+              "hostId": "walker",
+              "text": "Townes once pointed to a photo of himself and Blaze Foley and called him one of his best friends. He saw another brilliant writer who was entirely unwilling to separate the purity of his art from the chaos of his life.",
+              "atSeconds": 120,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch8-vo2.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Fall and the Legend",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "ch9-nar1",
+          "hostId": "sarah",
+          "text": "We have to strongly resist the urge to make Townes's later years sound like a beautiful, poetic fade into the twilight. It was an ugly, unromantic physical collapse. Decades of severe alcoholism and drug abuse completely ruined his coordination, shredded his memory, and drastically altered the timbre of his singing voice. The burden fell entirely on the people around him. Friends, road managers, and his ex-wives were forced into the impossible, harrowing position of managing a fatal addiction just to coax him onto a stage to pay the bills. The addiction did not make his early songs profound; it simply made it impossible for him to perform them anymore. Yet, miraculously, beneath the visible ruin, flashes of startling, gentle clarity still managed to cut through the haze.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch9-nar1.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch9-song1",
+          "track": {
+            "title": "At My Window",
+            "artist": "Townes Van Zandt",
+            "spotifyUri": "spotify:track:7yNvzQVmi5YQ2fzh6XfBgz"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 210,
+          "why": "Provides a glimpse of the gentleness that remained in his later years, rather than just showcasing the ruin.",
+          "voiceovers": [
+            {
+              "id": "ch9-vo1",
+              "hostId": "sarah",
+              "text": "Even as his body rapidly failed him, the profound tenderness in his writing survived intact. It proves that the art was totally independent of the disease that was killing him.",
+              "atSeconds": 95,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch9-vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "ch9-nar2",
+          "hostId": "walker",
+          "text": "By late 1996, the damage was catastrophic and undeniable. Townes was preparing for another major recording project, but shortly before the sessions were meant to start, he fell hard outside his home and badly fractured his hip. Refusing to cancel, he traveled to a studio in Memphis confined to a wheelchair, but he was in far too much agonizing pain to actually record. He was sent back home to recover from the surgery. But his body, battered by decades of relentless abuse, finally gave out entirely. On January 1, 1997, Townes Van Zandt died of a cardiac arrhythmia at the age of 52.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch9-nar2.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "ch9-nar3",
+          "hostId": "sarah",
+          "text": "The date of his death provided the final, irresistible piece of the mythology. He passed away exactly forty-four years to the day after Hank Williams, his foundational hero. It is incredibly tempting to view that coincidence as poetic destiny, as if he simply spent his entire life completing the slow, deliberate fall he began on that college balcony in Colorado. But that kind of thinking is morally dangerous. Townes didn't die because he was a mystic poet fulfilling a musical prophecy. He died because of very real, grim medical complications after decades of addiction, accidents, and a tragic lack of stability. He made the idea of falling a central part of his legend, but the flesh-and-blood people who loved him spent their entire lives desperately trying to break that fall.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch9-nar3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch9-song2",
+          "track": {
+            "title": "Flyin' Shoes",
+            "artist": "Townes Van Zandt",
+            "spotifyUri": "spotify:track:5ElGq6BPerTDx0xMp8xLIq"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 240,
+          "why": "Serves as the musical backdrop for his final departure from the physical world.",
+          "voiceovers": [
+            {
+              "id": "ch9-vo2",
+              "hostId": "walker",
+              "text": "He spent years writing songs about people slipping out the back door before dawn. When the end finally came, it wasn't a grand exit; it was just the quiet, devastating culmination of a lifetime of wear and tear.",
+              "atSeconds": 130,
+              "duckTo": 30,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch9-vo2.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "What Remains",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "ch10-nar1",
+          "hostId": "sarah",
+          "text": "Today, Townes is universally hailed as the ultimate songwriter's songwriter, largely because his work has continuously passed through the voices of giants. Emmylou Harris, Don Williams, Nanci Griffith, Lyle Lovett, Jason Isbell, and countless others have kept the catalog vividly alive. These songs easily survive the complex transplantation process because they contain absolutely no cheap period decoration. They do not rely on his tragic appearance, his outlaw reputation, or his personal suffering to make sense. They can be sung by men or women, by polished country stars or raw folk revivalists. His greatest influence on American music isn't a specific guitar tone; it's an impossibly high literary standard. Can you break someone's heart without raising your voice? Can you imply a terrible betrayal instead of spelling it out?",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch10-nar1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "ch10-nar2",
+          "hostId": "walker",
+          "text": "Townes Van Zandt spent almost the entirety of his fifty-two years leaving. He walked away from university, marriages, his own children, record deals, and countless versions of himself. He constantly crossed the vast plains of Texas, hid in the snows of Colorado, and always drifted back to Houston, even when everyone knew Houston was the most dangerous place on earth for him. His songs deeply understand that leaving and being left are not opposites; they are just two different positions within the exact same tragedy. But the ultimate difference between Townes and the doomed drifters in his ballads is what happens after the departure. The characters disappear silently into the harsh landscape. Townes left his songs behind to show us exactly where he had been.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch10-nar2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "ch10-song1",
+          "track": {
+            "title": "Rex's Blues",
+            "artist": "Townes Van Zandt",
+            "spotifyUri": "spotify:track:78on2kXsga3qRxBr86D2at"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 150,
+          "why": "Provides a communal, durable ending that separates the immortal songs from the ruined biography.",
+          "voiceovers": [
+            {
+              "id": "ch10-vo1",
+              "hostId": "sarah",
+              "text": "The tragic life eventually fell apart completely. But the songs remain meticulously controlled, far more merciful than his actual behavior, and infinitely more durable than his fragile body.",
+              "atSeconds": 45,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/waiting-around-to-die/audio/ch10-vo1.mp3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "facts": []
+}

@@ -1,0 +1,629 @@
+{
+  "schemaVersion": 1,
+  "id": "almost-blue",
+  "title": "Almost Blue",
+  "subject": "The Life and Music of Chet Baker",
+  "coverImage": "cover.png",
+  "estimatedMinutes": 120,
+  "hosts": [
+    {
+      "id": "arthur",
+      "name": "Arthur",
+      "persona": "A thoughtful, slightly worn musician or deep listener. He speaks with a quiet, analytical reverence about sound, focusing on the architecture of the music, the breathing, and the choices made in the studio. He actively avoids melodrama.",
+      "voiceRef": "elevenlabs:ZguM6IY85wmj9E68TzVA"
+    },
+    {
+      "id": "elena",
+      "name": "Elena",
+      "persona": "A sharp cultural historian who understands how jazz was sold, photographed, and packaged. She brings insight into the spaces Chet inhabited, unpacking the friction between William Claxton's iconic images and the reality of the working musician.",
+      "voiceRef": "elevenlabs:yplPYwGTUmxFuOqyKNlq"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "A Sound Before a Story",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c1_s1",
+          "hostId": "arthur",
+          "text": "We are starting in Copenhagen, in October of 1979. We aren't starting with the golden boy from California, and we aren't starting with the tragic figure from the end of the line. Chet Baker is at the Sweet Silence Studio, playing with a rhythm section that includes Duke Jordan on piano. He is far past the mythmaking machinery of his youth. The glamour of the early photographs has faded away, leaving only a working musician navigating the circumstances of the room. This is Chet in the middle of his long European afterlife. He isn't trying to reclaim his twenties or project an unearned heroism. He operates best here, when the band gives him a friendly structure rather than an empty, dramatic canvas.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c1_s1.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c1_s2",
+          "track": {
+            "title": "Glad I Met Pat",
+            "artist": "Chet Baker Quartet",
+            "spotifyUri": "spotify:track:456cyQlFxMxN7sNwSF4sBX"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 150,
+          "why": "Introduces the thesis: Chet is best approached through sound first, biography second, in a late-career setting.",
+          "voiceovers": [
+            {
+              "id": "c1_s2_v1",
+              "hostId": "arthur",
+              "text": "Listen to how he enters the song. The arrival is almost unannounced. He simply floats above the rhythm section, refusing to push, refusing to sound young.",
+              "atSeconds": 28,
+              "duckTo": 25,
+              "holdDuck": true,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c1_s2_v1.mp3"
+            },
+            {
+              "id": "c1_s2_v2",
+              "hostId": "elena",
+              "text": "The tone here isn't heroic, and it certainly isn't tragic. It sounds exactly like someone remembering a friend with deep affection, yet deliberately withholding any heavy sentimentality.",
+              "atSeconds": 85,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c1_s2_v2.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c1_s3",
+          "hostId": "elena",
+          "text": "That lack of sentimentality is the key to his entire musical identity. Chet Baker’s story is rarely told without slipping into melodrama. The narrative almost always focuses on beauty destroyed by addiction. But that framing turns him into a poster instead of a person. His real genius was in building a complete musical language around withholding. He didn't command a room with the blazing volume of Dizzy Gillespie, and he didn't construct the massive architectural solos of Miles Davis. His power came from making less feel like more. He used fewer notes, less vibrato, and a surprisingly narrow emotional temperature to draw the listener in.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c1_s3.mp3"
+        }
+      ]
+    },
+    {
+      "title": "Learning to Stand Near the Fire",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c2_s1",
+          "hostId": "arthur",
+          "text": "Chet Baker was born in Yale, Oklahoma, and his beginnings in music were entirely unromantic. He didn't attend a prestigious conservatory, and he wasn't a theory-forward arranger. He cut his teeth playing trumpet in Army bands. He learned by ear, by repetition, and by sheer proximity to the music happening around him. By the early 1950s, he had found his way to the California jazz scene. This matters because it grounds him. His famous 'cool' style wasn't born out of a vacuum, and it wasn't a calculated posture he adopted on day one. It was a choice he made after learning the rules of the road.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c2_s1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "c2_s2",
+          "hostId": "elena",
+          "text": "To understand that choice, you have to look at the spring of 1952. Charlie Parker, the undisputed sun of the bebop universe, had an engagement at the Tiffany Club in Los Angeles. Parker needed a trumpet player. A relatively unknown, twenty-something Chet Baker showed up to audition. The legend says Parker hired him immediately. Standing next to Charlie Parker on a bandstand meant standing right next to the bebop furnace. You couldn't fake your way through those tempos or those complex chord changes. Chet had to survive the heat.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c2_s2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c2_s3",
+          "track": {
+            "title": "Ornithology",
+            "artist": "Charlie Parker",
+            "spotifyUri": "spotify:track:2EWfgVTosZ2CDMZ666gr0Z"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 100,
+          "why": "Contrasts the blinding speed and density of Parker's bebop with Chet's eventual approach.",
+          "voiceovers": [
+            {
+              "id": "c2_s3_v1",
+              "hostId": "arthur",
+              "text": "This is what Parker demanded. The speed is relentless. He flies straight over the bar lines in a way that requires total submission from the rest of the band.",
+              "atSeconds": 15,
+              "duckTo": 20,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c2_s3_v1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c2_s4",
+          "hostId": "arthur",
+          "text": "Chet Baker knew this bebop grammar perfectly well. He had to, just to survive on that stage. But he chose not to speak it with the same accent. The lazy version of jazz history frames Chet as the antithesis of bebop, as if he simply couldn't play fast. The truth is much more interesting. He learned the dense, complicated language of modern jazz, and then he systematically began stripping words away. He decided to lower his center of gravity. Instead of racing over the bar lines like Parker, Chet started leaning heavily into them.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c2_s4.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c2_s5",
+          "track": {
+            "title": "The Thrill Is Gone",
+            "artist": "Chet Baker Quartet",
+            "spotifyUri": "spotify:track:17b9cl8yjehuaIQzyx3o7Z"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 180,
+          "why": "Demonstrates early Chet turning emotional reduction into something profoundly expressive.",
+          "voiceovers": [
+            {
+              "id": "c2_s5_v1",
+              "hostId": "elena",
+              "text": "Notice Russ Freeman on the piano. He provides the furniture and the chords. Because Freeman builds the room, Chet's melody can just sit down inside it.",
+              "atSeconds": 45,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c2_s5_v1.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Haig and the Invention of Space",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c3_s1",
+          "hostId": "elena",
+          "text": "In the summer of 1952, the architecture of Chet Baker's sound found its ideal home. The location wasn't a sprawling concert hall; it was a tiny, smoky room on Wilshire Boulevard called The Haig. It was built for close listening, chatter, and the economics of small-group touring. Gerry Mulligan, a brilliant baritone saxophonist and arranger, had recently moved to California from New York. He formed a quartet with Chet that featured a radical omission. There was no piano. In jazz, the piano is the foundation. Taking it away feels like removing the floorboards.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c3_s1.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c3_s2",
+          "track": {
+            "title": "Bernie's Tune",
+            "artist": "Gerry Mulligan Quartet",
+            "spotifyUri": "spotify:track:0OqV8yetUbvUA8cgjsgVyl"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 180,
+          "why": "The sharpest entry into the pianoless quartet story.",
+          "voiceovers": [
+            {
+              "id": "c3_s2_v1",
+              "hostId": "arthur",
+              "text": "Without the piano constantly defining the harmony, the weather completely changes. The trumpet and the baritone saxophone have to imply the chord changes through their counterpoint.",
+              "atSeconds": 22,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c3_s2_v1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c3_s3",
+          "hostId": "arthur",
+          "text": "The typical description of West Coast jazz is too clean. People call it cerebral, relaxed, even soft. But the actual Mulligan-Baker quartet carried incredible tension. The baritone saxophone is a heavy, commanding instrument. Mulligan played it with a dry wit and rigorous structural intelligence. Beside him, Chet's trumpet was bright and unadorned. His lines could feel almost naive, until you realize how perfectly placed they are. They created an immense amount of space, but it was never empty. It was a brightly lit room where every musical choice was starkly visible.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c3_s3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c3_s4",
+          "track": {
+            "title": "Line for Lyons",
+            "artist": "Gerry Mulligan Quartet",
+            "spotifyUri": "spotify:track:1ptUbtzqrlWbhbqx5GbPsZ"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 160,
+          "why": "Showcases the lyrical braiding of lines between Baker and Mulligan.",
+          "voiceovers": [
+            {
+              "id": "c3_s4_v1",
+              "hostId": "elena",
+              "text": "They aren't just taking turns at the microphone. They shadow each other, slipping around the melody and braiding their lines together.",
+              "atSeconds": 40,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c3_s4_v1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c3_s5",
+          "hostId": "elena",
+          "text": "The pianoless quartet produced a minor hit that put the group on the map. It also yielded a ballad that would follow Chet Baker for the rest of his life. 'My Funny Valentine' was the perfect vehicle for his specific set of limitations. The melody of the song requires patience, not pyrotechnics. In the hands of the Mulligan Quartet, it became a masterclass in emotional pressure. Chet discovered that if you hold back just enough, the audience will lean forward to meet you.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c3_s5.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c3_s6",
+          "track": {
+            "title": "My Funny Valentine",
+            "artist": "Gerry Mulligan Quartet",
+            "spotifyUri": "spotify:track:2wuv34mHTDPbZS0gXtcjeC"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 240,
+          "why": "The definitive early instrumental hit that defined his approach to ballads.",
+          "voiceovers": [
+            {
+              "id": "c3_s6_v1",
+              "hostId": "arthur",
+              "text": "Listen to how the drama here isn't about volume at all. It is entirely about placement, and what he chooses to leave out.",
+              "atSeconds": 55,
+              "duckTo": 20,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c3_s6_v1.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Photograph Begins Talking Back",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c4_s1",
+          "hostId": "elena",
+          "text": "Chet Baker's fame was not strictly musical. It was intensely visual. Richard Bock, the founder of Pacific Jazz records, realized early on that he had something highly marketable. He brought in a young photographer named William Claxton. Claxton later recalled seeing Chet's face emerge in the developing tray and instantly understanding what the word 'photogenic' meant. Together, they created a West Coast jazz identity that was modern, young, and clean. It was a sharp departure from the nightclub grit usually associated with jazz imagery. The packaging sold the record before the needle ever hit the groove.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c4_s1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "c4_s2",
+          "hostId": "arthur",
+          "text": "But that public image solved one problem only to create another. It gave Chet an audience far beyond the traditional jazz world, bringing his records into college dormitories and suburban living rooms. Yet, it also froze him into a rigid role. He became the beautiful, wounded, effortless young man. That image was incredibly seductive because it seemed to explain the quietness of his sound. Unfortunately, it also reduced him as a musician, making it easy for critics to dismiss him as a lightweight. And that friction reached its peak when Chet stepped up to the microphone and began to sing.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c4_s2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c4_s3",
+          "track": {
+            "title": "I Fall in Love Too Easily",
+            "artist": "Chet Baker",
+            "spotifyUri": "spotify:track:0F845nujLVqCb0XMZCh5Pc"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 200,
+          "why": "Demonstrates the voice as method, inseparable from his trumpet phrasing.",
+          "voiceovers": [
+            {
+              "id": "c4_s3_v1",
+              "hostId": "elena",
+              "text": "Notice how his vocal pitch feels almost undecorated. He sings as if he is absolutely refusing to perform the emotion on our behalf.",
+              "atSeconds": 30,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c4_s3_v1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c4_s4",
+          "hostId": "elena",
+          "text": "When the album 'Chet Baker Sings' appeared in 1954, it deeply divided listeners. Some heard a profound, unprecedented intimacy. Others simply heard weakness. But to understand his trumpet, you have to understand his voice. They are not separate talents. He sings exactly like a horn player who desperately wants to avoid overstating the lyric. The risk of this vocal style is flatness. The reward is absolute privacy.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c4_s4.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c4_s5",
+          "track": {
+            "title": "Let's Get Lost",
+            "artist": "Chet Baker",
+            "spotifyUri": "spotify:track:0UZFhlhUMrYyzzyOHkylM3"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 220,
+          "why": "Discusses persona, performance, and the manufacturing of cool.",
+          "voiceovers": [
+            {
+              "id": "c4_s5_v1",
+              "hostId": "arthur",
+              "text": "The trumpet solo here is just an extension of his singing voice. He doesn't shift gears. He just picks up the horn and continues the thought without leaving the melody behind.",
+              "atSeconds": 76,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c4_s5_v1.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "New York Asks a Harder Question",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c5_s1",
+          "hostId": "arthur",
+          "text": "There has always been a simplistic binary in jazz history. East Coast means hard, Black, and authentic. West Coast means soft, white, and commercial. While that binary certainly existed in the culture of the recording industry and the clubs, musically, it is entirely incomplete. By the late 1950s, Chet Baker found himself in New York, recording for the Riverside label under producer Orrin Keepnews. They didn't surround him with soft California studio players. They put him in a room with some of the heaviest, most muscular musicians on the East Coast. It was a test. What happens when Chet's understatement is thrown inside a harder-swinging engine?",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c5_s1.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c5_s2",
+          "track": {
+            "title": "Solar",
+            "artist": "Chet Baker",
+            "spotifyUri": "spotify:track:0inE6nSUt8DmS8WzIQ8B9g"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 250,
+          "why": "The East Coast test alongside Johnny Griffin and Philly Joe Jones.",
+          "voiceovers": [
+            {
+              "id": "c5_s2_v1",
+              "hostId": "arthur",
+              "text": "Listen to Paul Chambers' deep time feel on the bass, and the dangerous snap of Philly Joe Jones on the drums. Chet doesn't try to become Clifford Brown here. He survives by keeping his line incredibly clean.",
+              "atSeconds": 60,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c5_s2_v1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c5_s3",
+          "hostId": "elena",
+          "text": "The Riverside era is crucial because it proves that Chet's coolness was never just a California studio effect. It wasn't a trick of the microphone. Put him in New York with a serious, propulsive rhythm section, and his narrow-band tone still retains its identity. He didn't try to win the room by matching the density of the musicians around him. He held his ground. Sometimes he sounds frighteningly exposed, and sometimes he sounds distinctly underpowered. But he never disappears.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c5_s3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c5_s4",
+          "track": {
+            "title": "Fair Weather",
+            "artist": "Chet Baker",
+            "spotifyUri": "spotify:track:420mXZmGDNlrL426wDXAYy"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 220,
+          "why": "Shows Baker inside a different, stronger swing engine.",
+          "voiceovers": [
+            {
+              "id": "c5_s4_v1",
+              "hostId": "elena",
+              "text": "Against Johnny Griffin's fast, harmonically sharp tenor saxophone, Chet's understatement suddenly sounds elegant rather than fragile. The contrast gives him power.",
+              "atSeconds": 115,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c5_s4_v1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "song",
+          "id": "c5_s5",
+          "track": {
+            "title": "Alone Together",
+            "artist": "Chet Baker",
+            "spotifyUri": "spotify:track:41TfF8i4DzToDOuOJ92Fka"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 240,
+          "why": "Nocturnal but not sleepy, excellent for discussing atmosphere and Bill Evans-adjacent moods.",
+          "voiceovers": [
+            {
+              "id": "c5_s5_v1",
+              "hostId": "arthur",
+              "text": "This is music for the late hours. The drama is dialed all the way down, but the concentration in the room is absolute.",
+              "atSeconds": 45,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c5_s5_v1.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Europe is Not an Ending",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c6_s1",
+          "hostId": "elena",
+          "text": "The gap between the poise of Chet's music and the massive disorder of his personal life is unavoidable. By 1960, the damage of his addiction was impossible to hide. He was in Italy, and he was arrested in Lucca on drug charges. The Italian press closely followed the scandal, treating it as a daily spectacle. He served time in an Italian prison. It affected his reliability, his legal status, and eventually, his physical ability to play the horn. But we have to be careful not to treat his addiction as mere atmosphere. The recordings from this period are not diary entries documenting his collapse. They are performances, made under the stress of deadlines and contracts.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c6_s1.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c6_s2",
+          "track": {
+            "title": "Chetty's Lullaby",
+            "artist": "Chet Baker",
+            "spotifyUri": "spotify:track:70dfIPvvUP5GDUXWkOz0f3"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 180,
+          "why": "Reflects the Italian period and his output despite imprisonment.",
+          "voiceovers": [
+            {
+              "id": "c6_s2_v1",
+              "hostId": "elena",
+              "text": "Even with the press documenting his every failure, his phrasing on record remains eerily controlled. The music refuses to fall apart, even when the life around it has.",
+              "atSeconds": 40,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c6_s2_v1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c6_s3",
+          "hostId": "arthur",
+          "text": "In the United States, his reputation made him increasingly hard to book and easy to dismiss. But Europe offered something else. It became a working musician's geography. Europe didn't save him, but it gave him a circuit. He found consistent work, deep sympathy from audiences, and rhythm sections willing to adapt to a player whose physical tools were declining. It's too easy to call his later years a steady decline. He simply became a musician of circumstances. If the room was right, and the tempo breathed, he could still pull something startling out of the air.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c6_s3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c6_s4",
+          "track": {
+            "title": "No Problem",
+            "artist": "Chet Baker Quartet",
+            "spotifyUri": "spotify:track:0bdHOcuk49FewTRd0JkpdB"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 200,
+          "why": "Opens the Copenhagen chapter, proving that the late European records are not just 'decline records'.",
+          "voiceovers": [
+            {
+              "id": "c6_s4_v1",
+              "hostId": "arthur",
+              "text": "Here is Duke Jordan on piano, providing a friendly structure that feels highly singable, but never sentimental. It's the perfect safety net.",
+              "atSeconds": 55,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c6_s4_v1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c6_s5",
+          "hostId": "elena",
+          "text": "Which brings us back to where we started. Copenhagen, 1979. The most moving recordings of late Chet Baker are not moving because he is a broken man. The tragedy is not what carries the tune. They are moving because the musical intelligence is still entirely intact. He is still working, still listening, and still making incredibly clear choices about what not to play.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c6_s5.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c6_s6",
+          "track": {
+            "title": "Glad I Met Pat",
+            "artist": "Chet Baker Quartet",
+            "spotifyUri": "spotify:track:456cyQlFxMxN7sNwSF4sBX"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 500,
+          "why": "The full feature, serving as the emotional center of the European survival story.",
+          "voiceovers": [
+            {
+              "id": "c6_s6_v1",
+              "hostId": "arthur",
+              "text": "Notice Niels-Henning Ørsted Pedersen on bass. The band isn't pushing Chet into extroversion; they are patiently holding the space open so he can speak.",
+              "atSeconds": 120,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c6_s6_v1.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Line Gets Thinner, Not Simpler",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c7_s1",
+          "hostId": "elena",
+          "text": "In the late 1980s, the filmmaker Bruce Weber documented the final phase of Chet's life in the film 'Let's Get Lost'. The documentary captured the jarring disconnect of his later years. The famous face had changed radically, scarred by time, addiction, and violence. But the musical manner remained stubbornly recognizable. This created an experience for the audience that felt uncomfortably exposed. Claxton's youthful photographs had made the music easier to sell. Weber's camera made it harder to watch, even as the sound demanded to be heard. The late performances are wildly uneven, and that unevenness is part of the honest listening experience.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c7_s1.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c7_s2",
+          "track": {
+            "title": "There Will Never Be Another You",
+            "artist": "Chet Baker",
+            "spotifyUri": "spotify:track:2zPANzQTt5Nbkg0eBPb7HI"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 240,
+          "why": "Shows late Chet's risk regarding tempo, exposure, and physical endurance.",
+          "voiceovers": [
+            {
+              "id": "c7_s2_v1",
+              "hostId": "arthur",
+              "text": "The physical line is thinner now. He occasionally falters, but the intention behind every single note is fiercely intact.",
+              "atSeconds": 85,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c7_s2_v1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c7_s3",
+          "hostId": "arthur",
+          "text": "Yet, even as his jazz audience fractured, his specific kind of intimacy found a strange new resonance. His sound crossed over into the post-punk and new wave scenes of the 1980s. A younger generation of songwriters, led prominently by Elvis Costello, didn't view Chet Baker as an artifact of cool jazz nostalgia. They saw him as a master of a highly usable emotional vocabulary. Costello wrote the song 'Almost Blue' directly under Baker's influence. Years later, Chet actually performed it.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c7_s3.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c7_s4",
+          "track": {
+            "title": "Almost Blue",
+            "artist": "Chet Baker",
+            "spotifyUri": "spotify:track:2Mb0UmjVuMQ1Pgcyko9dW3"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 260,
+          "why": "Costello's song, written under Baker's influence, and later performed by Baker himself.",
+          "voiceovers": [
+            {
+              "id": "c7_s4_v1",
+              "hostId": "elena",
+              "text": "He takes a song that was written in homage to him, and he completely repossesses it, stripping it down to its barest bones.",
+              "atSeconds": 60,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c7_s4_v1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "song",
+          "id": "c7_s5",
+          "track": {
+            "title": "Shipbuilding",
+            "artist": "Elvis Costello",
+            "spotifyUri": "spotify:track:7DV1fLakiEgpJ1OuMQH4yb"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 300,
+          "why": "Features Chet Baker's solo on a 1980s British political pop song.",
+          "voiceovers": [
+            {
+              "id": "c7_s5_v1",
+              "hostId": "arthur",
+              "text": "When Chet enters on this track, the whole song seems to hold its breath. It isn't jazz nostalgia. It's pure, functional melancholy cutting straight through a modern pop mix.",
+              "atSeconds": 165,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c7_s5_v1.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Return to the Room",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c8_s1",
+          "hostId": "elena",
+          "text": "Chet Baker's music often sounds so much smaller than the life around it. The biographies will always be crowded with noise. They are filled with arrests, missing teeth, European hotels, unverified stories, and the constant friction between the people who loved him and the people who had every reason not to. But the records keep returning to a narrower, quieter space. The sound reduces the chaos until all that is left is a sung phrase that seems to avoid eye contact, or a melody stated as gently as possible.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c8_s1.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "c8_s2",
+          "hostId": "arthur",
+          "text": "So the central question of his legacy is not whether his life was sad. Parts of it plainly were. The better question is why the music, at its absolute best, still feels so exact. Chet Baker's great subject was never sadness. It was closeness. His best solos do not ask to be forgiven for the damage of his life. They simply ask to be heard, carefully.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c8_s2.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c8_s3",
+          "track": {
+            "title": "Time After Time",
+            "artist": "Chet Baker",
+            "spotifyUri": "spotify:track:4m6OC8u2rC6LMFtFWsME7d"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 400,
+          "why": "A gentle, final closing statement to play the documentary out.",
+          "voiceovers": [
+            {
+              "id": "c8_s3_v1",
+              "hostId": "elena",
+              "text": "Just a voice, a trumpet, and the small room inside the song.",
+              "atSeconds": 25,
+              "duckTo": 25,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c8_s3_v1.mp3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "facts": []
+}

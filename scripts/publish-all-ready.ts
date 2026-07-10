@@ -28,10 +28,12 @@ const READY: Array<{ draftId: string; slug: string; releaseDate: string }> = [
   { draftId: 'a4f13f9852227236', slug: 'strangeways',           releaseDate: '2026-07-24' },
   { draftId: '395167dc4f72e0c8', slug: 'ziggy-stardust',        releaseDate: '2026-07-31' },
   { draftId: '696c14858c302cf3', slug: 'all-things-must-pass',  releaseDate: '2026-08-07' },
+  { draftId: 'e6e9e58ee42cc80a', slug: 'almost-blue',           releaseDate: '2026-08-14' },
+  { draftId: '1a3b8e1a9ac75cd7', slug: 'waiting-around-to-die', releaseDate: '2026-08-21' },
 ]
 
 /** First Friday for still-upcoming episodes (after the last released above). */
-const FIRST_UPCOMING_FRIDAY = '2026-08-14'
+const FIRST_UPCOMING_FRIDAY = '2026-08-28'
 
 function nextFriday(dateIso: string): string {
   // Adds 7 days to a YYYY-MM-DD.

@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-10T10:09:01.136Z",
+  "updatedAt": "2026-07-10T10:18:52.013Z",
   "episodes": [
     {
       "id": "almost-blue",
-      "status": "upcoming",
-      "expectedRelease": "2026-08-14",
+      "status": "released",
+      "releaseDate": "2026-08-14",
       "order": 1
     },
     {
       "id": "waiting-around-to-die",
-      "status": "upcoming",
-      "expectedRelease": "2026-08-21",
+      "status": "released",
+      "releaseDate": "2026-08-21",
       "order": 2
     },
     {
