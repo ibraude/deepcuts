@@ -47,7 +47,7 @@
               "hostId": "arthur",
               "text": "Listen to how he enters the song. The arrival is almost unannounced. He simply floats above the rhythm section, refusing to push, refusing to sound young.",
               "atSeconds": 28,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": true,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c1_s2_v1.mp3"
             },
@@ -56,7 +56,7 @@
               "hostId": "elena",
               "text": "The tone here isn't heroic, and it certainly isn't tragic. It sounds exactly like someone remembering a friend with deep affection, yet deliberately withholding any heavy sentimentality.",
               "atSeconds": 85,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c1_s2_v2.mp3"
             }
@@ -66,7 +66,7 @@
           "type": "narration",
           "id": "c1_s3",
           "hostId": "elena",
-          "text": "That lack of sentimentality is the key to his entire musical identity. Chet Baker’s story is rarely told without slipping into melodrama. The narrative almost always focuses on beauty destroyed by addiction. But that framing turns him into a poster instead of a person. His real genius was in building a complete musical language around withholding. He didn't command a room with the blazing volume of Dizzy Gillespie, and he didn't construct the massive architectural solos of Miles Davis. His power came from making less feel like more. He used fewer notes, less vibrato, and a surprisingly narrow emotional temperature to draw the listener in.",
+          "text": "That lack of sentimentality is the key to his entire musical identity. Chet Baker\u2019s story is rarely told without slipping into melodrama. The narrative almost always focuses on beauty destroyed by addiction. But that framing turns him into a poster instead of a person. His real genius was in building a complete musical language around withholding. He didn't command a room with the blazing volume of Dizzy Gillespie, and he didn't construct the massive architectural solos of Miles Davis. His power came from making less feel like more. He used fewer notes, less vibrato, and a surprisingly narrow emotional temperature to draw the listener in.",
           "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c1_s3.mp3"
         }
       ]
@@ -105,7 +105,7 @@
               "hostId": "arthur",
               "text": "This is what Parker demanded. The speed is relentless. He flies straight over the bar lines in a way that requires total submission from the rest of the band.",
               "atSeconds": 15,
-              "duckTo": 20,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c2_s3_v1.mp3"
             }
@@ -135,7 +135,7 @@
               "hostId": "elena",
               "text": "Notice Russ Freeman on the piano. He provides the furniture and the chords. Because Freeman builds the room, Chet's melody can just sit down inside it.",
               "atSeconds": 45,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c2_s5_v1.mp3"
             }
@@ -170,7 +170,7 @@
               "hostId": "arthur",
               "text": "Without the piano constantly defining the harmony, the weather completely changes. The trumpet and the baritone saxophone have to imply the chord changes through their counterpoint.",
               "atSeconds": 22,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c3_s2_v1.mp3"
             }
@@ -200,7 +200,7 @@
               "hostId": "elena",
               "text": "They aren't just taking turns at the microphone. They shadow each other, slipping around the melody and braiding their lines together.",
               "atSeconds": 40,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c3_s4_v1.mp3"
             }
@@ -230,7 +230,7 @@
               "hostId": "arthur",
               "text": "Listen to how the drama here isn't about volume at all. It is entirely about placement, and what he chooses to leave out.",
               "atSeconds": 55,
-              "duckTo": 20,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c3_s6_v1.mp3"
             }
@@ -272,7 +272,7 @@
               "hostId": "elena",
               "text": "Notice how his vocal pitch feels almost undecorated. He sings as if he is absolutely refusing to perform the emotion on our behalf.",
               "atSeconds": 30,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c4_s3_v1.mp3"
             }
@@ -302,7 +302,7 @@
               "hostId": "arthur",
               "text": "The trumpet solo here is just an extension of his singing voice. He doesn't shift gears. He just picks up the horn and continues the thought without leaving the melody behind.",
               "atSeconds": 76,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c4_s5_v1.mp3"
             }
@@ -337,7 +337,7 @@
               "hostId": "arthur",
               "text": "Listen to Paul Chambers' deep time feel on the bass, and the dangerous snap of Philly Joe Jones on the drums. Chet doesn't try to become Clifford Brown here. He survives by keeping his line incredibly clean.",
               "atSeconds": 60,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c5_s2_v1.mp3"
             }
@@ -367,7 +367,7 @@
               "hostId": "elena",
               "text": "Against Johnny Griffin's fast, harmonically sharp tenor saxophone, Chet's understatement suddenly sounds elegant rather than fragile. The contrast gives him power.",
               "atSeconds": 115,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c5_s4_v1.mp3"
             }
@@ -390,7 +390,7 @@
               "hostId": "arthur",
               "text": "This is music for the late hours. The drama is dialed all the way down, but the concentration in the room is absolute.",
               "atSeconds": 45,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c5_s5_v1.mp3"
             }
@@ -425,7 +425,7 @@
               "hostId": "elena",
               "text": "Even with the press documenting his every failure, his phrasing on record remains eerily controlled. The music refuses to fall apart, even when the life around it has.",
               "atSeconds": 40,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c6_s2_v1.mp3"
             }
@@ -455,7 +455,7 @@
               "hostId": "arthur",
               "text": "Here is Duke Jordan on piano, providing a friendly structure that feels highly singable, but never sentimental. It's the perfect safety net.",
               "atSeconds": 55,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c6_s4_v1.mp3"
             }
@@ -483,9 +483,9 @@
             {
               "id": "c6_s6_v1",
               "hostId": "arthur",
-              "text": "Notice Niels-Henning Ørsted Pedersen on bass. The band isn't pushing Chet into extroversion; they are patiently holding the space open so he can speak.",
+              "text": "Notice Niels-Henning \u00d8rsted Pedersen on bass. The band isn't pushing Chet into extroversion; they are patiently holding the space open so he can speak.",
               "atSeconds": 120,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c6_s6_v1.mp3"
             }
@@ -520,7 +520,7 @@
               "hostId": "arthur",
               "text": "The physical line is thinner now. He occasionally falters, but the intention behind every single note is fiercely intact.",
               "atSeconds": 85,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c7_s2_v1.mp3"
             }
@@ -550,7 +550,7 @@
               "hostId": "elena",
               "text": "He takes a song that was written in homage to him, and he completely repossesses it, stripping it down to its barest bones.",
               "atSeconds": 60,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c7_s4_v1.mp3"
             }
@@ -573,7 +573,7 @@
               "hostId": "arthur",
               "text": "When Chet enters on this track, the whole song seems to hold its breath. It isn't jazz nostalgia. It's pure, functional melancholy cutting straight through a modern pop mix.",
               "atSeconds": 165,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c7_s5_v1.mp3"
             }
@@ -615,7 +615,7 @@
               "hostId": "elena",
               "text": "Just a voice, a trumpet, and the small room inside the song.",
               "atSeconds": 25,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/almost-blue/audio/c8_s3_v1.mp3"
             }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ziggy-stardust",
   "title": "The Rise, Fall, and Assassination of Ziggy Stardust",
-  "subject": "David Bowie — The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+  "subject": "David Bowie \u2014 The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
   "coverImage": "cover.png",
   "estimatedMinutes": 45,
   "hosts": [
@@ -47,7 +47,7 @@
               "hostId": "roxy",
               "text": "While 'Space Oddity' put Bowie on the map, he knew a lonely astronaut wouldn't sustain a career. To build his ultimate rock god, he began studying the exaggerated gestures of Kabuki theatre, the discipline of mime under Lindsay Kemp, and the visceral danger of street-level rockers like Lou Reed and Iggy Pop.",
               "atSeconds": 120,
-              "duckTo": 35,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch1-seg2-vo1.mp3"
             }
@@ -77,7 +77,7 @@
               "hostId": "oliver",
               "text": "For an album with such an elaborate conceptual facade, the studio reality was incredibly raw and fast. Co-producer Ken Scott actually kept the unedited first take of this vocal, capturing Bowie sobbing uncontrollably in the booth as he sang the apocalyptic climax.",
               "atSeconds": 240,
-              "duckTo": 35,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch1-seg4-vo1.mp3"
             }
@@ -112,7 +112,7 @@
               "hostId": "roxy",
               "text": "What makes the Ziggy sound so unique is the interplay of textures. Beneath Ronson's roaring electric Les Paul, there is actually a crisp, driving acoustic guitar foundation that gives the record its incredible punch and clarity.",
               "atSeconds": 150,
-              "duckTo": 35,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch2-seg2-vo1.mp3"
             }
@@ -142,7 +142,7 @@
               "hostId": "oliver",
               "text": "On July 6, 1972, Bowie fundamentally altered British youth culture on Top of the Pops. Singing 'I had to phone someone so I picked on you,' he pointed directly into millions of living rooms, casually draped his arm around Mick Ronson, and beamed unabashed queer intimacy across the nation.",
               "atSeconds": 65,
-              "duckTo": 35,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch2-seg4-vo1.mp3"
             }
@@ -177,7 +177,7 @@
               "hostId": "oliver",
               "text": "This track is a masterclass in thematic duality, functioning as both a celebration of rock mythology and a self-aware critique. Bowie is literally singing about the crushing ego, jealousy, and inevitable burnout of the manufactured idol.",
               "atSeconds": 100,
-              "duckTo": 35,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch3-seg2-vo1.mp3"
             }
@@ -207,7 +207,7 @@
               "hostId": "roxy",
               "text": "By publicly assassinating Ziggy, Bowie severed himself from the glam-rock scene before it could stagnate into parody. He freed himself to evolve, leaving behind a legacy that would birth punk rock and provide a lasting visual vocabulary for queer representation across the globe.",
               "atSeconds": 160,
-              "duckTo": 40,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/ziggy-stardust/audio/ch3-seg4-vo1.mp3"
             }
