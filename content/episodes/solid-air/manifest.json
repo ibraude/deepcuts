@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "solid-air",
   "title": "Air Made Solid",
-  "subject": "John Martyn — Solid Air (1973)",
+  "subject": "John Martyn \u2014 Solid Air (1973)",
   "coverImage": "cover.png",
   "estimatedMinutes": 90,
   "hosts": [
@@ -61,7 +61,7 @@
               "hostId": "simon",
               "text": "Despite the sheer, breathtaking majesty of this track, John and his bassist Danny Thompson privately referred to it by the absolutely absurd nickname, 'Sausages.'",
               "atSeconds": 30,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap1-vo1.mp3"
             }
@@ -71,7 +71,7 @@
           "type": "narration",
           "id": "chap1-narr4",
           "hostId": "clara",
-          "text": "To understand John's intense need for connection, you have to look at how he started. He was born Iain David McGeachy in 1948 to parents who were both opera singers. When their marriage collapsed, his childhood was violently split between the south of England and a life with his father and grandmother in Glasgow. That division permanently fractured his identity—even as an adult, his accent could shift unpredictably from broad Glaswegian to polished Southern English depending on who he was talking to. Beverley later found heartbreaking letters he had written as a young boy to his absent mother, begging to know why she never visited or wrote to him. It's a wound of abandonment that would drive his desperate, lifelong plea for loyalty: do not leave me, do not disappear.",
+          "text": "To understand John's intense need for connection, you have to look at how he started. He was born Iain David McGeachy in 1948 to parents who were both opera singers. When their marriage collapsed, his childhood was violently split between the south of England and a life with his father and grandmother in Glasgow. That division permanently fractured his identity\u2014even as an adult, his accent could shift unpredictably from broad Glaswegian to polished Southern English depending on who he was talking to. Beverley later found heartbreaking letters he had written as a young boy to his absent mother, begging to know why she never visited or wrote to him. It's a wound of abandonment that would drive his desperate, lifelong plea for loyalty: do not leave me, do not disappear.",
           "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap1-narr4.mp3"
         },
         {
@@ -98,7 +98,7 @@
               "hostId": "simon",
               "text": "Listen to the groove here. This is the exact sound of John stepping over the threshold of traditional folk music, leaving it entirely behind to find something much deeper.",
               "atSeconds": 45,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap1-vo2.mp3"
             }
@@ -120,7 +120,7 @@
           "type": "narration",
           "id": "chap2-narr2",
           "hostId": "clara",
-          "text": "By 1973, the family had relocated to that house in Hastings. From the outside, it looked like a bohemian paradise—a coastal folk salon where legends like Bert Jansch and Nick Drake would drift through to eat, drink, and make music in the living room. But inside, there was an escalating, dark instability. We have to actively reject the familiar, romantic cliché of the 'difficult male genius and his long-suffering wife.' Beverley was an artist whose career was suffocated, and who would later describe a harrowing reality of physical abuse and intimidation at John's hands. The house in Hastings was not just a creative hub; it was increasingly a place of fear.",
+          "text": "By 1973, the family had relocated to that house in Hastings. From the outside, it looked like a bohemian paradise\u2014a coastal folk salon where legends like Bert Jansch and Nick Drake would drift through to eat, drink, and make music in the living room. But inside, there was an escalating, dark instability. We have to actively reject the familiar, romantic clich\u00e9 of the 'difficult male genius and his long-suffering wife.' Beverley was an artist whose career was suffocated, and who would later describe a harrowing reality of physical abuse and intimidation at John's hands. The house in Hastings was not just a creative hub; it was increasingly a place of fear.",
           "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap2-narr2.mp3"
         },
         {
@@ -140,7 +140,7 @@
               "hostId": "simon",
               "text": "With Richard Thompson on mandolin and the Fairport Convention family chiming in, this transforms into a completely idealized, sunny rural procession. A fantasy of an uncomplicated homecoming.",
               "atSeconds": 65,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap2-vo1.mp3"
             }
@@ -150,7 +150,7 @@
           "type": "narration",
           "id": "chap2-narr3",
           "hostId": "clara",
-          "text": "That sunny procession of 'Over the Hill' stands in stark contrast to the reality Beverley was navigating. She later revealed that for the song 'Don't Want to Know', she was the one who supplied the musical motion in their sea-facing living room while John worked out the lyrics. Yet, when the album was pressed, the writing credit she was promised mysteriously vanished. It was entirely credited to John. The lyrics themselves ostensibly reject the horror of the outside world—war, greed, and lies. But knowing what was happening in that house, it takes on a much darker hue.",
+          "text": "That sunny procession of 'Over the Hill' stands in stark contrast to the reality Beverley was navigating. She later revealed that for the song 'Don't Want to Know', she was the one who supplied the musical motion in their sea-facing living room while John worked out the lyrics. Yet, when the album was pressed, the writing credit she was promised mysteriously vanished. It was entirely credited to John. The lyrics themselves ostensibly reject the horror of the outside world\u2014war, greed, and lies. But knowing what was happening in that house, it takes on a much darker hue.",
           "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap2-narr3.mp3"
         },
         {
@@ -170,7 +170,7 @@
               "hostId": "clara",
               "text": "When you know the history of the household, this song's rejection of the world's ugliness feels incredibly defensive. Not wanting to know was also John's personal strategy for ignoring the damage he was causing.",
               "atSeconds": 40,
-              "duckTo": 35,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap2-vo2.mp3"
             }
@@ -210,9 +210,9 @@
             {
               "id": "chap3-vo1",
               "hostId": "simon",
-              "text": "Pink Moon strips everything away. It is total isolation. Solid Air is exactly the opposite—John responds to this terrifying emptiness by surrounding Nick with warm bodies, heavy bass, and protective instrumentation.",
+              "text": "Pink Moon strips everything away. It is total isolation. Solid Air is exactly the opposite\u2014John responds to this terrifying emptiness by surrounding Nick with warm bodies, heavy bass, and protective instrumentation.",
               "atSeconds": 60,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap3-vo1.mp3"
             }
@@ -249,7 +249,7 @@
               "hostId": "simon",
               "text": "Danny Thompson wasn't just keeping time here; he was a co-pilot. Producer John Wood famously considered this to be among the absolute finest bass performances he ever committed to tape.",
               "atSeconds": 120,
-              "duckTo": 20,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap3-vo2.mp3"
             }
@@ -264,7 +264,7 @@
           "type": "narration",
           "id": "chap4-narr1",
           "hostId": "simon",
-          "text": "That track, 'I'd Rather Be the Devil', is actually a radical dismantling of a 1931 Delta blues song by Skip James. But John didn't just respectfully cover it; he possessed it. He ran his acoustic guitar through a fuzz pedal, added a phase effect to make it rotate, and fed the whole thing into an Echoplex. The Echoplex recorded his playing onto a moving loop of tape and spat it back at him on a delay. He was literally playing against his own immediate past. Every note returned altered, turning a solo performance into a visceral, rhythmic struggle between man and machine. It wasn't avant-garde for the sake of it—it sounded like thick, electronic weather moving right through a folk song.",
+          "text": "That track, 'I'd Rather Be the Devil', is actually a radical dismantling of a 1931 Delta blues song by Skip James. But John didn't just respectfully cover it; he possessed it. He ran his acoustic guitar through a fuzz pedal, added a phase effect to make it rotate, and fed the whole thing into an Echoplex. The Echoplex recorded his playing onto a moving loop of tape and spat it back at him on a delay. He was literally playing against his own immediate past. Every note returned altered, turning a solo performance into a visceral, rhythmic struggle between man and machine. It wasn't avant-garde for the sake of it\u2014it sounded like thick, electronic weather moving right through a folk song.",
           "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap4-narr1.mp3"
         },
         {
@@ -284,7 +284,7 @@
               "hostId": "clara",
               "text": "Danny Thompson remembered hearing the line about curling around someone like a fern in the spring, marveling at John's ability to conjure an image of such profound, organic gentleness.",
               "atSeconds": 60,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap4-vo1.mp3"
             }
@@ -321,7 +321,7 @@
               "hostId": "simon",
               "text": "Tony Coe plays that brilliant, unstable saxophone drifting through the arrangement. Amazingly, Coe later admitted he had absolutely no memory of ever playing on this album. For the hired guns, history is just another Tuesday.",
               "atSeconds": 90,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap4-vo2.mp3"
             }
@@ -363,7 +363,7 @@
               "hostId": "clara",
               "text": "It is a brotherly blessing for a friend, but beneath that, it sounds remarkably like a once-abandoned child desperately trying to offer someone else the unconditional security he always wanted for himself.",
               "atSeconds": 85,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap5-vo1.mp3"
             }
@@ -393,7 +393,7 @@
               "hostId": "simon",
               "text": "It's jarring, isn't it? The 1971 single tries so hard to be a 'record'. The 1973 midnight acoustic take just lets it be what it actually is: a private promise.",
               "atSeconds": 50,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap5-vo2.mp3"
             }
@@ -428,7 +428,7 @@
               "hostId": "simon",
               "text": "Listen to Rabbit's electric piano. It's not just adding harmony; it changes the entire atmospheric temperature of the room. It pushes this way past folk into something resembling early trip-hop.",
               "atSeconds": 70,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap6-vo1.mp3"
             }
@@ -456,9 +456,9 @@
             {
               "id": "chap6-vo2",
               "hostId": "simon",
-              "text": "This looseness points to what came next. Just eight months after Solid Air, John would drop 'Inside Out'—a sprawling, wild record that he privately preferred to his so-called masterpiece.",
+              "text": "This looseness points to what came next. Just eight months after Solid Air, John would drop 'Inside Out'\u2014a sprawling, wild record that he privately preferred to his so-called masterpiece.",
               "atSeconds": 45,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap6-vo2.mp3"
             }
@@ -495,7 +495,7 @@
               "hostId": "simon",
               "text": "This is what happened when they took it on the road. The studio track was just a blueprint. Live, with the Echoplex screaming and Danny's bass locking in, it becomes a ferocious, living organism.",
               "atSeconds": 180,
-              "duckTo": 20,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap6-vo3.mp3"
             }
@@ -510,14 +510,14 @@
           "type": "narration",
           "id": "chap7-narr1",
           "hostId": "clara",
-          "text": "In November 1974, the subject of Solid Air's title track finally succumbed to his illness. Nick Drake died of an overdose of amitriptyline. History has often romanticized this tragedy, trying to view Nick's entire life merely as a prelude to a beautifully doomed end. But Solid Air wasn't written as a eulogy; it was a desperate intervention for a living boy. The painful coda is that, according to friends, John and Nick had a bitter argument about a month before Nick's death. It was a fight that was never repaired. John disappeared for two days when he heard the news. Decades later, he would express a deep, uncomfortable resentment toward the posthumous cult that sprang up around Nick—perhaps fueled by grief, perhaps by guilt, or perhaps by the agonizing knowledge that he couldn't push through the solid air in time.",
+          "text": "In November 1974, the subject of Solid Air's title track finally succumbed to his illness. Nick Drake died of an overdose of amitriptyline. History has often romanticized this tragedy, trying to view Nick's entire life merely as a prelude to a beautifully doomed end. But Solid Air wasn't written as a eulogy; it was a desperate intervention for a living boy. The painful coda is that, according to friends, John and Nick had a bitter argument about a month before Nick's death. It was a fight that was never repaired. John disappeared for two days when he heard the news. Decades later, he would express a deep, uncomfortable resentment toward the posthumous cult that sprang up around Nick\u2014perhaps fueled by grief, perhaps by guilt, or perhaps by the agonizing knowledge that he couldn't push through the solid air in time.",
           "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap7-narr1.mp3"
         },
         {
           "type": "narration",
           "id": "chap7-narr2",
           "hostId": "simon",
-          "text": "John didn't stop in 1973, and we shouldn't rush straight to the tragic end of his own story. He didn't just fulfill some neat, self-destructive rock cliché. He went on to release an extraordinary run of albums: Inside Out, Sunday's Child, One World, and Grace and Danger. He pushed further into electric instrumentation, pioneered ambient environmental recordings, and fully embraced electronic production. By the time he passed away in 2009, having lost a leg to septicaemia but still touring relentlessly in a wheelchair, he had created an artistic universe that cast a shadow over everything from folk to trip-hop.",
+          "text": "John didn't stop in 1973, and we shouldn't rush straight to the tragic end of his own story. He didn't just fulfill some neat, self-destructive rock clich\u00e9. He went on to release an extraordinary run of albums: Inside Out, Sunday's Child, One World, and Grace and Danger. He pushed further into electric instrumentation, pioneered ambient environmental recordings, and fully embraced electronic production. By the time he passed away in 2009, having lost a leg to septicaemia but still touring relentlessly in a wheelchair, he had created an artistic universe that cast a shadow over everything from folk to trip-hop.",
           "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap7-narr2.mp3"
         },
         {
@@ -544,7 +544,7 @@
               "hostId": "simon",
               "text": "For thirty-five minutes in 1973, air became solid. It was something invisible finally given weight, resistance, and sound. This is where that sound went next.",
               "atSeconds": 30,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/solid-air/audio/chap7-vo1.mp3"
             }

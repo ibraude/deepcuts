@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "strangeways",
   "title": "A Private Language",
-  "subject": "The Smiths — Strangeways, Here We Come",
+  "subject": "The Smiths \u2014 Strangeways, Here We Come",
   "coverImage": "cover.png",
   "estimatedMinutes": 120,
   "hosts": [
@@ -40,7 +40,7 @@
               "hostId": "clara",
               "text": "It is September 1987. A new studio album by The Smiths arrives in British record shops, quickly climbing to number two. But there is a glaring absence surrounding it. There is no functioning band left to tour it, no joint interviews to promote it, and no opportunity to discover what these newly minted songs might become in front of a live audience.",
               "atSeconds": 35,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": true,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c1_s1_v1.mp3"
             },
@@ -49,7 +49,7 @@
               "hostId": "martin",
               "text": "And the music itself unsettles every expectation. You'd expect a final Smiths album to open with the absolute apex of Johnny Marr's chiming, intricate guitar lines. Instead, the guitar hero is deliberately withholding the guitar. What you get is a synthesized marimba, a strange electronic pulse, and a returning voice singing from beyond the grave.",
               "atSeconds": 55,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c1_s1_v2.mp3"
             }
@@ -91,7 +91,7 @@
               "hostId": "clara",
               "text": "Morrissey wasn't listening to this to imitate their sound. He was studying their psychology. He recognized that a band could become culturally massive to a small group of outsiders precisely because polite society found them ridiculous.",
               "atSeconds": 45,
-              "duckTo": 20,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c2_s1_v1.mp3"
             }
@@ -101,7 +101,7 @@
           "type": "narration",
           "id": "c2_n2",
           "hostId": "martin",
-          "text": "A few miles away, John Maher—who would later become Johnny Marr—was growing up in a very different kind of Manchester Irish household. Born in 1963 to young immigrant parents, his home wasn't steeped in solemn traditionalism. It was alive with modern pop. Family gatherings meant dancing, instruments lying around, and records spinning constantly. While Morrissey concentrated on the emotional tragedy and persona of a singer, young Marr listened to how the records were physically assembled. He was obsessed with the machinery of a song. His education wasn't just the standard indie rock diet. He was soaking up Motown, T. Rex, the Rolling Stones, and critically, the pristine funk of Nile Rodgers and Chic. He didn't view dance music as the enemy of rock and roll. He viewed it as an instruction manual.",
+          "text": "A few miles away, John Maher\u2014who would later become Johnny Marr\u2014was growing up in a very different kind of Manchester Irish household. Born in 1963 to young immigrant parents, his home wasn't steeped in solemn traditionalism. It was alive with modern pop. Family gatherings meant dancing, instruments lying around, and records spinning constantly. While Morrissey concentrated on the emotional tragedy and persona of a singer, young Marr listened to how the records were physically assembled. He was obsessed with the machinery of a song. His education wasn't just the standard indie rock diet. He was soaking up Motown, T. Rex, the Rolling Stones, and critically, the pristine funk of Nile Rodgers and Chic. He didn't view dance music as the enemy of rock and roll. He viewed it as an instruction manual.",
           "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c2_n2.mp3"
         },
         {
@@ -119,9 +119,9 @@
             {
               "id": "c2_s2_v1",
               "hostId": "martin",
-              "text": "Listen to what the guitar is doing here. It creates constant, shimmering motion, but it never demands to be the center of attention. It's a kinetic system. Marr was internalizing this concision—how to drive a song without suffocating it.",
+              "text": "Listen to what the guitar is doing here. It creates constant, shimmering motion, but it never demands to be the center of attention. It's a kinetic system. Marr was internalizing this concision\u2014how to drive a song without suffocating it.",
               "atSeconds": 60,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c2_s2_v1.mp3"
             }
@@ -156,7 +156,7 @@
               "hostId": "martin",
               "text": "The energy here is obvious, but the real takeaway for the Manchester kids in the crowd was attainable action. A band could be formed before you actually knew how to play perfectly.",
               "atSeconds": 45,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c3_s1_v1.mp3"
             }
@@ -179,7 +179,7 @@
               "hostId": "clara",
               "text": "This is what Pete Shelley and Howard Devoto did next with Buzzcocks. They took their limited technical ability and made it the concept. That two-note guitar solo isn't hiding what they can't do; it's framing it as brilliant architecture.",
               "atSeconds": 30,
-              "duckTo": 20,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c3_s2_v1.mp3"
             }
@@ -209,7 +209,7 @@
               "hostId": "clara",
               "text": "Linder Sterling showed Morrissey that you didn't have to adopt the aggressive masculinity of punk. You could use art-school confrontation, collage, and raw theater to stake your claim.",
               "atSeconds": 50,
-              "duckTo": 20,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c3_s3_v1.mp3"
             }
@@ -244,7 +244,7 @@
               "hostId": "martin",
               "text": "When the two finally decided to work together, they discovered a shared admiration for bands like The Monochrome Set. It proves The Smiths didn't just materialize out of thin air. There was already a lineage of literate, slightly theatrical, English guitar pop waiting to be weaponized.",
               "atSeconds": 30,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c4_s1_v1.mp3"
             }
@@ -274,7 +274,7 @@
               "hostId": "clara",
               "text": "This is their first single. The abrasive harmonica, the non-macho propulsion of the guitar, and the central lyrical stance. The message is clear: the gaze of other people will not determine the value of this bond.",
               "atSeconds": 85,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c4_s2_v1.mp3"
             }
@@ -309,7 +309,7 @@
               "hostId": "martin",
               "text": "Focus entirely on the bass right here. It's not just decorating the composition; it is the composition. Rourke is anchoring the track while injecting a massive amount of physical pleasure into it.",
               "atSeconds": 45,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c5_s1_v1.mp3"
             }
@@ -339,7 +339,7 @@
               "hostId": "martin",
               "text": "Joyce's relentless drumming drives this like a runaway train. It completely shatters the lazy myth that The Smiths were just delicate, miserable boys. Underneath the poetry, they hit incredibly hard.",
               "atSeconds": 70,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c5_s2_v1.mp3"
             }
@@ -374,7 +374,7 @@
               "hostId": "martin",
               "text": "This track is a masterclass in arranging. Marr packs upper notes, chord fragments, and rhythmic accents so tightly it implies multiple guitars playing at once. It's perfectly buoyant pop, providing a stark contrast to Morrissey's narrator, who is stranded and socially terrified.",
               "atSeconds": 55,
-              "duckTo": 20,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c6_s1_v1.mp3"
             }
@@ -395,9 +395,9 @@
             {
               "id": "c6_s2_v1",
               "hostId": "martin",
-              "text": "And they weren't purists. The defining pulse of this track is purely a studio construction—carefully synchronized tremolo effects mapped out over a long edit. It's closer to an engineered, synthesized environment than four guys just jamming in a room.",
+              "text": "And they weren't purists. The defining pulse of this track is purely a studio construction\u2014carefully synchronized tremolo effects mapped out over a long edit. It's closer to an engineered, synthesized environment than four guys just jamming in a room.",
               "atSeconds": 30,
-              "duckTo": 20,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c6_s2_v1.mp3"
             }
@@ -420,7 +420,7 @@
               "hostId": "clara",
               "text": "Notice the romantic swell of strings here. They didn't hire an orchestra; they used an Emulator sampler. The band was already learning how to use technology to imagine an emotional scale far beyond their four physical members. It's a direct precedent for the sonic palette of Strangeways.",
               "atSeconds": 130,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c6_s3_v1.mp3"
             }
@@ -435,14 +435,14 @@
           "type": "narration",
           "id": "c7_n1",
           "hostId": "clara",
-          "text": "To fully understand the weight of their final records, you have to feel the political weather of Britain in the mid-1980s. Margaret Thatcher’s government had consolidated power. The year-long Miners' Strike had ended in a crushing defeat for the unions, cementing the feeling that the industrial decline was not a temporary dip, but a permanent social reorganization. Unemployment and fierce regional inequality defined the landscape. But The Smiths rarely offered textbook political manifestos. Instead, they localized the national distress. Their politics played out through the humiliation of the individual body. A pupil subjected to casual violence. An unemployed person processed by a hostile bureaucracy. A worker trapped in endless repetition. They rejected the aspirational polish of 1980s pop, offering instead a highly sophisticated soundtrack for the stranded.",
+          "text": "To fully understand the weight of their final records, you have to feel the political weather of Britain in the mid-1980s. Margaret Thatcher\u2019s government had consolidated power. The year-long Miners' Strike had ended in a crushing defeat for the unions, cementing the feeling that the industrial decline was not a temporary dip, but a permanent social reorganization. Unemployment and fierce regional inequality defined the landscape. But The Smiths rarely offered textbook political manifestos. Instead, they localized the national distress. Their politics played out through the humiliation of the individual body. A pupil subjected to casual violence. An unemployed person processed by a hostile bureaucracy. A worker trapped in endless repetition. They rejected the aspirational polish of 1980s pop, offering instead a highly sophisticated soundtrack for the stranded.",
           "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c7_n1.mp3"
         },
         {
           "type": "narration",
           "id": "c7_n2",
           "hostId": "martin",
-          "text": "On December 12, 1986, The Smiths walked onto the stage at the Brixton Academy. It was a benefit concert for Artists Against Apartheid. Nobody in the audience—and nobody in the band—knew that it would be the very last time they ever played together live. They fully expected to return to the road after recording their next album. For the final song of the encore, they went all the way back to the beginning. They closed with 'Hand in Glove'.",
+          "text": "On December 12, 1986, The Smiths walked onto the stage at the Brixton Academy. It was a benefit concert for Artists Against Apartheid. Nobody in the audience\u2014and nobody in the band\u2014knew that it would be the very last time they ever played together live. They fully expected to return to the road after recording their next album. For the final song of the encore, they went all the way back to the beginning. They closed with 'Hand in Glove'.",
           "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c7_n2.mp3"
         },
         {
@@ -462,7 +462,7 @@
               "hostId": "clara",
               "text": "Listen to the massive roar of that crowd. They have completely conquered the country. And now... they step off the stage, they leave the audience behind, and they lock themselves inside the quiet, enclosed environment of a residential recording studio.",
               "atSeconds": 45,
-              "duckTo": 20,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c7_s1_v1.mp3"
             }
@@ -497,7 +497,7 @@
               "hostId": "martin",
               "text": "Notice the massive, blunt, glam-rock stomp right from the start. Heavy drum programming and distorted guitar. And lyrically, Morrissey gives the narrator this huge, bravado-filled entrance, only to reveal the awkward, terrified person trapped inside his own armor.",
               "atSeconds": 60,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c8_s1_v1.mp3"
             }
@@ -525,9 +525,9 @@
             {
               "id": "c8_s2_v1",
               "hostId": "clara",
-              "text": "Marr and Street don't try to correct the unsteady gait of Morrissey's piano; they build the entire track around it. It perfectly matches a lyric about the complete exhaustion of public slogans—a narrator who no longer trusts the words 'peace' and 'love'.",
+              "text": "Marr and Street don't try to correct the unsteady gait of Morrissey's piano; they build the entire track around it. It perfectly matches a lyric about the complete exhaustion of public slogans\u2014a narrator who no longer trusts the words 'peace' and 'love'.",
               "atSeconds": 90,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c8_s2_v1.mp3"
             }
@@ -550,7 +550,7 @@
               "hostId": "clara",
               "text": "People often reduce this to 'sad words over happy music.' Don't fall for it. The bounce of the music is essential because it masks the narrator's irritation, emotional detachment, and possible guilt. It's a dramatic monologue of pure moral evasion.",
               "atSeconds": 45,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c8_s3_v1.mp3"
             }
@@ -585,7 +585,7 @@
               "hostId": "clara",
               "text": "For Morrissey, this wasn't a joke. It was his interventionist nostalgia. He wanted to rescue a neglected female voice from the dusty bins of pop history, proving that immense emotional melancholy could hide beneath supposedly unfashionable light entertainment.",
               "atSeconds": 20,
-              "duckTo": 20,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c9_s1_v1.mp3"
             }
@@ -608,7 +608,7 @@
               "hostId": "martin",
               "text": "But for Johnny Marr, this felt like going backward. He believed The Smiths existed to invent new work, to push into the future. Excavating an old pop song felt like abandoning the ambitious architecture he was trying to build.",
               "atSeconds": 30,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c9_s2_v1.mp3"
             }
@@ -631,7 +631,7 @@
               "hostId": "martin",
               "text": "Listen to the metallic clatter under the opening chords. Marr dropped a heavy knife against his Telecaster to get that noise. He was treating the guitar as a resonant, physical object to be struck. He wasn't abandoning his instrument; he was just refusing to treat it with boring reverence.",
               "atSeconds": 20,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c9_s3_v1.mp3"
             }
@@ -666,7 +666,7 @@
               "hostId": "clara",
               "text": "The sheer scale of this is staggering. The song places the public, collective defeat of an entire region in the exact same room as one individual's private, intimate isolation. The chaos outside is merely the weather through which the narrator experiences his own unyielding loneliness.",
               "atSeconds": 270,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c10_s1_v1.mp3"
             }
@@ -689,7 +689,7 @@
               "hostId": "martin",
               "text": "To shake off that massive weight, they pivot into petty cruelty. Marr plays an old-fashioned harmonium here. It gives this viciously unresolved, almost childish grievance the formal, stiff feeling of a gloomy parlor or a countryside chapel service.",
               "atSeconds": 40,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c10_s2_v1.mp3"
             }
@@ -717,7 +717,7 @@
               "hostId": "clara",
               "text": "This is a brilliant, layered self-accusation. It attacks the record industry for repackaging a dead or absent artist to sell artificial intimacy back to the fans. And yet, all four band members are credited with providing the handclaps. They are collectively decorating a song predicting their own commercial disassembly.",
               "atSeconds": 190,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c11_s1_v1.mp3"
             }
@@ -740,7 +740,7 @@
               "hostId": "martin",
               "text": "This track is pure theatrical compression. It's nervous, short, and structurally necessary. It creates quick, agitated movement to clear the palate, stripping all the grandeur away to prepare the room for the very end.",
               "atSeconds": 25,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c11_s2_v1.mp3"
             }
@@ -777,7 +777,7 @@
               "hostId": "clara",
               "text": "Strangeways, Here We Come was the sound of The Smiths finding somewhere genuinely new to go, released after they had lost the means of going there together.",
               "atSeconds": 150,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/strangeways/audio/c11_s3_v1.mp3"
             }

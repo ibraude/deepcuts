@@ -15,7 +15,7 @@
     {
       "id": "stella",
       "name": "Stella",
-      "persona": "A sharp, empathetic cultural critic. She focuses on the messy human element—the egos, the love triangles, and the spiritual yearning behind the music.",
+      "persona": "A sharp, empathetic cultural critic. She focuses on the messy human element\u2014the egos, the love triangles, and the spiritual yearning behind the music.",
       "voiceRef": "elevenlabs:SAz9YHcvj6GT2YYXdXww"
     }
   ],
@@ -54,7 +54,7 @@
               "hostId": "stella",
               "text": "Listen to the sheer volume and chaos on this track. This is not the mystical, sitar-playing Beatle we are used to. This is the sound of a guy who has been told to sit down and be quiet for ten years finally screaming at the top of his lungs.",
               "atSeconds": 30,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": true,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c1-s1-v1.mp3"
             },
@@ -63,7 +63,7 @@
               "hostId": "oliver",
               "text": "And the title itself is a brilliant double meaning. 'Wah-Wah' was not just a nod to the guitar effects pedal driving the riff. It was George's literal term for the massive, throbbing headache Paul McCartney was giving him.",
               "atSeconds": 45,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c1-s1-v2.mp3"
             }
@@ -93,7 +93,7 @@
               "hostId": "oliver",
               "text": "When it came time to finally release his massive solo debut, George did not open it with a loud declaration of independence. He opened it with this: a gentle, intimate invitation co-written with Bob Dylan in upstate New York.",
               "atSeconds": 18,
-              "duckTo": 35,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c1-s2-v1.mp3"
             }
@@ -128,7 +128,7 @@
               "hostId": "oliver",
               "text": "You can hear Spector's legendary Wall of Sound being erected in real time right here. They have twin drum kits going at once, multiple keyboardists, and an absolute army of acoustic guitars, all drenched in Abbey Road's chamber echo.",
               "atSeconds": 65,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": true,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c2-s1-v1.mp3"
             },
@@ -137,7 +137,7 @@
               "hostId": "stella",
               "text": "But beneath the massive production, pay attention to the lyrics. George is watching his oldest friends tear each other apart over money and bruised egos in the press. Rather than striking back, he frames the entire Beatles breakup as a tragic failure of universal love.",
               "atSeconds": 130,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c2-s1-v2.mp3"
             }
@@ -174,7 +174,7 @@
               "hostId": "stella",
               "text": "Highlight that furious, biting guitar bend. That is Eric Clapton, completely strung out, pouring his toxic, secret obsession for his best friend's wife directly onto the tape.",
               "atSeconds": 15,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": true,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c2-s2-v1.mp3"
             },
@@ -183,7 +183,7 @@
               "hostId": "oliver",
               "text": "The rhythm section on this track is phenomenal. In fact, Clapton bonded so deeply with these specific players during these sessions that as soon as they finished, they immediately fled to Miami to form Derek and the Dominos.",
               "atSeconds": 30,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c2-s2-v2.mp3"
             }
@@ -218,7 +218,7 @@
               "hostId": "oliver",
               "text": "Listen to how dense those acoustics are. To get this sound, Spector arranged all four members of the band Badfinger, plus George, in a tight semi-circle, having them strum identical rhythms into a single microphone setup.",
               "atSeconds": 22,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": true,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c3-s1-v1.mp3"
             },
@@ -227,7 +227,7 @@
               "hostId": "stella",
               "text": "And here comes the real genius. George starts the chorus with a familiar Christian Hallelujah, making western pop audiences feel safe. Then, seamlessly, he slips in the Hindu Hare Krishna, literally tricking radio listeners around the world into chanting a holy mantra.",
               "atSeconds": 105,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c3-s1-v2.mp3"
             }
@@ -264,7 +264,7 @@
               "hostId": "stella",
               "text": "Just think back to January 1969. George brought this exact song to John and Paul, and they could not find a use for it. They let it slip right through their fingers.",
               "atSeconds": 45,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": true,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c3-s2-v1.mp3"
             },
@@ -273,7 +273,7 @@
               "hostId": "oliver",
               "text": "Now, listen to those majestic horns swell. It is a stoic, philosophical epitaph for The Beatles, and the ultimate victory lap for the Quiet Beatle.",
               "atSeconds": 68,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/all-things-must-pass/audio/c3-s2-v2.mp3"
             }

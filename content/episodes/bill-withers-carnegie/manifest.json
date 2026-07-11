@@ -2,20 +2,20 @@
   "schemaVersion": 1,
   "id": "bill-withers-carnegie",
   "title": "A Room Where People Hear Each Other",
-  "subject": "Bill Withers — Live at Carnegie Hall",
+  "subject": "Bill Withers \u2014 Live at Carnegie Hall",
   "coverImage": "cover.png",
   "estimatedMinutes": 120,
   "hosts": [
     {
       "id": "walker",
       "name": "Walker",
-      "persona": "The storyteller and biographer. Walker has a warm, grounded delivery. He focuses on Bill Withers’ working-class roots, the emotional mechanics of the lyrics, and the human narratives unfolding inside Carnegie Hall.",
+      "persona": "The storyteller and biographer. Walker has a warm, grounded delivery. He focuses on Bill Withers\u2019 working-class roots, the emotional mechanics of the lyrics, and the human narratives unfolding inside Carnegie Hall.",
       "voiceRef": "elevenlabs:uVPaoHk10Ap5NfMgYbjN"
     },
     {
       "id": "sarah",
       "name": "Sarah",
-      "persona": "The musical analyst. Sharp, observant, and deeply appreciative of groove and restraint. She unpacks the machinery behind Withers’ apparent simplicity, focusing on arrangement, vocal technique, and the band’s incredible discipline.",
+      "persona": "The musical analyst. Sharp, observant, and deeply appreciative of groove and restraint. She unpacks the machinery behind Withers\u2019 apparent simplicity, focusing on arrangement, vocal technique, and the band\u2019s incredible discipline.",
       "voiceRef": "elevenlabs:oUMxh02yjiu8yM49gRI0"
     }
   ],
@@ -54,7 +54,7 @@
               "hostId": "sarah",
               "text": "Listen to the enormous spaces the musicians are leaving here. Drummer James Gadson and bassist Melvin Dunlap aren't trying to fill every available gap. The restraint is incredible.",
               "atSeconds": 65,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch1-1-sarah.mp3"
             },
@@ -63,7 +63,7 @@
               "hostId": "walker",
               "text": "At the end of this eight-minute jam, he simply thanks the crowd for coming out through the rain. In that one small, gracious gesture, the formal architecture of Carnegie Hall totally collapses. He's talking to them like neighbors in a living room.",
               "atSeconds": 480,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch1-1-walker.mp3"
             }
@@ -105,7 +105,7 @@
               "hostId": "walker",
               "text": "Notice how he reverses the typical flow of a pop concert. Most stars organize the room so that all admiration flows in one direction, toward them. Bill asks the audience to look around and support each other.",
               "atSeconds": 120,
-              "duckTo": 35,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch2-1-walker.mp3"
             }
@@ -154,7 +154,7 @@
               "hostId": "sarah",
               "text": "Listen to this forward momentum. He isn't writing literally about machines, but he constructs his songs with the exact, driving efficiency of an assembly line.",
               "atSeconds": 85,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch3-1-sarah.mp3"
             }
@@ -196,7 +196,7 @@
               "hostId": "sarah",
               "text": "Notice how his voice completely refuses to perform the emotion. He hits sustained notes cleanly, allows just a slight roughness to appear, and then stops before the feeling becomes ornamental.",
               "atSeconds": 70,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch4-1-sarah.mp3"
             },
@@ -205,7 +205,7 @@
               "hostId": "walker",
               "text": "This repetition isn't filler. It's the sound of a mind trapped inside recognition, completely unable to act on what it knows.",
               "atSeconds": 115,
-              "duckTo": 35,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch4-1-walker.mp3"
             }
@@ -245,9 +245,9 @@
             {
               "id": "vo-ch5-1-sarah",
               "hostId": "sarah",
-              "text": "The opening pulse here feels older than the record itself. It contains gospel handclaps and blues repetition—styles that didn't need to be academically combined because they already lived naturally inside his body.",
+              "text": "The opening pulse here feels older than the record itself. It contains gospel handclaps and blues repetition\u2014styles that didn't need to be academically combined because they already lived naturally inside his body.",
               "atSeconds": 130,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch5-1-sarah.mp3"
             },
@@ -256,7 +256,7 @@
               "hostId": "walker",
               "text": "Years later, Johnny Cash told Bill that after hearing this song, he truly wished he could have met her.",
               "atSeconds": 240,
-              "duckTo": 35,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch5-1-walker.mp3"
             }
@@ -271,14 +271,14 @@
           "type": "narration",
           "id": "narration-ch6-1",
           "hostId": "walker",
-          "text": "Later in his career, Bill Withers would have fierce arguments with record executives who tried to tell him what Black music was supposed to sound like. He had absolutely no patience for industry experts attempting to explain the blues to him as an academic category. He felt that his own family history in Slab Fork gave him an inherent knowledge of his culture that couldn't be acquired in a boardroom or a textbook. He wasn't an untutored innocent by any means—he was incredibly observant and precise. But his intelligence was practical. He measured ideas by whether they accurately described actual human behavior.",
+          "text": "Later in his career, Bill Withers would have fierce arguments with record executives who tried to tell him what Black music was supposed to sound like. He had absolutely no patience for industry experts attempting to explain the blues to him as an academic category. He felt that his own family history in Slab Fork gave him an inherent knowledge of his culture that couldn't be acquired in a boardroom or a textbook. He wasn't an untutored innocent by any means\u2014he was incredibly observant and precise. But his intelligence was practical. He measured ideas by whether they accurately described actual human behavior.",
           "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch6-1.mp3"
         },
         {
           "type": "narration",
           "id": "narration-ch6-2",
           "hostId": "sarah",
-          "text": "You can hear that practical intelligence in how he uses the social architecture of the church. He wasn't primarily a gospel artist, but he took the tools of gospel—the call and response, the moral instruction delivered through story, the expectation of participation—and applied them to everyday secular life. He understood the fundamental church belief that individual suffering can be carried collectively. That is exactly what happens during this concert. The room slowly transforms into a congregation, completely organically, without Bill ever stepping up to a pulpit or turning the show into a sermon.",
+          "text": "You can hear that practical intelligence in how he uses the social architecture of the church. He wasn't primarily a gospel artist, but he took the tools of gospel\u2014the call and response, the moral instruction delivered through story, the expectation of participation\u2014and applied them to everyday secular life. He understood the fundamental church belief that individual suffering can be carried collectively. That is exactly what happens during this concert. The room slowly transforms into a congregation, completely organically, without Bill ever stepping up to a pulpit or turning the show into a sermon.",
           "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch6-2.mp3"
         },
         {
@@ -298,7 +298,7 @@
               "hostId": "walker",
               "text": "There is a persistent, pragmatic darkness in Bill's writing that grounds the entire concert. It proves he isn't just offering generic uplift; he prevents the community ethic from ever becoming cheap sentimentality.",
               "atSeconds": 180,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch6-1-walker.mp3"
             }
@@ -328,7 +328,7 @@
               "hostId": "sarah",
               "text": "Listen to how the humor makes the authority horizontal. He isn't preaching from on high; he's just another guy noticing how fundamentally strange people are.",
               "atSeconds": 150,
-              "duckTo": 35,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch6-2-sarah.mp3"
             }
@@ -350,7 +350,7 @@
           "type": "narration",
           "id": "narration-ch7-2",
           "hostId": "walker",
-          "text": "This is where Bill's industrial background provides the perfect analogy. In good mechanical work, whether you're building a car or an airplane, every single component performs a strictly necessary function. Additional movement doesn't create improvement; it creates failure. The band’s arrangements behave the exact same way. The bass establishes the weight. The drums establish the time. The guitar and keys create friction and color. Absolutely nothing exists merely to prove that the musician can play fast. It isn't simplicity through limitation. It is simplicity through absolute trust.",
+          "text": "This is where Bill's industrial background provides the perfect analogy. In good mechanical work, whether you're building a car or an airplane, every single component performs a strictly necessary function. Additional movement doesn't create improvement; it creates failure. The band\u2019s arrangements behave the exact same way. The bass establishes the weight. The drums establish the time. The guitar and keys create friction and color. Absolutely nothing exists merely to prove that the musician can play fast. It isn't simplicity through limitation. It is simplicity through absolute trust.",
           "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch7-2.mp3"
         },
         {
@@ -370,7 +370,7 @@
               "hostId": "walker",
               "text": "This is a profound sociological argument disguised as a groove: you can walk busy streets in a populated neighborhood and remain completely emotionally invisible.",
               "atSeconds": 105,
-              "duckTo": 35,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch7-1-walker.mp3"
             },
@@ -379,7 +379,7 @@
               "hostId": "sarah",
               "text": "The rhythm carries the body, keeping the song upbeat, while the lyric names the isolation that the body cannot escape.",
               "atSeconds": 185,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch7-1-sarah.mp3"
             }
@@ -394,14 +394,14 @@
           "type": "narration",
           "id": "narration-ch8-1",
           "hostId": "walker",
-          "text": "The emotional centerpiece of the concert might be a song that Bill rarely played later in his career. It’s an anti-war song completely devoid of political slogans. When he introduces 'I Can't Write Left-Handed', he doesn't offer a geopolitical analysis of Vietnam. He talks conversationally about how people usually write songs about social issues from a safe, comfortable distance. And then he narrows the entire scope of the war down to a single, devastating image: an injured young soldier who has been shot in the right shoulder, who simply needs someone else to help him write a letter home to his mother.",
+          "text": "The emotional centerpiece of the concert might be a song that Bill rarely played later in his career. It\u2019s an anti-war song completely devoid of political slogans. When he introduces 'I Can't Write Left-Handed', he doesn't offer a geopolitical analysis of Vietnam. He talks conversationally about how people usually write songs about social issues from a safe, comfortable distance. And then he narrows the entire scope of the war down to a single, devastating image: an injured young soldier who has been shot in the right shoulder, who simply needs someone else to help him write a letter home to his mother.",
           "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch8-1.mp3"
         },
         {
           "type": "narration",
           "id": "narration-ch8-2",
           "hostId": "sarah",
-          "text": "The power of the song comes from Bill’s own institutional knowledge. He had spent nine years in the Navy. He hadn't fought in Vietnam, but he intimately knew the world of the military. He knew how young men are turned into functions, into serial numbers. Instead of standing on stage and loudly announcing that war is wrong, he asks the listener to fully inhabit a damaged body. He concentrates on the soldier's sheer physical bewilderment—the realization that his dominant arm no longer works, and his total inability to understand why a stranger just shot him.",
+          "text": "The power of the song comes from Bill\u2019s own institutional knowledge. He had spent nine years in the Navy. He hadn't fought in Vietnam, but he intimately knew the world of the military. He knew how young men are turned into functions, into serial numbers. Instead of standing on stage and loudly announcing that war is wrong, he asks the listener to fully inhabit a damaged body. He concentrates on the soldier's sheer physical bewilderment\u2014the realization that his dominant arm no longer works, and his total inability to understand why a stranger just shot him.",
           "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch8-2.mp3"
         },
         {
@@ -421,7 +421,7 @@
               "hostId": "sarah",
               "text": "The moral force here comes entirely from specificity. He highlights the abrupt, cruel distance between political orders and bodily consequences.",
               "atSeconds": 240,
-              "duckTo": 25,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch8-1-sarah.mp3"
             }
@@ -436,7 +436,7 @@
           "type": "narration",
           "id": "narration-ch9-1",
           "hostId": "sarah",
-          "text": "The origin of 'Lean on Me' is famously unpretentious. Bill had just bought a brand-new Wurlitzer electric piano. He brought it home, screwed on the legs, sat down, and started messing around. He didn't know how to play the piano properly, so he just found a simple chord shape and started moving his hands up and down the keys without changing the shape of his fingers. He later pointed out that its sheer mechanical simplicity is exactly why it's one of the very first songs that children learn to play. But it’s the lyric that transforms that simple exercise into a masterpiece.",
+          "text": "The origin of 'Lean on Me' is famously unpretentious. Bill had just bought a brand-new Wurlitzer electric piano. He brought it home, screwed on the legs, sat down, and started messing around. He didn't know how to play the piano properly, so he just found a simple chord shape and started moving his hands up and down the keys without changing the shape of his fingers. He later pointed out that its sheer mechanical simplicity is exactly why it's one of the very first songs that children learn to play. But it\u2019s the lyric that transforms that simple exercise into a masterpiece.",
           "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/narration-ch9-1.mp3"
         },
         {
@@ -463,7 +463,7 @@
               "hostId": "walker",
               "text": "Notice how he doesn't protect the song as his private property. He gives it over to the room entirely. The audience knows exactly when to enter because the structure feels like a hymn and a playground chant simultaneously.",
               "atSeconds": 195,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch9-1-walker.mp3"
             },
@@ -472,7 +472,7 @@
               "hostId": "sarah",
               "text": "This isn't uncomplicated uplift. The hard truth embedded in this song is that asking for help requires you to admit your own pride is insufficient.",
               "atSeconds": 280,
-              "duckTo": 35,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch9-1-sarah.mp3"
             }
@@ -507,7 +507,7 @@
               "hostId": "sarah",
               "text": "The melody stays remarkably controlled here. He avoids the massive, cathartic soul climax you might expect, because the emotional situation itself is completely unresolved.",
               "atSeconds": 150,
-              "duckTo": 35,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch10-1-sarah.mp3"
             }
@@ -537,7 +537,7 @@
               "hostId": "walker",
               "text": "He understands that the person causing the harm is also deeply suffering, but he refuses to convert that observation into automatic forgiveness.",
               "atSeconds": 140,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch10-2-walker.mp3"
             }
@@ -579,7 +579,7 @@
               "hostId": "sarah",
               "text": "This is the full range of his authority. He is shouting without grandstanding, and he is preaching without ever becoming a preacher.",
               "atSeconds": 300,
-              "duckTo": 35,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch11-1-sarah.mp3"
             },
@@ -588,7 +588,7 @@
               "hostId": "walker",
               "text": "This image totally dissolves his celebrity. The evening doesn't end with limousines or artistic transcendence; it ends with hunger, companionship, and whatever cold food is waiting in the kitchen.",
               "atSeconds": 540,
-              "duckTo": 30,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch11-1-walker.mp3"
             },
@@ -597,7 +597,7 @@
               "hostId": "walker",
               "text": "Carnegie Hall was built to make music feel important. Bill Withers did something far more difficult. For one rainy night, he made importance feel completely ordinary.",
               "atSeconds": 700,
-              "duckTo": 35,
+              "duckTo": 60,
               "holdDuck": false,
               "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/bill-withers-carnegie/audio/vo-ch11-1-walker2.mp3"
             }
