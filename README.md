@@ -4,7 +4,7 @@ A macOS desktop app that plays AI-generated listening documentaries about music.
 
 ## Download
 
-The signed website lives at [deepcuts.studio](https://deepcuts.studio). The latest .dmg for Apple Silicon Macs is on the [releases page](https://github.com/ibraude/deepcuts/releases/latest). Unsigned for now; right-click → Open on first launch.
+The website lives at [deepcuts.studio](https://deepcuts.studio). The latest .dmg for Apple Silicon Macs is on the [releases page](https://github.com/ibraude/deepcuts/releases/latest). Unsigned for now — after moving DeepCuts to Applications, run `xattr -cr /Applications/DeepCuts.app` in Terminal to clear macOS's quarantine flag, then launch normally.
 
 ## Run it (5 minutes, no keys)
 
