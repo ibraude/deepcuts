@@ -2,6 +2,10 @@
 
 A macOS desktop app that plays AI-generated listening documentaries about music. Narration alternates with the actual songs, which play through your own Spotify desktop client. No accounts, no Spotify Web API, no server — everything runs locally.
 
+## Download
+
+The signed website lives at [deepcuts.studio](https://deepcuts.studio). The latest .dmg for Apple Silicon Macs is on the [releases page](https://github.com/ibraude/deepcuts/releases/latest). Unsigned for now; right-click → Open on first launch.
+
 ## Run it (5 minutes, no keys)
 
 Requirements: macOS, Node 20+, the Spotify desktop app installed and signed in.
