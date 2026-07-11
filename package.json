@@ -1,6 +1,6 @@
 {
   "name": "deepcuts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Listening documentaries about music — narration alternating with real Spotify tracks.",
   "main": "out/main/index.js",

@@ -38,7 +38,7 @@ export interface SchedulerMusic {
 
 export interface SchedulerDeps {
   music: SchedulerMusic
-  playNarration: (segmentId: string, text: string, hostVoiceRef: string, ttsModel?: string) => { done: Promise<void>; cancel: () => void }
+  playNarration: (segmentId: string, text: string, hostVoiceRef: string, ttsModel?: string, audio?: string) => { done: Promise<void>; cancel: () => void }
   pollIntervalMs?: number
   // Fade duration applied when cutting a song mid-play before the next segment.
   // Defaults to 1800ms; injectable so tests don't have to wait real time.
@@ -181,7 +181,7 @@ export class Scheduler {
     const host = this.state.manifest?.hosts.find((h) => h.id === segment.hostId)
     const voiceRef = host?.voiceRef ?? 'system:default'
     this.setState({ status: { kind: 'playing-narration', segmentId: segment.id } })
-    this.narrationHandle = this.deps.playNarration(segment.id, segment.text, voiceRef, host?.ttsModel)
+    this.narrationHandle = this.deps.playNarration(segment.id, segment.text, voiceRef, host?.ttsModel, segment.audio)
     try {
       await this.narrationHandle.done
     } finally {
@@ -374,7 +374,7 @@ export class Scheduler {
             }
             // else: continuing a conversation; volume already ducked, no fade or beat.
 
-            const handle = this.deps.playNarration(vo.id, vo.text, voiceRef, voHostTtsModel)
+            const handle = this.deps.playNarration(vo.id, vo.text, voiceRef, voHostTtsModel, vo.audio)
             activeVoiceoverHandle = handle
             const capturedIndex = i
             const holdDuck = vo.holdDuck === true

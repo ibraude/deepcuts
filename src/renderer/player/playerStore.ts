@@ -35,7 +35,16 @@ const playAudio = (
   onTick?: (t: { currentTime: number; duration: number }) => void,
 ) =>
   new Promise<void>((resolve, reject) => {
-    const audio = new Audio(src)
+    const audio = new Audio()
+    // For http(s) URLs, explicitly enable CORS. In packaged builds the
+    // renderer is served from file:// with webSecurity on; Chromium then
+    // treats cross-origin <audio> loads as tainted and silently fails.
+    // jsDelivr already sends access-control-allow-origin: *, so setting
+    // crossOrigin='anonymous' makes Chromium accept the response.
+    if (/^https?:\/\//.test(src)) {
+      audio.crossOrigin = 'anonymous'
+    }
+    audio.src = src
     audio.preload = 'auto'
     const cleanup = () => {
       audio.pause()
@@ -49,7 +58,11 @@ const playAudio = (
       })
     }
     audio.addEventListener('ended', () => { cleanup(); resolve() })
-    audio.addEventListener('error', () => { cleanup(); reject(new Error(`Audio failed: ${src}`)) })
+    audio.addEventListener('error', () => {
+      const err = audio.error
+      cleanup()
+      reject(new Error(`Audio failed: ${src} (code=${err?.code ?? '?'} msg=${err?.message ?? ''})`))
+    })
     signal?.addEventListener('abort', () => { cleanup(); resolve() })
     audio.play().catch(reject)
   })
@@ -82,13 +95,18 @@ const scheduler = new Scheduler({
     getVolume: () => window.deepcuts.spotify.getVolume(),
     setVolume: (pct) => window.deepcuts.spotify.setVolume(pct),
   },
-  playNarration: (segmentId, text, voiceRef, ttsModel) => {
+  playNarration: (segmentId, text, voiceRef, ttsModel, audio) => {
     // Only apply the user's global voice override on single-host episodes.
     // Multi-host episodes intentionally use distinct authored voices per host.
-    const effectiveVoiceRef = currentHostCount <= 1 && currentUserVoiceRef ? currentUserVoiceRef : voiceRef
+    // Also: NEVER override when the manifest ships a pre-rendered audio URL —
+    // the pre-render already committed to a specific voice, so overriding
+    // the voiceRef here would only affect the fallback branches (ElevenLabs
+    // live-synth / SystemTTS) and cause voice drift.
+    const effectiveVoiceRef =
+      !audio && currentHostCount <= 1 && currentUserVoiceRef ? currentUserVoiceRef : voiceRef
     progressSink?.(0)
     return narrationPlayer.play(
-      { type: 'narration', id: segmentId, hostId: '', text },
+      { type: 'narration', id: segmentId, hostId: '', text, audio },
       effectiveVoiceRef,
       {
         hasElevenLabsKey: currentHasKey,

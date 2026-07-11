@@ -1,9 +1,9 @@
 # Electron-builder configuration.
 #
-# For now: unsigned + unnotarized. Users will see a Gatekeeper warning on
-# first open ("cannot verify developer") and must right-click → Open, or
-# System Settings → Privacy & Security → "Open Anyway". Once we have an
-# Apple Developer ID, flip identity/notarize below.
+# Unsigned + unnotarized. Users get macOS's "damaged" wall on first open;
+# workaround is `xattr -cr /Applications/DeepCuts.app` in Terminal, documented
+# in the release notes. Once we have an Apple Developer ID, flip identity to
+# it and set notarize below.
 
 appId: studio.deepcuts.app
 productName: DeepCuts
@@ -29,12 +29,12 @@ mac:
     - target: dmg
       arch:
         - arm64
-  # Explicitly disable code signing + notarization until we have a Developer ID.
+  # No code signing. Users bypass macOS's "damaged" wall by running
+  # `xattr -cr /Applications/DeepCuts.app` in Terminal after installing.
   identity: null
   gatekeeperAssess: false
   hardenedRuntime: false
   # Give the app Automation entitlements so users can grant Spotify access.
-  # These do nothing without a code signature but keep the plist correct.
   extendInfo:
     NSAppleEventsUsageDescription: >-
       DeepCuts controls Spotify to play tracks synchronized with narration.
