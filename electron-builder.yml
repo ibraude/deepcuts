@@ -1,0 +1,49 @@
+# Electron-builder configuration.
+#
+# For now: unsigned + unnotarized. Users will see a Gatekeeper warning on
+# first open ("cannot verify developer") and must right-click → Open, or
+# System Settings → Privacy & Security → "Open Anyway". Once we have an
+# Apple Developer ID, flip identity/notarize below.
+
+appId: studio.deepcuts.app
+productName: DeepCuts
+
+directories:
+  output: dist
+  buildResources: build
+
+files:
+  - out/**/*
+  - package.json
+  - '!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}'
+  - '!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}'
+  - '!**/node_modules/*.d.ts'
+  - '!**/node_modules/.bin'
+
+# jsDelivr URLs and cache files live in userData; nothing extra to bundle.
+asar: true
+
+mac:
+  category: public.app-category.music
+  target:
+    - target: dmg
+      arch:
+        - arm64
+  # Explicitly disable code signing + notarization until we have a Developer ID.
+  identity: null
+  gatekeeperAssess: false
+  hardenedRuntime: false
+  # Give the app Automation entitlements so users can grant Spotify access.
+  # These do nothing without a code signature but keep the plist correct.
+  extendInfo:
+    NSAppleEventsUsageDescription: >-
+      DeepCuts controls Spotify to play tracks synchronized with narration.
+
+dmg:
+  # Predictable filename so the site's github-release plugin can find it.
+  # electron-builder substitutes ${productName}, ${version}, ${arch}.
+  artifactName: ${productName}-${version}-${arch}.dmg
+  writeUpdateInfo: false
+
+# Prevent electron-builder from trying to publish anywhere — we upload via gh CLI.
+publish: null
