@@ -171,7 +171,7 @@ ${useAudioTags ? AUDIO_TAGS_SECTION : NO_AUDIO_TAGS_SECTION}Content rules:
 - Set holdDuck=true on voiceovers that are part of a conversation chain (every voiceover in the chain except the last).
 - songs: keep the trackRequest from the outline. playSeconds: 500 for full-song play-through, or a shorter value when cutting.
 - Real songs only — never invent.
-- duckTo is a PERCENTAGE on a 0–100 scale (e.g. 55 means 55%). NEVER write it as a 0–1 fraction.`,
+- duckTo is a PERCENTAGE on a 0–100 scale (e.g. 60 means 60%). NEVER write it as a 0–1 fraction.`,
     prompt: `Subject: ${subject}
 
 Research notes:

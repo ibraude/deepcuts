@@ -368,7 +368,7 @@ export class Scheduler {
               } catch {
                 preDuckVolume = 100
               }
-              duckedToVolume = vo.duckTo ?? 55
+              duckedToVolume = vo.duckTo ?? 60
               await fadeVolume(preDuckVolume, duckedToVolume)
               await new Promise((r) => setTimeout(r, BEAT_MS))
             }

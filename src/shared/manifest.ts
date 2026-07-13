@@ -37,7 +37,7 @@ const voiceoverSchema = z.object({
   hostId: z.string().min(1),
   text: z.string().min(1),
   atSeconds: z.number().min(0),
-  duckTo: z.number().min(0).max(100).default(55),
+  duckTo: z.number().min(0).max(100).default(60),
   // When true, don't fade music back up after this voiceover ends.
   // The next voiceover will pick up the conversation at the already-ducked level.
   // Set on every voiceover in a chain EXCEPT the last one.
