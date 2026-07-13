@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-11T09:09:32.330094Z",
+  "updatedAt": "2026-07-13T00:00:00Z",
   "episodes": [
     {
       "id": "almost-blue",
@@ -133,6 +133,12 @@
       "status": "released",
       "releaseDate": "2026-08-07",
       "order": 22
+    },
+    {
+      "id": "wish-you-were-here",
+      "status": "released",
+      "releaseDate": "2026-07-13",
+      "order": 23
     }
   ]
 }
