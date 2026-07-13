@@ -1,0 +1,689 @@
+{
+  "schemaVersion": 1,
+  "id": "wish-you-were-here",
+  "title": "Welcome to the Machine",
+  "subject": "Pink Floyd — Wish You Were Here",
+  "coverImage": "cover.png",
+  "estimatedMinutes": 120,
+  "hosts": [
+    {
+      "id": "eleanor",
+      "name": "Eleanor",
+      "persona": "An analytical, atmospheric storyteller. She focuses on the emotional stakes, the cultural backdrop of 1970s Britain, and the thematic weight of absence. Speaks with measured, deliberate pacing, never rushing the emotional impact.",
+      "voiceRef": "elevenlabs:yplPYwGTUmxFuOqyKNlq"
+    },
+    {
+      "id": "julian",
+      "name": "Julian",
+      "persona": "A meticulous studio historian and audio enthusiast. He breaks down the physical realities of the recording process—tape splices, routing errors, the mechanics of synthesizers, and the room dynamics at Abbey Road.",
+      "voiceRef": "elevenlabs:ZguM6IY85wmj9E68TzVA"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Cold Open",
+      "segments": [
+        {
+          "type": "song",
+          "id": "intro_song",
+          "track": {
+            "title": "Have a Cigar",
+            "artist": "Pink Floyd",
+            "spotifyUri": "spotify:track:3CmHvyZQQAGkKkTjTBFWN6"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 120,
+          "why": "The album's most cynical track — a snarl at the industry from a band drowning in what success had made of them. Sets the atmosphere before we rewind ten years to Cambridge.",
+          "voiceovers": [
+            {
+              "id": "intro_vo1",
+              "hostId": "eleanor",
+              "text": "In September 1975, Pink Floyd released Wish You Were Here — the record you have probably heard drifting from a coffee shop speaker, or through the walls of your parents' house. Four songs. Forty-four minutes. Millions of copies. But underneath the numbers, this record is a ghost story.",
+              "atSeconds": 22,
+              "duckTo": 60,
+              "holdDuck": true,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/intro_vo1.mp3"
+            },
+            {
+              "id": "intro_vo2",
+              "hostId": "julian",
+              "text": "The song you are hearing right now is the album's centerpiece of contempt — Have a Cigar. A snarl aimed straight at the record industry. Pink Floyd had just made the biggest album of their lives with Dark Side of the Moon, and they did not like what success felt like.",
+              "atSeconds": 48,
+              "duckTo": 60,
+              "holdDuck": true,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/intro_vo2.mp3"
+            },
+            {
+              "id": "intro_vo3",
+              "hostId": "eleanor",
+              "text": "But the real subject of Wish You Were Here isn't the industry. It is a person. Someone the four members of the band could not stop thinking about, even as they were trying, very carefully, to write around him.",
+              "atSeconds": 70,
+              "duckTo": 60,
+              "holdDuck": true,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/intro_vo3.mp3"
+            },
+            {
+              "id": "intro_vo4",
+              "hostId": "julian",
+              "text": "To understand how they got here — to this record, and to that person — we have to go back ten years. Not to London. Not to the machinery of stardom. To a boy in Cambridge.",
+              "atSeconds": 90,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/intro_vo4.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Boy in Cambridge",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c1_b1_narration",
+          "hostId": "eleanor",
+          "text": "It is June 1975, and inside EMI Studio Three at Abbey Road, the air is thick with the slow, suspended atmosphere of an album trying to piece itself together. You can hear the faint hum of a wine glass being played with a wet finger, mingling with the static of a radio tuning across a dial. The four members of Pink Floyd are deep in playback, listening to a sprawling, twenty-minute elegy they have spent the last several months building. Sitting quietly in the control room is a visitor. He is overweight, his head and eyebrows are completely shaved, and he is wearing a pale trench coat. He is clutching a plastic bag and intermittently brushing his teeth. For a long time—an uncomfortably long time—nobody in the band recognizes him. They assume he is a technician's friend, or just someone who wandered into the wrong room. But he isn't a stranger. He is the exact reason they are making this record.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c1_b1_narration.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "c1_b2_narration",
+          "hostId": "julian",
+          "text": "To understand how deeply strange that moment in the studio really is, you have to wind the tape back ten years, far away from the isolation of the 1970s rock machinery. We have to go back to Cambridge in 1965. Long before the myth-making and the tragedy, Roger Barrett—who everyone just called Syd—was not a cautionary tale. He was just a wildly charismatic, sharply dressed art student. He was the social gravity of his local scene, writing poetry, painting, and endlessly trading guitar licks with his teenage friend, David Gilmour. They were just two unknown kids who took their acoustic guitars and busked their way across the south of France. There is a brilliant, purely human detail from that trip where they were actually briefly detained by police in St. Tropez for busking. It is a crucial thing to remember. Gilmour was not just a hired gun drafted into the band years later to replace a crumbling genius. He was Syd's mate. They learned to play on the same streets, in the exact same cafes, trying to figure out how to be musicians together.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c1_b2_narration.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "c1_b3_narration",
+          "hostId": "eleanor",
+          "text": "When Syd eventually moved to London, he brought that Cambridge bohemian energy with him into the sprawling art school network of the city. He fell in with architecture students Roger Waters, Nick Mason, and keyboardist Richard Wright. They had been knocking around under various names, like Sigma 6 and the Tea Set, but it was Syd who finally gave them their identity. The name did not come from a grand psychedelic vision; it came from a misremembered geography fact on a blues record liner note. He spliced together the names of two obscure Carolina bluesmen, Pink Anderson and Floyd Council, to create The Pink Floyd Sound. But Syd brought more than just a name. He brought a wholly unique musical vocabulary. While every other English band was trying to perfectly mimic Chicago blues or write standard pop singles, Syd was pulling from something much more driving and weird. He loved American rhythm and blues, but he began translating it into a completely different, slightly unhinged English dialect.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c1_b3_narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c1_b4_song",
+          "track": {
+            "title": "Road Runner",
+            "artist": "Bo Diddley",
+            "spotifyUri": "spotify:track:6JsAXX6L7iBtiEpIysrHF7"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 150,
+          "why": "Demonstrates the foundational rhythmic influence on Syd Barrett before he entered psychedelia.",
+          "voiceovers": [
+            {
+              "id": "c1_b4_vo1",
+              "hostId": "julian",
+              "text": "Syd loved Bo Diddley. Notice how he took this driving, relentless American rhythm and eventually transplanted it directly into a strange, English art-school context.",
+              "atSeconds": 35,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c1_b4_vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c1_b5_narration",
+          "hostId": "julian",
+          "text": "By 1966, the group had found their true setting in the London underground. They became the house band at a legendary club called UFO, and played massive, chaotic sets at All Saints Church Hall. The events were advertised as sound-and-light workshops, with liquid movies and slides projected over the musicians. Syd understood the visual assignment perfectly. He actually glued reflective metal discs to his white Fender Esquire guitar. When the light show hit him, he would tilt the instrument, catching the glare and bouncing the projection right back into the eyes of the audience. Pink Floyd were not just playing songs underneath a light show. The room, the volume, and the image were all being treated as one unified work of art.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c1_b5_narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c1_b6_song",
+          "track": {
+            "title": "See Emily Play",
+            "artist": "Pink Floyd",
+            "spotifyUri": "spotify:track:1YZuigG1YcdgbfD7XJoCU5"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 200,
+          "why": "Showcases Syd's pop imagination at its most brilliantly compressed.",
+          "voiceovers": [
+            {
+              "id": "c1_b6_vo1",
+              "hostId": "eleanor",
+              "text": "Listen to the abrupt sectional changes and the massive melodic leaps. Syd could write an English pop single that felt like the scenery itself was moving.",
+              "atSeconds": 55,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c1_b6_vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c1_b7_narration",
+          "hostId": "eleanor",
+          "text": "But a three-minute pop single was only half of what the early Pink Floyd could do. The other half was far less structured and far more dangerous. They were developing a secondary identity on stage, where a simple riff could mutate into a massive, shared architecture. They were learning the specific art of collective time. The trick wasn't just to play a long solo. The trick was to dissolve the song into near abstraction, let the audience feel entirely lost in the dark, and then miraculously find the musical horizon again together.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c1_b7_narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c1_b8_song",
+          "track": {
+            "title": "Interstellar Overdrive",
+            "artist": "Pink Floyd",
+            "spotifyUri": "spotify:track:3xyTufSSGLP3oZnomceAVW"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 300,
+          "why": "Represents the band's second practice of collective time, texture, and risk.",
+          "voiceovers": [
+            {
+              "id": "c1_b8_vo1",
+              "hostId": "julian",
+              "text": "Right here, as the riff dissolves into pure texture, they are writing the grammatical blueprint. This departure and return is exactly how they will compose their masterpieces in the 1970s.",
+              "atSeconds": 180,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c1_b8_vo1.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Five-Man Floyd",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c2_b1_narration",
+          "hostId": "eleanor",
+          "text": "The speed of Pink Floyd's ascent in 1967 is still startling to think about. Within months, they went from being a club phenomenon to cutting hit singles. They found themselves recording their debut album, The Piper at the Gates of Dawn, at Abbey Road Studios in the exact same complex where The Beatles were making Sgt. Pepper. There were package tours, television broadcasts, and the crushing industry expectation that Syd would simply keep churning out hits. And somewhere in the middle of this blistering velocity, his behavior drastically changed. Friends and contemporaries noticed a sudden withdrawal, a chilling blankness taking over his eyes. Songs were altered or withheld entirely. There were performances where he would simply stand on stage with his guitar strapped on, staring out into the dark, scarcely playing a single note.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c2_b1_narration.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "c2_b2_narration",
+          "hostId": "julian",
+          "text": "The band was terrified, and they came up with a desperate plan to survive. At the end of 1967, they brought David Gilmour into the group. The idea was to operate as a five-piece Pink Floyd. Gilmour could handle the heavy lifting on stage, playing the guitar parts and singing, while Syd could retreat from the public eye and just remain their resident songwriter. It was essentially the exact arrangement the Beach Boys had struck with Brian Wilson. But the reality was entirely unworkable. Syd's material was becoming too fractured, his presence too inconsistent. By the spring of 1968, they made the agonizing decision to officially separate from him.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c2_b2_narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c2_b3_song",
+          "track": {
+            "title": "Jugband Blues",
+            "artist": "Pink Floyd",
+            "spotifyUri": "spotify:track:6BRaVA74yCgxgb8v0braWc"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 180,
+          "why": "Syd's only composition on A Saucerful of Secrets, an unsettling self-portrait.",
+          "voiceovers": [
+            {
+              "id": "c2_b3_vo1",
+              "hostId": "eleanor",
+              "text": "Syd specifically asked the Salvation Army musicians on this track to ignore the band and just play whatever they wanted. It captures two incompatible worlds crashing together, and proves he knew exactly what was happening to him.",
+              "atSeconds": 92,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c2_b3_vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c2_b4_narration",
+          "hostId": "julian",
+          "text": "There is a persistent myth that the band callously abandoned Syd once he was no longer commercially useful to them. The truth is far more complicated and far more human. Syd did not simply vanish the day he left Pink Floyd. Over the next two years, he recorded two solo albums, and his former bandmates were the ones trying to drag those records across the finish line. Roger Waters and David Gilmour spent agonizing hours in the studio helping produce The Madcap Laughs. Later, Gilmour and Richard Wright stepped in to produce his second album, Barrett. You can hear the strain in those sessions. It is a messy mix of deep friendship, terrible guilt, and raw impatience. They wanted his music out in the world, but they were also exhausted men trying to keep their own band from sinking.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c2_b4_narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c2_b5_song",
+          "track": {
+            "title": "Dark Globe",
+            "artist": "Syd Barrett",
+            "spotifyUri": "spotify:track:3XKKBkbIfq39PZL0tbFKmI"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 125,
+          "why": "A small, exposed voice left over after the psychedelic spectacle.",
+          "voiceovers": [
+            {
+              "id": "c2_b5_vo1",
+              "hostId": "eleanor",
+              "text": "Notice how bare and exposed this sounds. The studio artifice is completely gone, leaving only his erratic timing, his breath, and a heartbreaking fragility.",
+              "atSeconds": 45,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c2_b5_vo1.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Learning to Build a Machine",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c3_b1_narration",
+          "hostId": "eleanor",
+          "text": "Without their primary visionary, Pink Floyd did not immediately transform into the colossal stadium band of the 1970s. They spent years wandering. They made sprawling film scores, they tried orchestral arrangements, and they kept relentlessly touring. But the most important thing they did was learn how to be a composition rather than a vehicle for a single songwriter. They had to invent a collective method of working, building massive suites out of tiny fragments and studio experiments. And a crucial part of that new architecture came from Richard Wright. Wright was bringing an entirely different language into the room, heavily influenced by his deep love for modern jazz.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c3_b1_narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c3_b2_song",
+          "track": {
+            "title": "Blue in Green",
+            "artist": "Miles Davis",
+            "spotifyUri": "spotify:track:0aWMVrwxPNYkKmFthzmpRi"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 200,
+          "why": "Demonstrates the jazz influence Richard Wright brought to the band's harmonic space.",
+          "voiceovers": [
+            {
+              "id": "c3_b2_vo1",
+              "hostId": "julian",
+              "text": "Wright later named Miles Davis and Bill Evans as massive influences. Notice the suspended chords here, the lyrical phrasing, the willingness to let negative space hang in the air. That is what Wright brought to Pink Floyd.",
+              "atSeconds": 60,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c3_b2_vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c3_b3_narration",
+          "hostId": "julian",
+          "text": "That spacious, jazz-inflected harmony became the glue for their new sound. You can hear it perfectly solidify in 1971, on the twenty-three-minute epic 'Echoes'. This was the moment their new collective method truly locked in. Waters was providing the structural frame and the intellectual drive. Gilmour gave the music its singing, muscular instrumental voice. Wright supplied the vast, colorful harmonic space. And just as importantly, Nick Mason understood pacing. He learned exactly how little a drummer sometimes needed to play to make a song feel immense.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c3_b3_narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c3_b4_song",
+          "track": {
+            "title": "Echoes",
+            "artist": "Pink Floyd",
+            "spotifyUri": "spotify:track:7kriFJLY2KOhw5en9iI2jb"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 300,
+          "why": "The breakthrough of the collaborative, fragment-based Floyd.",
+          "voiceovers": [
+            {
+              "id": "c3_b4_vo1",
+              "hostId": "eleanor",
+              "text": "Listen to the patience here. Nick Mason holds back, letting the massive span of music feel entirely inhabited rather than rushed. They are building a world you can walk around in.",
+              "atSeconds": 145,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c3_b4_vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c3_b5_narration",
+          "hostId": "eleanor",
+          "text": "That precise balance of talents reached its absolute zenith on The Dark Side of the Moon. With Alan Parsons' engineering, they created a record that felt less like an album and more like an environment. But the unimaginable success of that record created an entirely new problem. It threw a group of men who had formed in small London art rooms into an unprecedented scale of American wealth. They were now an international corporate entity, carrying the crushing expectation of an audience waiting for their next monumental event. Syd was still on their minds, but now he was becoming a symbol for a much wider kind of madness.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c3_b5_narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c3_b6_song",
+          "track": {
+            "title": "Brain Damage",
+            "artist": "Pink Floyd",
+            "spotifyUri": "spotify:track:7EUEl5wJb8VI777UAUvRnH"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 230,
+          "why": "Shows Syd appearing as an earlier shadow in Waters's writing.",
+          "voiceovers": [
+            {
+              "id": "c3_b6_vo1",
+              "hostId": "julian",
+              "text": "The language and the subject here clearly evoke Syd, but Waters is expanding it into a broader fear of mental collapse. Syd is becoming an emblem of absence.",
+              "atSeconds": 85,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c3_b6_vo1.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Household Objects and Four Notes",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c4_b1_narration",
+          "hostId": "eleanor",
+          "text": "To understand the strange inertia that gripped Pink Floyd in 1974, you have to look out the window at the country they were living in. Britain was in the grip of a grim, protracted crisis. The oil shock and miners' strikes had forced the government to impose a three-day working week to conserve electricity. Inflation was accelerating violently toward twenty percent. There were IRA bombings, two tense general elections in a single year, and a pervasive public dread about national decline. And completely insulated from this, floating in their own newly minted stratosphere of wealth, were Pink Floyd. They could leave this broken Britain behind, tour North America in private jets, buy massive country houses, and block out months of time in the best recording studios on earth. But inside those expensive rooms, they were suffering from a complete creative paralysis. They had reached the absolute peak of the mountain, and they had absolutely no idea what to do next.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c4_b1_narration.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "c4_b2_narration",
+          "hostId": "julian",
+          "text": "Their solution to following up Dark Side of the Moon was an incredibly elaborate form of avoidance. They decided to make an album without using any conventional musical instruments. It was known as the Household Objects project. The band spent weeks in the studio painstakingly recording stretched rubber bands over matchboxes, the tearing of newspapers, aerosol sprays, and tuned bottles. It was unbelievably laborious, and it was going absolutely nowhere. Nick Mason later admitted that the whole exercise was basically a subconscious excuse to avoid actually writing any new songs. They were terrified of the blank page.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c4_b2_narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c4_b3_song",
+          "track": {
+            "title": "Wine Glasses",
+            "artist": "Pink Floyd",
+            "spotifyUri": "spotify:track:7yyfMWXQqXmoSOKAhNxFUo"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 140,
+          "why": "The only surviving audio from the abandoned Household Objects project.",
+          "voiceovers": [
+            {
+              "id": "c4_b3_vo1",
+              "hostId": "julian",
+              "text": "This is the only thing that survived. They recorded wet fingers on wine glasses across 16 tracks at semitone intervals. They were basically building a massive, cumbersome analog sampler out of glassware.",
+              "atSeconds": 45,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c4_b3_vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c4_b4_narration",
+          "hostId": "eleanor",
+          "text": "The inertia finally broke in a dingy rehearsal room in King's Cross. David Gilmour was idly messing around on his guitar when he played a simple, mournful four-note phrase. Roger Waters heard it, and immediately locked onto its potential. It sounded like a call hanging in the air, waiting for an answer that was missing. It became the seed of a massive new suite called 'Shine On You Crazy Diamond.' But even then, the band was fractured. Gilmour wanted to surround it with two other long, aggressive, cynical pieces they had been testing on the road. Waters disagreed. He wanted to split 'Shine On' in half and write brand new songs about the actual disconnection and emptiness they were feeling right then in the room. A brutal vote was called. Wright and Mason sided with Waters, leaving Gilmour outvoted, and setting the true thematic course of the album.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c4_b4_narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c4_b5_song",
+          "track": {
+            "title": "You've Got To Be Crazy (Live at Wembley 1974)",
+            "artist": "Pink Floyd",
+            "spotifyUri": "spotify:track:5FT6pzQBQdU7vpnsiAUrGA"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 240,
+          "why": "One of the long, aggressive pieces Gilmour wanted to include, which was outvoted.",
+          "voiceovers": [
+            {
+              "id": "c4_b5_vo1",
+              "hostId": "eleanor",
+              "text": "Gilmour desperately wanted to keep this aggressive, driving track on the record. But by outvoting him, the band chose to pursue the theme of absence instead. This track was shelved for years, eventually becoming 'Dogs' on the Animals album.",
+              "atSeconds": 110,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c4_b5_vo1.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Studio Three",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c5_b1_narration",
+          "hostId": "julian",
+          "text": "By January of 1975, the band was sequestered inside EMI Studio Three at Abbey Road, and the sessions were an absolute grind. They were trying to track the massive, multi-part foundation for 'Shine On You Crazy Diamond'. The first attempt took days, and when they listened back, it felt completely lifeless. So they scrapped it, buckled down, and re-recorded the entire backing track in a single, grueling day. They finally nailed it. The performance was perfect. But when they sat at the desk to play it back, their blood ran cold. Someone unfamiliar with the new mixing console had accidentally routed the echo returns directly onto the master recording tracks. Every snare hit, every guitar strum, and every keyboard chord was bleeding over with a contaminated, unfixable delay. The perfect take was permanently ruined. With no other option, an exhausted Pink Floyd had to reset and record the entire suite for a third time.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c5_b1_narration.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "c5_b2_narration",
+          "hostId": "eleanor",
+          "text": "The version they finally captured on that third attempt is a masterpiece of restraint. When you listen to the opening of 'Shine On', you are getting a masterclass in delayed arrival. The music does not start so much as it gradually fades into your awareness, like weather rolling over a landscape. Richard Wright layers his organ and synthesizers so slowly that the changes register as shifting atmospheric pressure rather than distinct musical events. And when Gilmour's guitar finally arrives, it enters before the famous four-note phrase is even established. He is playing the sound of a voice wandering in the dark, searching for a signal, completely untethered until it finally finds the call.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c5_b2_narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c5_b3_song",
+          "track": {
+            "title": "Shine On You Crazy Diamond, Parts I-V",
+            "artist": "Pink Floyd",
+            "spotifyUri": "spotify:track:6pnwfWyaWjQiHCKTiZLItr"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 500,
+          "why": "The centerpiece of the album, moving from atmospheric drone to human elegy.",
+          "voiceovers": [
+            {
+              "id": "c5_b3_vo1",
+              "hostId": "julian",
+              "text": "Listen closely right here. That drone sitting beneath the mix is the wine glass recording from their failed household objects project. It anchors the entire atmosphere.",
+              "atSeconds": 130,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c5_b3_vo1.mp3"
+            },
+            {
+              "id": "c5_b3_vo2",
+              "hostId": "eleanor",
+              "text": "And here are the four notes from King's Cross. It lands like a human-sized sign suddenly appearing inside an enormous, empty sound field.",
+              "atSeconds": 235,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c5_b3_vo2.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Welcome to the Machine",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c6_b1_narration",
+          "hostId": "eleanor",
+          "text": "If 'Shine On' is a deeply human elegy for a lost friend, the album immediately pivots to examine the cold, mechanical reality that took his place. The tragedy of Pink Floyd's massive success was not just the money; it was the total institutional isolation. They had become a global product. The second track on the album turns its lens directly onto the music industry itself. But it doesn't paint the industry as a cartoon villain. It paints it as a machine that speaks to you in a perfectly polite, human voice. It is an institution that knows exactly where you grew up, knows what you want to buy, and congratulates you for complying with your own career itinerary, all while feeling absolutely zero human obligation toward you.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c6_b1_narration.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "c6_b2_narration",
+          "hostId": "julian",
+          "text": "To capture that coldness, they completely abandoned the idea of a standard band performance. 'Welcome to the Machine' does not have a conventional rhythm track. It is an architectural sound collage. Gilmour and engineer Brian Humphries built the track out of heavily spliced tape and the relentless, synthetic throb of a VCS 3 synthesizer. They used a single-repeat echo to create a sense of vast, metallic space. It sounds like the doors of a massive elevator closing, trapping the band inside the very infrastructure they built.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c6_b2_narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c6_b3_song",
+          "track": {
+            "title": "Welcome to the Machine",
+            "artist": "Pink Floyd",
+            "spotifyUri": "spotify:track:5VWC7v2dC2K0SIIjT9WTLN"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 450,
+          "why": "Shifts the album from human elegy to an institution speaking in a human voice.",
+          "voiceovers": [
+            {
+              "id": "c6_b3_vo1",
+              "hostId": "julian",
+              "text": "Notice how the warm, acoustic guitars are entirely trapped inside this rigid electronic pulse. The human element is literally being swallowed by the machine.",
+              "atSeconds": 120,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c6_b3_vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c6_b4_narration",
+          "hostId": "eleanor",
+          "text": "That faceless industrial dread bleeds directly into the next song, which introduces the ultimate symbol of their new reality. The band was constantly surrounded by record executives who were desperate to shake their hands and project their fourth-quarter earnings, but who knew absolutely nothing about the art they were making. This wasn't just a paranoid metaphor. Roger Waters wrote the lyrics based on a very real class of stupid question they received over and over again from oblivious corporate suits. Men in expensive clothes who would sit down, look at the four members of Pink Floyd, and genuinely ask, 'By the way, which one is Pink?'",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c6_b4_narration.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "c6_b5_narration",
+          "hostId": "julian",
+          "text": "But when it came time to record the biting vocal for 'Have a Cigar', they hit a wall. Roger Waters had absolutely shredded his vocal cords recording 'Shine On', and he simply could not hit the notes. Gilmour tried singing it, but neither of them was happy with the attitude of the take. So they stepped out into the hallway of Abbey Road. Recording in Studio Two, right next door, was their friend, the folk singer Roy Harper. Waters asked Harper if he would come in and sing the lead vocal. Harper agreed, but jokingly demanded a lifetime season ticket to Lord's Cricket Ground as his payment. He walked into Studio Three, stood at the microphone, and absolutely nailed the finished, iconic vocal on only his second take.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c6_b5_narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c6_b6_song",
+          "track": {
+            "title": "Have a Cigar",
+            "artist": "Pink Floyd",
+            "spotifyUri": "spotify:track:3CmHvyZQQAGkKkTjTBFWN6"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 300,
+          "why": "A sociably ridiculous take on the music business, sung by a non-member.",
+          "voiceovers": [
+            {
+              "id": "c6_b6_vo1",
+              "hostId": "eleanor",
+              "text": "It is a brilliant, accidental piece of conceptual art. You have a total outsider impersonating the smarmy business voice that cannot identify the band's actual members.",
+              "atSeconds": 75,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c6_b6_vo1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "narration",
+          "id": "c6_b7_narration",
+          "hostId": "eleanor",
+          "text": "Roy Harper wasn't just hanging around Abbey Road waiting to do a favor for Pink Floyd. He was deep into recording his own masterpiece, an album called HQ. And it is fascinating to think about the atmospheres bleeding through the walls of the building that month. While Pink Floyd were trying to conjure a musical monument to absence and departure in Studio Three, Harper was next door recording 'When an Old Cricketer Leaves the Crease'. It is a deeply traditional, unmistakably English meditation on mortality, fading glory, and the inevitable moment of stepping off the field for the last time. The physical space of Abbey Road in 1975 was absolutely saturated with the sound of leave-taking.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c6_b7_narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c6_b8_song",
+          "track": {
+            "title": "When an Old Cricketer Leaves the Crease",
+            "artist": "Roy Harper",
+            "spotifyUri": "spotify:track:3Ob5b9b22xC86uvsGyoF3Q"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 250,
+          "why": "A neighboring work recorded in the same building, meditating on mortality and leave-taking.",
+          "voiceovers": [
+            {
+              "id": "c6_b8_vo1",
+              "hostId": "eleanor",
+              "text": "The melancholy sound of departure, recorded just down the hall, while Pink Floyd struggled with their own ghosts.",
+              "atSeconds": 180,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c6_b8_vo1.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Two Guitars Separated by a Medium",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c7_b1_narration",
+          "hostId": "julian",
+          "text": "At the very end of 'Have a Cigar', something incredible happens to the mix. The sweeping, multi-track scale of this massive rock band suddenly collapses. All the low end vanishes, the stereo field narrows, and the song is sucked into the tiny, tinny frequency range of a cheap AM radio. You hear the dial turning. It scans past some muffled speech, picks up a fleeting snippet of the finale of Tchaikovsky's Fourth Symphony, and then finally lands on a lone acoustic guitar. It sounds exactly like someone sitting in a car, or a small room, tuning a radio. And then, a second, full-bodied acoustic guitar enters the room, completely clear, playing along with the broadcast. You are hearing companionship enacted as a tape overdub. It is one musician, playing along with a distant, degraded version of himself.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c7_b1_narration.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "c7_b2_narration",
+          "hostId": "eleanor",
+          "text": "That shrinking of bandwidth, that deliberate physical separation, was exactly what the design group Hipgnosis was trying to capture for the album's artwork. They created a visual system built entirely around the elements of absence. A diver plunging into a lake without making a splash. A faceless salesman holding out an invisible record. And famously, two businessmen shaking hands on a Hollywood backlot, while one of them is engulfed in flames. That wasn't a composite photo. A stuntman actually set himself on fire, holding perfectly still while the cameras fired, physically enacting the danger of an empty, destructive business deal. When fans bought the record, it was hidden inside an opaque black plastic shrink-wrap. You literally had to tear through the dark, removing an absence, just to look at pictures about absence.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c7_b2_narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c7_b3_song",
+          "track": {
+            "title": "Wish You Were Here",
+            "artist": "Pink Floyd",
+            "spotifyUri": "spotify:track:6mFkJmJqdDVQ1REhVfGgd1"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 320,
+          "why": "The album's least armored performance.",
+          "voiceovers": [
+            {
+              "id": "c7_b3_vo1",
+              "hostId": "julian",
+              "text": "Listen to the breath, the throat clearing, the shifting weight. They left all this ordinary bodily presence in the track to anchor the illusion that a real person is sitting right next to you, playing to the radio.",
+              "atSeconds": 43,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c7_b3_vo1.mp3"
+            },
+            {
+              "id": "c7_b3_vo2",
+              "hostId": "eleanor",
+              "text": "Down the hall, jazz legend Stéphane Grappelli was brought in to play violin for £300. But the band mixed him so incredibly low at the end of this track, they ultimately left him off the credits to avoid insulting him.",
+              "atSeconds": 240,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c7_b3_vo2.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Visitor",
+      "segments": [
+        {
+          "type": "narration",
+          "id": "c8_b1_narration",
+          "hostId": "eleanor",
+          "text": "On June 5, 1975, the band was in Studio Three, working on the final mix for 'Shine On You Crazy Diamond'. The album was nearly finished. The elegiac portrait of their brilliant, fragmented founder was finally locked onto the tape. And that is exactly when the heavy man in the pale trench coat walked into the room unannounced. He had gained a massive amount of weight. His head and eyebrows were entirely shaved clean. He sat quietly, clutching his plastic bag, occasionally pulling out a toothbrush to brush his teeth, watching them work on a song about him.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c8_b1_narration.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "c8_b2_narration",
+          "hostId": "julian",
+          "text": "The most harrowing part of the story is not that Syd Barrett looked frightening. The harrowing part is the terrifying delay of recognition. These were men who had shared cramped bedrooms, cold rehearsal spaces, and transit vans with him for years. David Gilmour had busked on the streets of France with him as a teenager. And yet, for roughly forty-five minutes, no one in the room knew who he was. When the realization finally clicked—when they looked at the shape of his eyes and realized it was Syd—the shock was devastating. Roger Waters had to leave the room because he broke down in tears.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c8_b2_narration.mp3"
+        },
+        {
+          "type": "narration",
+          "id": "c8_b3_narration",
+          "hostId": "eleanor",
+          "text": "It is deeply tempting to view this visit as some kind of profound cosmic coincidence, a moment of poetic closure. But real life is rarely poetic. Syd's arrival did not repair anything, and it provided absolutely no validation for the music they were making. He hung around for a while, made some disconnected comments about helping out with guitar parts, and then he quietly slipped away, never to be seen by the band again. The living person and the tragic symbol had briefly occupied the exact same room, looking at each other across an unbridgeable distance. There was no neat reconciliation. There was only the album, left behind to fade slowly into silence.",
+          "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c8_b3_narration.mp3"
+        },
+        {
+          "type": "song",
+          "id": "c8_b4_song",
+          "track": {
+            "title": "Shine On You Crazy Diamond, Parts VI-IX",
+            "artist": "Pink Floyd",
+            "spotifyUri": "spotify:track:0W1uJJJsbbLxc1Sa9aLNxN"
+          },
+          "startAtSeconds": 0,
+          "playSeconds": 500,
+          "why": "The elegiac close to the album.",
+          "voiceovers": [
+            {
+              "id": "c8_b4_vo1",
+              "hostId": "julian",
+              "text": "Notice how the rushing wind from the end of the title track blows directly into Gilmour's pedal steel here. He doesn't sound like a soloist anymore. He sounds like a radio signal bending across a vast distance.",
+              "atSeconds": 60,
+              "duckTo": 60,
+              "holdDuck": false,
+              "audio": "https://cdn.jsdelivr.net/gh/ibraude/deepcuts@main/content/episodes/wish-you-were-here/audio/c8_b4_vo1.mp3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "facts": []
+}

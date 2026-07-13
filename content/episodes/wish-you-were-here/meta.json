@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "artistName": "Pink Floyd",
+  "albumName": "Wish You Were Here",
+  "blurb": "Pink Floyd at the height of their fame, writing an entire record about the friend they lost to it. Their most personal, and most haunted, album.",
+  "palette": {
+    "bg": "#d9c19d",
+    "ink": "#1a1308",
+    "accent": "#c14b1a"
+  },
+  "releaseDate": null,
+  "expectedRelease": null
+}
