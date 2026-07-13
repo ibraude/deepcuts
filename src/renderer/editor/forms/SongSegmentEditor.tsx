@@ -69,7 +69,7 @@ export function SongSegmentEditor({ chapterIndex, segmentIndex }: Props) {
       hostId: draft.hosts[0]?.id ?? 'host_a',
       text: '',
       atSeconds: 0,
-      duckTo: 55,
+      duckTo: 60,
       holdDuck: false,
     }
     const newVoiceovers = [...(seg.voiceovers ?? []), newVo]

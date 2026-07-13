@@ -32,8 +32,8 @@ export const generatedVoiceoverSchema = z.object({
     .number()
     .min(0)
     .max(100)
-    .default(55)
-    .describe('Music duck level as a PERCENTAGE on a 0–100 scale (e.g. 55 means 55%). Do NOT use a 0–1 fraction.'),
+    .default(60)
+    .describe('Music duck level as a PERCENTAGE on a 0–100 scale (e.g. 60 means 60%). Do NOT use a 0–1 fraction.'),
   holdDuck: z.boolean().default(false).describe('True if next voiceover follows shortly — keeps music ducked'),
 })
 
